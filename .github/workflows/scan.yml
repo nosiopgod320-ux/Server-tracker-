@@ -37,12 +37,13 @@ jobs:
 
       - name: Scan loop (every 171 seconds)
         env:
-          DISCORD_WEBHOOK_PIRATE_RAID:    ${{ secrets.DISCORD_WEBHOOK_PIRATE_RAID }}
-          DISCORD_WEBHOOK_FACTORY_RAID:   ${{ secrets.DISCORD_WEBHOOK_FACTORY_RAID }}
-          DISCORD_WEBHOOK_FRUIT_SPAWN:    ${{ secrets.DISCORD_WEBHOOK_FRUIT_SPAWN }}
+          DISCORD_WEBHOOK_PIRATE_RAID:     ${{ secrets.DISCORD_WEBHOOK_PIRATE_RAID }}
+          DISCORD_WEBHOOK_FACTORY_RAID:    ${{ secrets.DISCORD_WEBHOOK_FACTORY_RAID }}
+          DISCORD_WEBHOOK_FRUIT_SPAWN:     ${{ secrets.DISCORD_WEBHOOK_FRUIT_SPAWN }}
           DISCORD_WEBHOOK_LEGENDARY_SWORD: ${{ secrets.DISCORD_WEBHOOK_LEGENDARY_SWORD }}
-          DISCORD_WEBHOOK_FIST_DARKNESS:  ${{ secrets.DISCORD_WEBHOOK_FIST_DARKNESS }}
-          DISCORD_WEBHOOK_GOD_CHALICE:    ${{ secrets.DISCORD_WEBHOOK_GOD_CHALICE }}
+          DISCORD_WEBHOOK_FIST_DARKNESS:   ${{ secrets.DISCORD_WEBHOOK_FIST_DARKNESS }}
+          DISCORD_WEBHOOK_GOD_CHALICE:     ${{ secrets.DISCORD_WEBHOOK_GOD_CHALICE }}
+          DISCORD_WEBHOOK_LOG:             ${{ secrets.DISCORD_WEBHOOK_LOG }}
         run: |
           # Loop for 5.5 hours (19800 seconds), scanning every 171 seconds
           END=$((SECONDS + 19800))
