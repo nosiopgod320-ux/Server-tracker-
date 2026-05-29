@@ -1,1 +1,42 @@
-
+{
+  "updatedAt": "2026-05-29T17:41:23.602Z",
+  "totalKnown": 254,
+  "totalTracked": 0,
+  "totalUnknown": 254,
+  "newThisScan": 0,
+  "diedThisScan": 0,
+  "eventMeta": {
+    "PirateRaid": {
+      "label": "⚔️ Pirate / Castle Raid",
+      "sea": "Sea 3"
+    },
+    "FactoryRaid": {
+      "label": "🏭 Factory Raid",
+      "sea": "Sea 2"
+    },
+    "FruitSpawn": {
+      "label": "🍎 Fruit Spawn",
+      "sea": "All Seas"
+    },
+    "LegendarySword": {
+      "label": "🗡️ Legendary Sword Dealer",
+      "sea": "Sea 2"
+    },
+    "FistOfDarkness": {
+      "label": "✊ Fist of Darkness",
+      "sea": "Sea 2"
+    },
+    "GodChalice": {
+      "label": "🏆 God Chalice",
+      "sea": "Sea 3"
+    }
+  },
+  "events": {
+    "PirateRaid": [],
+    "FactoryRaid": [],
+    "FruitSpawn": [],
+    "LegendarySword": [],
+    "FistOfDarkness": [],
+    "GodChalice": []
+  }
+}
