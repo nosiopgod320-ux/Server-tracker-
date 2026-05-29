@@ -2,8 +2,12 @@ name: Blox Fruits Server Scanner
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "0 */5 * * *"   # Restart every 5 hours as safety net
   workflow_dispatch:
+
+concurrency:
+  group: scanner
+  cancel-in-progress: false  # Queue next run, never cancel the active one
 
 permissions:
   contents: write
@@ -11,7 +15,8 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 350
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -21,127 +26,94 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Run scanner
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Write scanner
         run: |
-          node - << 'EOF'
+          mkdir -p data
+          cat > /tmp/scan.mjs << 'EOF'
           import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
-
-          const DATA_DIR    = "data";
-          const STATE_FILE  = DATA_DIR + "/state.json";
-          const OUT_FILE    = DATA_DIR + "/servers.json";
-          const PLACE_ID    = 2753915549;
-          const MAX_PAGES   = 3;
-          const TOP_N       = 10;
-
+          const DATA = "data";
+          const STATE = DATA + "/state.json";
+          const OUT   = DATA + "/servers.json";
+          const PID   = 2753915549;
+          const TOP   = 10;
           const EVENTS = {
             PirateRaid:  { offset: 4500, interval: 3600 },
             FactoryRaid: { offset: 900,  interval: 7200 },
-            FruitSpawn:  { offset: 0, interval: () => {
-              const d = new Date().getUTCDay();
-              return (d === 0 || d === 6) ? 2700 : 3600;
-            }},
+            FruitSpawn:  { offset: 0, interval: () => ([0,6].includes(new Date().getUTCDay()) ? 2700 : 3600) },
           };
-
-          mkdirSync(DATA_DIR, { recursive: true });
-
-          let state = existsSync(STATE_FILE)
-            ? JSON.parse(readFileSync(STATE_FILE, "utf8"))
-            : { isFirstScan: true, servers: {}, lastScanAt: null };
-
+          mkdirSync(DATA, { recursive: true });
+          let state = existsSync(STATE) ? JSON.parse(readFileSync(STATE,"utf8")) : { isFirstScan:true, servers:{}, lastScanAt:null };
           const isFirst = state.isFirstScan;
           state.isFirstScan = false;
-          console.log(isFirst ? "First scan — building baseline" : `Scanning (${Object.keys(state.servers).length} known)`);
-
-          async function fetchPage(cursor, n) {
-            let url = "https://games.roblox.com/v1/games/" + PLACE_ID + "/servers/Public?limit=100";
-            if (cursor) url += "&cursor=" + encodeURIComponent(cursor);
-            console.log("Page " + n + "...");
-            const r = await fetch(url, {
-              headers: { "User-Agent": "Mozilla/5.0", "Accept": "application/json", "Referer": "https://www.roblox.com/" },
-              signal: AbortSignal.timeout(15000),
-            });
-            if (r.status === 429) { console.log("Rate limited"); return { servers: [], nextCursor: null, stop: true }; }
-            if (!r.ok) throw new Error("API " + r.status);
+          console.log(isFirst ? "First scan — baseline" : "Scanning (" + Object.keys(state.servers).length + " known)");
+          async function pg(cur, n) {
+            let u = "https://games.roblox.com/v1/games/"+PID+"/servers/Public?limit=100";
+            if (cur) u += "&cursor=" + encodeURIComponent(cur);
+            const r = await fetch(u, { headers:{"User-Agent":"Mozilla/5.0","Accept":"application/json","Referer":"https://www.roblox.com/"}, signal:AbortSignal.timeout(15000) });
+            if (r.status===429) { console.log("Rate limited p"+n); return {servers:[],nextCursor:null,stop:true}; }
+            if (!r.ok) throw new Error("API "+r.status);
             const d = await r.json();
-            return { servers: d.data ?? [], nextCursor: d.nextPageCursor ?? null, stop: false };
+            return { servers:d.data??[], nextCursor:d.nextPageCursor??null, stop:false };
           }
-
-          let live = [], cursor = null;
-          for (let p = 0; p < MAX_PAGES; p++) {
-            const { servers, nextCursor, stop } = await fetchPage(cursor, p + 1);
+          let live=[],cur=null;
+          for (let p=0;p<3;p++) {
+            const {servers,nextCursor,stop} = await pg(cur, p+1);
             live.push(...servers);
-            if (stop || !nextCursor) break;
-            await new Promise(r => setTimeout(r, 3000));
-            cursor = nextCursor;
+            if (stop||!nextCursor) break;
+            await new Promise(r=>setTimeout(r,3000));
+            cur=nextCursor;
           }
-          console.log("Fetched:", live.length);
-
-          const now = Date.now() / 1000;
-          const seen = new Set();
-          let added = 0;
-
+          console.log("Got:", live.length);
+          const now=Date.now()/1000, seen=new Set(); let added=0;
           for (const s of live) {
             seen.add(s.id);
-            if (state.servers[s.id]) {
-              state.servers[s.id].playing = s.playing;
-              state.servers[s.id].fps = s.fps;
-            } else if (isFirst) {
-              state.servers[s.id] = { firstSeen: null, status: "unknown", playing: s.playing, fps: s.fps };
-            } else {
-              state.servers[s.id] = { firstSeen: now, status: "tracked", playing: s.playing, fps: s.fps };
-              added++;
-            }
+            if (state.servers[s.id]) { state.servers[s.id].playing=s.playing; state.servers[s.id].fps=s.fps; }
+            else if (isFirst) state.servers[s.id]={firstSeen:null,status:"unknown",playing:s.playing,fps:s.fps};
+            else { state.servers[s.id]={firstSeen:now,status:"tracked",playing:s.playing,fps:s.fps}; added++; }
           }
-
-          if (live.length >= 250) {
-            for (const id of Object.keys(state.servers)) {
-              if (!seen.has(id)) delete state.servers[id];
+          if (live.length>=250) for (const id of Object.keys(state.servers)) if (!seen.has(id)) delete state.servers[id];
+          state.lastScanAt=new Date().toISOString();
+          const tracked=Object.values(state.servers).filter(e=>e.status==="tracked").length;
+          console.log("+"+added+" new | tracked:"+tracked);
+          const events={};
+          for (const [name,cfg] of Object.entries(EVENTS)) {
+            const iv=typeof cfg.interval==="function"?cfg.interval():cfg.interval, off=cfg.offset, list=[];
+            for (const [id,e] of Object.entries(state.servers)) {
+              if (e.status!=="tracked"||!e.firstSeen||(e.fps??60)<20) continue;
+              const age=now-e.firstSeen, t=age<off?Math.round(off-age):Math.round(iv-((age-off)%iv));
+              list.push({jobId:id,timeUntilEvent:t,estimatedAge:Math.round(age),playing:e.playing??0,fps:Math.round((e.fps??60)*10)/10});
             }
+            list.sort((a,b)=>a.timeUntilEvent-b.timeUntilEvent);
+            events[name]=list.slice(0,TOP);
           }
-
-          state.lastScanAt = new Date().toISOString();
-          const tracked = Object.values(state.servers).filter(e => e.status === "tracked").length;
-          console.log("New: +" + added + " | Tracked: " + tracked);
-
-          const events = {};
-          for (const [name, cfg] of Object.entries(EVENTS)) {
-            const interval = typeof cfg.interval === "function" ? cfg.interval() : cfg.interval;
-            const offset = cfg.offset;
-            const list = [];
-            for (const [id, e] of Object.entries(state.servers)) {
-              if (e.status !== "tracked" || !e.firstSeen || (e.fps ?? 60) < 20) continue;
-              const age = now - e.firstSeen;
-              const t = age < offset ? Math.round(offset - age) : Math.round(interval - ((age - offset) % interval));
-              list.push({ jobId: id, timeUntilEvent: t, estimatedAge: Math.round(age), playing: e.playing ?? 0, fps: Math.round((e.fps ?? 60) * 10) / 10 });
+          writeFileSync(STATE,JSON.stringify(state,null,2));
+          writeFileSync(OUT,JSON.stringify({updatedAt:state.lastScanAt,totalKnown:Object.keys(state.servers).length,totalTracked:tracked,newThisScan:added,events},null,2));
+          console.log("Saved.");
+          const wh=process.env.DISCORD_WEBHOOK;
+          if (wh&&!isFirst&&added>0) {
+            const lines=["**Blox Fruits** | Tracked: **"+tracked+"** | +"+added+" new"];
+            for (const [name,svs] of Object.entries(events)) {
+              const soon=svs.filter(s=>s.timeUntilEvent<600); if (!soon.length) continue;
+              const lbl={PirateRaid:"⚔️ Pirate/Castle Raid",FactoryRaid:"🏭 Factory Raid",FruitSpawn:"🍎 Fruit Spawn"}[name]??name;
+              lines.push(lbl+":"); for (const s of soon.slice(0,3)) lines.push("`"+s.jobId+"` — **"+Math.floor(s.timeUntilEvent/60)+"m "+(s.timeUntilEvent%60)+"s**");
             }
-            list.sort((a, b) => a.timeUntilEvent - b.timeUntilEvent);
-            events[name] = list.slice(0, TOP_N);
-          }
-
-          writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
-          writeFileSync(OUT_FILE, JSON.stringify({ updatedAt: state.lastScanAt, totalKnown: Object.keys(state.servers).length, totalTracked: tracked, newThisScan: added, events }, null, 2));
-          console.log("Done.");
-
-          const webhook = process.env.DISCORD_WEBHOOK;
-          if (webhook && !isFirst && added > 0) {
-            const lines = ["**Blox Fruits Scanner** | Tracked: **" + tracked + "** | +" + added + " new"];
-            for (const [name, servers] of Object.entries(events)) {
-              const soon = servers.filter(s => s.timeUntilEvent < 600);
-              if (!soon.length) continue;
-              const label = { PirateRaid: "⚔️ Pirate/Castle Raid", FactoryRaid: "🏭 Factory Raid", FruitSpawn: "🍎 Fruit Spawn" }[name] ?? name;
-              lines.push(label + ":");
-              for (const s of soon.slice(0, 3)) lines.push("`" + s.jobId + "` — **" + Math.floor(s.timeUntilEvent/60) + "m " + (s.timeUntilEvent%60) + "s**");
-            }
-            await fetch(webhook, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ content: lines.join("\n").slice(0, 2000) }) });
+            await fetch(wh,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({content:lines.join("\n").slice(0,2000)})});
           }
           EOF
 
-      - name: Commit results
+      - name: Scan loop — every 171 seconds
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          git diff --staged --quiet || git commit -m "scan $(date -u '+%H:%M UTC')"
-          git push
+
+          # Loop for ~340 minutes (job timeout is 350)
+          END=$((SECONDS + 20400))
+          while [ $SECONDS -lt $END ]; do
+            git pull --quiet origin main 2>/dev/null || true
+            node /tmp/scan.mjs
+            git add data/
+            git diff --staged --quiet || (git commit -m "scan $(date -u '+%H:%M:%S')" && git push --quiet)
+            sleep 171
+          done
