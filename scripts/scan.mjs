@@ -392,6 +392,67 @@ function pruneAlertedJobs(state) {
   }
 }
 
+// ── Heartbeat / scan log ───────────────────────────────────────────────────
+
+async function sendHeartbeat(opts) {
+  const webhookUrl = process.env["DISCORD_WEBHOOK_LOG"];
+  if (!webhookUrl) return;   // secret not set — skip
+
+  const {
+    nowIso, isFirst, liveCount, newCount, diedCount, agedOut,
+    totalTracked, totalUnknown, rateLimited, eventResults,
+  } = opts;
+
+  const timeStr = nowIso.replace("T", " ").slice(0, 19) + " UTC";
+
+  // Build one line per event showing how many servers are within 10 min
+  const eventLines = Object.entries(EVENTS).map(([key, cfg]) => {
+    const list   = eventResults[key] ?? [];
+    const under5 = list.filter(s => s.timeUntilEvent <= 300).length;
+    const under10 = list.filter(s => s.timeUntilEvent <= 600).length;
+    const best   = list[0];
+    const bestStr = best
+      ? `closest: ${Math.floor(best.timeUntilEvent / 60)}m ${best.timeUntilEvent % 60}s`
+      : "none tracked";
+    const alert  = under5 > 0 ? " 🔴" : under10 > 0 ? " 🟡" : " 🟢";
+    return `${cfg.emoji} **${cfg.label}** — ${list.length} servers | ${bestStr}${alert}`;
+  });
+
+  // List new servers discovered this scan (up to 10)
+  const newServersNote = newCount > 0
+    ? `\n**+${newCount} new server${newCount > 1 ? "s" : ""} discovered this scan**`
+    : "";
+
+  const embed = {
+    title:       isFirst ? "🟡 First Scan — Baseline Built" : "🟢 Scan Complete",
+    description: [
+      `**${timeStr}**${rateLimited ? "  ⚠️ rate-limited" : ""}`,
+      `📡 Scanned: **${liveCount}** servers`,
+      `📊 Tracked: **${totalTracked}** | Unknown: **${totalUnknown}**`,
+      `➕ New: **${newCount}** | 💀 Dead: **${diedCount}** | ⌛ Aged out: **${agedOut}**`,
+      newServersNote,
+    ].filter(Boolean).join("\n"),
+    color:  isFirst ? 0xFFCC00 : newCount > 0 ? 0x00CCFF : 0x44BB66,
+    fields: [{
+      name:  "Event Status",
+      value: eventLines.join("\n") || "No events calculated",
+    }],
+    footer:    { text: "Blox Fruits Tracker  •  Next scan in ~171s" },
+    timestamp: nowIso,
+  };
+
+  try {
+    await fetch(parseWebhook(webhookUrl).base, {
+      method:  "POST",
+      headers: { "Content-Type": "application/json" },
+      body:    JSON.stringify({ embeds: [embed] }),
+    });
+    console.log("  Heartbeat sent to log channel.");
+  } catch (err) {
+    console.warn("  Heartbeat failed:", err.message);
+  }
+}
+
 // ── Main ───────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -500,6 +561,20 @@ async function main() {
 
   saveState(state);
   saveServers(publicData);
+
+  // ── Heartbeat to log channel ─────────────────────────────────────────
+  await sendHeartbeat({
+    nowIso,
+    isFirst,
+    liveCount:    liveServers.length,
+    newCount,
+    diedCount,
+    agedOut,
+    totalTracked,
+    totalUnknown,
+    rateLimited,
+    eventResults,
+  });
 
   console.log("Done. state.json and servers.json saved.");
 }
