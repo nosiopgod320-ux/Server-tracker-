@@ -2,12 +2,12 @@ name: Blox Fruits Server Scanner
 
 on:
   schedule:
-    - cron: "0 */5 * * *"   # Restart every 5 hours as safety net
+    - cron: "0 */5 * * *"
   workflow_dispatch:
 
 concurrency:
   group: scanner
-  cancel-in-progress: false  # Queue next run, never cancel the active one
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -16,12 +16,10 @@ jobs:
   scan:
     runs-on: ubuntu-latest
     timeout-minutes: 350
-
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
@@ -31,24 +29,23 @@ jobs:
           mkdir -p data
           cat > /tmp/scan.mjs << 'EOF'
           import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
-          const DATA = "data";
-          const STATE = DATA + "/state.json";
-          const OUT   = DATA + "/servers.json";
-          const PID   = 2753915549;
-          const TOP   = 10;
+          const DATA = "data", STATE = DATA+"/state.json", OUT = DATA+"/servers.json";
+          const PID = 2753915549, TOP = 10;
           const EVENTS = {
-            PirateRaid:  { offset: 4500, interval: 3600 },
-            FactoryRaid: { offset: 900,  interval: 7200 },
-            FruitSpawn:  { offset: 0, interval: () => ([0,6].includes(new Date().getUTCDay()) ? 2700 : 3600) },
+            PirateRaid:     { offset: 4500,  interval: 4500 },
+            FactoryRaid:    { offset: 0,     interval: 5400 },
+            FruitSpawn:     { offset: 0,     interval: () => ([0,6].includes(new Date().getUTCDay()) ? 2700 : 3600) },
+            LegendarySword: { offset: 14400, interval: 14400 },
           };
           mkdirSync(DATA, { recursive: true });
           let state = existsSync(STATE) ? JSON.parse(readFileSync(STATE,"utf8")) : { isFirstScan:true, servers:{}, lastScanAt:null };
           const isFirst = state.isFirstScan;
           state.isFirstScan = false;
-          console.log(isFirst ? "First scan — baseline" : "Scanning (" + Object.keys(state.servers).length + " known)");
+          console.log(isFirst ? "First scan — baseline" : "Scanning ("+Object.keys(state.servers).length+" known)");
           async function pg(cur, n) {
             let u = "https://games.roblox.com/v1/games/"+PID+"/servers/Public?limit=100";
-            if (cur) u += "&cursor=" + encodeURIComponent(cur);
+            if (cur) u += "&cursor="+encodeURIComponent(cur);
+            console.log("Page "+n+"...");
             const r = await fetch(u, { headers:{"User-Agent":"Mozilla/5.0","Accept":"application/json","Referer":"https://www.roblox.com/"}, signal:AbortSignal.timeout(15000) });
             if (r.status===429) { console.log("Rate limited p"+n); return {servers:[],nextCursor:null,stop:true}; }
             if (!r.ok) throw new Error("API "+r.status);
@@ -57,13 +54,13 @@ jobs:
           }
           let live=[],cur=null;
           for (let p=0;p<3;p++) {
-            const {servers,nextCursor,stop} = await pg(cur, p+1);
+            const {servers,nextCursor,stop} = await pg(cur,p+1);
             live.push(...servers);
             if (stop||!nextCursor) break;
             await new Promise(r=>setTimeout(r,3000));
             cur=nextCursor;
           }
-          console.log("Got:", live.length);
+          console.log("Got:",live.length);
           const now=Date.now()/1000, seen=new Set(); let added=0;
           for (const s of live) {
             seen.add(s.id);
@@ -90,25 +87,33 @@ jobs:
           writeFileSync(OUT,JSON.stringify({updatedAt:state.lastScanAt,totalKnown:Object.keys(state.servers).length,totalTracked:tracked,newThisScan:added,events},null,2));
           console.log("Saved.");
           const wh=process.env.DISCORD_WEBHOOK;
-          if (wh&&!isFirst&&added>0) {
-            const lines=["**Blox Fruits** | Tracked: **"+tracked+"** | +"+added+" new"];
+          if (wh&&!isFirst) {
+            const LABELS={PirateRaid:"⚔️ Pirate Raid (Sea 3)",FactoryRaid:"🏭 Factory Raid (Sea 2)",FruitSpawn:"🍎 Fruit Spawn",LegendarySword:"🗡️ Legendary Sword Dealer (Sea 2)"};
+            const lines=["**Blox Fruits Scanner** | Tracked: **"+tracked+"** servers | +"+added+" new this scan",""];
+            let hasAlert=false;
             for (const [name,svs] of Object.entries(events)) {
-              const soon=svs.filter(s=>s.timeUntilEvent<600); if (!soon.length) continue;
-              const lbl={PirateRaid:"⚔️ Pirate/Castle Raid",FactoryRaid:"🏭 Factory Raid",FruitSpawn:"🍎 Fruit Spawn"}[name]??name;
-              lines.push(lbl+":"); for (const s of soon.slice(0,3)) lines.push("`"+s.jobId+"` — **"+Math.floor(s.timeUntilEvent/60)+"m "+(s.timeUntilEvent%60)+"s**");
+              const soon=svs.filter(s=>s.timeUntilEvent<600);
+              if (!soon.length) continue;
+              hasAlert=true;
+              lines.push(LABELS[name]+" — within 10 min:");
+              for (const s of soon.slice(0,3)) {
+                const m=Math.floor(s.timeUntilEvent/60), sec=s.timeUntilEvent%60;
+                lines.push("`"+s.jobId+"` → **"+m+"m "+sec+"s** | "+s.playing+" players");
+              }
+              lines.push("");
             }
-            await fetch(wh,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({content:lines.join("\n").slice(0,2000)})});
+            if (hasAlert||added>0) {
+              await fetch(wh,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({content:lines.join("\n").slice(0,2000)})}).catch(()=>{});
+            }
           }
           EOF
 
-      - name: Scan loop — every 171 seconds
+      - name: Scan loop (every 171 seconds)
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Loop for ~340 minutes (job timeout is 350)
           END=$((SECONDS + 20400))
           while [ $SECONDS -lt $END ]; do
             git pull --quiet origin main 2>/dev/null || true
