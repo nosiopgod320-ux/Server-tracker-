@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blox Fruits Hub — Server Tracker</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #07090f;
+      --surface:  #0d1120;
+      --surface2: #111827;
+      --border:   #1c2540;
+      --accent:   #6366f1;
+      --accent2:  #818cf8;
+      --urgent:   #ef4444;
+      --warn:     #f59e0b;
+      --ok:       #22c55e;
+      --text:     #e2e8f0;
+      --muted:    #64748b;
+      --sea1:     #0ea5e9;
+      --sea2:     #a855f7;
+      --sea3:     #f97316;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .logo { font-size: 17px; font-weight: 800; color: var(--text); letter-spacing: -0.3px; }
+    .logo span { color: var(--accent2); }
+
+    .header-right {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .live-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--ok);
+      box-shadow: 0 0 6px var(--ok);
+    }
+
+    /* ── Layout ── */
+    main { max-width: 980px; margin: 0 auto; padding: 24px 20px 60px; }
+
+    /* ── Stats ── */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    @media (max-width: 560px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .stat-card .val { font-size: 24px; font-weight: 800; color: var(--accent2); line-height: 1; margin-bottom: 4px; }
+    .stat-card .lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
+
+    #last-update { font-size: 12px; color: var(--muted); margin-bottom: 18px; }
+
+    /* ── Sea filter ── */
+    .filter-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .filter-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-right: 4px; }
+
+    .sea-btn {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      transition: all 0.15s;
+    }
+    .sea-btn:hover { opacity: 0.85; }
+    .sea-btn[data-sea="all"].active   { background: rgba(99,102,241,0.2); border-color: var(--accent); color: var(--accent2); }
+    .sea-btn[data-sea="Sea 1"].active { background: rgba(14,165,233,0.18); border-color: var(--sea1); color: var(--sea1); }
+    .sea-btn[data-sea="Sea 2"].active { background: rgba(168,85,247,0.18); border-color: var(--sea2); color: var(--sea2); }
+    .sea-btn[data-sea="Sea 3"].active { background: rgba(249,115,22,0.18); border-color: var(--sea3); color: var(--sea3); }
+
+    /* ── Event tabs ── */
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      padding: 8px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--muted);
+      transition: all 0.15s;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .tab:hover { border-color: var(--accent); color: var(--text); }
+    .tab.active {
+      background: rgba(99,102,241,0.15);
+      border-color: var(--accent);
+      color: var(--accent2);
+      font-weight: 700;
+    }
+    .tab .sea-pill {
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+    .sea-pill-sea1 { background: rgba(14,165,233,0.15); color: var(--sea1); }
+    .sea-pill-sea2 { background: rgba(168,85,247,0.15); color: var(--sea2); }
+    .sea-pill-sea3 { background: rgba(249,115,22,0.15); color: var(--sea3); }
+    .sea-pill-all  { background: rgba(99,102,241,0.12); color: var(--accent2); }
+
+    /* ── Warmup banner ── */
+    .warmup-banner {
+      background: rgba(245,158,11,0.07);
+      border: 1px solid rgba(245,158,11,0.2);
+      border-radius: 10px;
+      padding: 14px 18px;
+      color: var(--warn);
+      font-size: 13px;
+      margin-bottom: 18px;
+      display: none;
+    }
+
+    /* ── Server cards ── */
+    .server-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 15px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: border-color 0.15s;
+      margin-bottom: 8px;
+    }
+    .server-card:hover { border-color: #2a3855; }
+    .server-card.urgent { border-color: rgba(239,68,68,0.45); background: rgba(239,68,68,0.04); }
+    .server-card.soon   { border-color: rgba(245,158,11,0.35); background: rgba(245,158,11,0.04); }
+
+    .rank-badge {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: #1a2236;
+      color: var(--muted);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 12px;
+      flex-shrink: 0;
+    }
+    .rank-badge.urgent { background: rgba(239,68,68,0.15); color: var(--urgent); }
+    .rank-badge.soon   { background: rgba(245,158,11,0.15); color: var(--warn); }
+
+    .timer-block { flex-shrink: 0; min-width: 100px; }
+    .countdown {
+      font-size: 24px;
+      font-weight: 900;
+      color: var(--accent2);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .countdown.urgent { color: var(--urgent); }
+    .countdown.soon   { color: var(--warn); }
+    .event-sub { font-size: 10px; color: var(--muted); margin-top: 3px; text-transform: uppercase; letter-spacing: 0.4px; }
+
+    .job-id {
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      min-width: 0;
+    }
+
+    .meta-row { display: flex; gap: 16px; flex-shrink: 0; }
+    .meta-item { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+    .meta-item .val { font-size: 13px; font-weight: 700; color: #94a3b8; }
+    .meta-item .lbl { font-size: 10px; color: var(--muted); }
+
+    .copy-btn {
+      padding: 7px 14px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      flex-shrink: 0;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .copy-btn:hover { background: #4f46e5; }
+    .copy-btn:active { transform: scale(0.96); }
+    .copy-btn.copied { background: var(--ok); }
+
+    /* ── Empty / Loading ── */
+    .empty-state {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 44px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .empty-state p { margin-top: 8px; font-size: 12px; opacity: 0.55; }
+
+    @keyframes pulse { 0%,100%{opacity:1}50%{opacity:0.3} }
+    .loading { animation: pulse 1.5s infinite; text-align: center; padding: 48px; color: var(--muted); font-size: 14px; }
+
+    /* ── How to use ── */
+    .how-to {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-top: 30px;
+    }
+    .how-to h3 { font-size: 12px; font-weight: 700; color: var(--accent2); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .how-to ol { padding-left: 18px; color: var(--muted); line-height: 2; font-size: 13px; }
+    .how-to code {
+      background: #0a0d15;
+      color: #60a5fa;
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-family: 'Consolas', monospace;
+    }
+
+    /* ── Discord setup info ── */
+    .webhook-info {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-top: 14px;
+    }
+    .webhook-info h3 { font-size: 12px; font-weight: 700; color: #a855f7; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .webhook-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; }
+    .webhook-row {
+      background: #0a0f1a;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 12px;
+    }
+    .webhook-row .wh-name { font-family: monospace; color: #60a5fa; font-size: 11px; margin-bottom: 3px; }
+    .webhook-row .wh-desc { color: var(--muted); font-size: 11px; }
+
+    @media (max-width: 680px) {
+      .meta-row { display: none; }
+      .countdown { font-size: 20px; }
+      .server-card { gap: 10px; padding: 12px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🍎 Blox Fruits <span>Hub</span></div>
+  <div class="header-right">
+    <div class="live-dot" id="live-dot"></div>
+    <span id="status-text">Loading…</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- Stats -->
+  <div class="stats-row" id="stats-row" style="display:none">
+    <div class="stat-card">
+      <div class="val" id="stat-tracked">—</div>
+      <div class="lbl">Tracked Servers</div>
+    </div>
+    <div class="stat-card">
+      <div class="val" id="stat-known">—</div>
+      <div class="lbl">Total Known</div>
+    </div>
+    <div class="stat-card">
+      <div class="val" id="stat-new">—</div>
+      <div class="lbl">New Last Scan</div>
+    </div>
+    <div class="stat-card">
+      <div class="val" id="stat-died">—</div>
+      <div class="lbl">Died Last Scan</div>
+    </div>
+  </div>
+
+  <div id="last-update"></div>
+
+  <!-- Warmup notice -->
+  <div class="warmup-banner" id="warmup-banner">
+    ⏳ <strong>Warming up</strong> — Scanner is building a baseline. New servers will appear after the next scan (~3 minutes).
+  </div>
+
+  <!-- Sea filter -->
+  <div class="filter-row">
+    <span class="filter-label">Sea:</span>
+    <button class="sea-btn active" data-sea="all">All Seas</button>
+    <button class="sea-btn" data-sea="Sea 1">🌊 Sea 1</button>
+    <button class="sea-btn" data-sea="Sea 2">🌊 Sea 2</button>
+    <button class="sea-btn" data-sea="Sea 3">🌊 Sea 3</button>
+  </div>
+
+  <!-- Event tabs -->
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-event="PirateRaid">
+      ⚔️ Pirate / Castle Raid
+      <span class="sea-pill sea-pill-sea3">Sea 3</span>
+    </button>
+    <button class="tab" data-event="FactoryRaid">
+      🏭 Factory Raid
+      <span class="sea-pill sea-pill-sea2">Sea 2</span>
+    </button>
+    <button class="tab" data-event="FruitSpawn">
+      🍎 Fruit Spawn
+      <span class="sea-pill sea-pill-all">All</span>
+    </button>
+    <button class="tab" data-event="LegendarySword">
+      🗡️ Legendary Sword
+      <span class="sea-pill sea-pill-sea2">Sea 2</span>
+    </button>
+    <button class="tab" data-event="FistOfDarkness">
+      ✊ Fist of Darkness
+      <span class="sea-pill sea-pill-sea2">Sea 2</span>
+    </button>
+    <button class="tab" data-event="GodChalice">
+      🏆 God Chalice
+      <span class="sea-pill sea-pill-sea3">Sea 3</span>
+    </button>
+  </div>
+
+  <!-- Server list -->
+  <div id="server-list">
+    <div class="loading">Loading server data…</div>
+  </div>
+
+  <!-- How to teleport -->
+  <div class="how-to">
+    <h3>How to teleport</h3>
+    <ol>
+      <li>Pick an event tab above and find a server where the timer is under <strong>5 minutes</strong></li>
+      <li>Click <strong>Copy ID</strong> next to that server</li>
+      <li>In your executor, run:</li>
+    </ol>
+    <br>
+    <code>game:GetService("TeleportService"):TeleportToPlaceInstance(2753915549, "PASTE_ID_HERE")</code>
+  </div>
+
+  <!-- Discord webhook setup reference -->
+  <div class="webhook-info">
+    <h3>Discord Webhook Secrets (GitHub → Settings → Secrets)</h3>
+    <div class="webhook-grid">
+      <div class="webhook-row">
+        <div class="wh-name">DISCORD_WEBHOOK_PIRATE_RAID</div>
+        <div class="wh-desc">⚔️ Pirate / Castle Raid alerts</div>
+      </div>
+      <div class="webhook-row">
+        <div class="wh-name">DISCORD_WEBHOOK_FACTORY_RAID</div>
+        <div class="wh-desc">🏭 Factory Raid alerts</div>
+      </div>
+      <div class="webhook-row">
+        <div class="wh-name">DISCORD_WEBHOOK_FRUIT_SPAWN</div>
+        <div class="wh-desc">🍎 Fruit Spawn alerts</div>
+      </div>
+      <div class="webhook-row">
+        <div class="wh-name">DISCORD_WEBHOOK_LEGENDARY_SWORD</div>
+        <div class="wh-desc">🗡️ Legendary Sword alerts</div>
+      </div>
+      <div class="webhook-row">
+        <div class="wh-name">DISCORD_WEBHOOK_FIST_DARKNESS</div>
+        <div class="wh-desc">✊ Fist of Darkness alerts</div>
+      </div>
+      <div class="webhook-row">
+        <div class="wh-name">DISCORD_WEBHOOK_GOD_CHALICE</div>
+        <div class="wh-desc">🏆 God Chalice alerts</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  // Point this at your GitHub Pages data file
+  const DATA_URL   = "./data/servers.json";
+  const REFRESH_MS = 60_000;
+
+  // Which seas each event belongs to
+  const EVENT_SEA = {
+    PirateRaid:     "Sea 3",
+    FactoryRaid:    "Sea 2",
+    FruitSpawn:     "All seas",
+    LegendarySword: "Sea 2",
+    FistOfDarkness: "Sea 2",
+    GodChalice:     "Sea 3",
+  };
+
+  let activeEvent  = "PirateRaid";
+  let activeSea    = "all";
+  let serverData   = null;
+  let tickInterval = null;
+
+  // ── Sea filter ──────────────────────────────────────────────────────────
+  document.querySelectorAll(".sea-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".sea-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      activeSea = btn.dataset.sea;
+      updateTabVisibility();
+      renderServers();
+    });
+  });
+
+  function updateTabVisibility() {
+    document.querySelectorAll(".tab").forEach(tab => {
+      const eventSea = EVENT_SEA[tab.dataset.event] ?? "";
+      const visible =
+        activeSea === "all" ||
+        eventSea === activeSea ||
+        eventSea === "All seas";
+      tab.style.display = visible ? "" : "none";
+    });
+
+    // If the active event tab is now hidden, switch to the first visible one
+    const activeTab = document.querySelector(`.tab[data-event="${activeEvent}"]`);
+    if (activeTab && activeTab.style.display === "none") {
+      const firstVisible = document.querySelector(".tab:not([style*='none'])");
+      if (firstVisible) {
+        document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+        firstVisible.classList.add("active");
+        activeEvent = firstVisible.dataset.event;
+      }
+    }
+  }
+
+  // ── Event tabs ───────────────────────────────────────────────────────────
+  document.querySelectorAll(".tab").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      btn.classList.add("active");
+      activeEvent = btn.dataset.event;
+      renderServers();
+    });
+  });
+
+  // ── Fetch ─────────────────────────────────────────────────────────────────
+  async function fetchData() {
+    try {
+      const res = await fetch(DATA_URL + "?t=" + Date.now());
+      if (!res.ok) throw new Error(res.status);
+      serverData = await res.json();
+      render();
+    } catch {
+      document.getElementById("server-list").innerHTML =
+        '<div class="empty-state">Could not load data — check back in a moment.<p>Scans run every 3 minutes automatically.</p></div>';
+      document.getElementById("status-text").textContent = "Offline";
+      document.getElementById("live-dot").style.cssText = "background:#ef4444;box-shadow:0 0 6px #ef4444";
+    }
+  }
+
+  // ── Utilities ─────────────────────────────────────────────────────────────
+  function fmt(sec) {
+    const m = Math.floor(sec / 60);
+    const s = sec % 60;
+    return `${m}m ${String(s).padStart(2, "0")}s`;
+  }
+
+  function timeAgo(isoStr) {
+    const diff = Math.round((Date.now() - new Date(isoStr)) / 1000);
+    if (diff < 60)   return "just now";
+    if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+    return `${Math.floor(diff / 3600)}h ago`;
+  }
+
+  // ── Render all ────────────────────────────────────────────────────────────
+  function render() {
+    if (!serverData) return;
+
+    document.getElementById("stats-row").style.display = "grid";
+    document.getElementById("stat-tracked").textContent = serverData.totalTracked;
+    document.getElementById("stat-known").textContent   = serverData.totalKnown;
+    document.getElementById("stat-new").textContent     = "+" + serverData.newThisScan;
+    document.getElementById("stat-died").textContent    = "-" + (serverData.diedThisScan ?? 0);
+
+    document.getElementById("last-update").textContent =
+      `Last scan: ${timeAgo(serverData.updatedAt)} · scans every 3 min`;
+
+    document.getElementById("live-dot").style.cssText = "background:#22c55e;box-shadow:0 0 6px #22c55e";
+    document.getElementById("status-text").textContent = `${serverData.totalTracked} tracked`;
+
+    document.getElementById("warmup-banner").style.display =
+      serverData.totalTracked < 5 ? "block" : "none";
+
+    renderServers();
+  }
+
+  // ── Render server cards ───────────────────────────────────────────────────
+  function renderServers() {
+    if (!serverData) return;
+    if (tickInterval) { clearInterval(tickInterval); tickInterval = null; }
+
+    const servers = serverData.events?.[activeEvent] ?? [];
+    const list    = document.getElementById("server-list");
+
+    if (servers.length === 0) {
+      list.innerHTML = `<div class="empty-state">
+        ${serverData.totalTracked < 5
+          ? "Still warming up — come back in ~3 minutes once a baseline is built."
+          : "No tracked servers for this event yet. Try another tab."}
+        <p>Dead servers and servers over 4 hours old are removed automatically.</p>
+      </div>`;
+      return;
+    }
+
+    const capturedAt  = Date.now();
+    const baseServers = servers.map(s => ({ ...s }));
+
+    function buildCards() {
+      return baseServers.map((s, i) => {
+        const elapsed   = Math.round((Date.now() - capturedAt) / 1000);
+        const remaining = Math.max(0, s.timeUntilEvent - elapsed);
+        const urgent    = remaining < 300;
+        const soon      = !urgent && remaining < 600;
+        const cls       = urgent ? " urgent" : soon ? " soon" : "";
+
+        return `
+          <div class="server-card${cls}">
+            <div class="rank-badge${cls}">${i + 1}</div>
+            <div class="timer-block">
+              <div class="countdown${cls}">${fmt(remaining)}</div>
+              <div class="event-sub">until event</div>
+            </div>
+            <div class="job-id" title="${s.jobId}">${s.jobId}</div>
+            <div class="meta-row">
+              <div class="meta-item"><span class="val">${s.playing}</span><span class="lbl">players</span></div>
+              <div class="meta-item"><span class="val">${s.fps}</span><span class="lbl">fps</span></div>
+              <div class="meta-item"><span class="val">${Math.round(s.estimatedAge / 60)}m</span><span class="lbl">age</span></div>
+            </div>
+            <button class="copy-btn" onclick="copyId('${s.jobId}', this)">Copy ID</button>
+          </div>`;
+      }).join("");
+    }
+
+    list.innerHTML = buildCards();
+    tickInterval = setInterval(() => { list.innerHTML = buildCards(); }, 1000);
+  }
+
+  // ── Copy ─────────────────────────────────────────────────────────────────
+  function copyId(jobId, btn) {
+    navigator.clipboard.writeText(jobId).then(() => {
+      btn.textContent = "Copied!";
+      btn.classList.add("copied");
+      setTimeout(() => { btn.textContent = "Copy ID"; btn.classList.remove("copied"); }, 2000);
+    });
+  }
+
+  // ── Init ─────────────────────────────────────────────────────────────────
+  fetchData();
+  setInterval(fetchData, REFRESH_MS);
+</script>
+</body>
+</html>
