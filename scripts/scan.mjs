@@ -24,9 +24,11 @@ const SERVERS_FILE = join(DATA_DIR, "servers.json");
 const PLACE_ID            = 2753915549;
 const MAX_TRACK_AGE_SEC   = 14400;   // drop servers older than 4 h
 const ALERT_THRESHOLD_SEC = 600;     // alert when ≤10 min to event
-const MAX_PAGES           = 10;      // 10 × 100 = up to 1 000 servers
-const PAGE_DELAY_MS       = 1500;    // delay between pages
+const MAX_PAGES           = 8;       // 8 × 100 = up to 800 servers
+const PAGE_DELAY_MS       = 2500;    // slower = fewer rate limits
 const TOP_N               = 50;      // servers stored per event
+// Only prune dead servers when scan was nearly complete (not rate-limited mid-way)
+const MIN_FOR_PRUNE       = 600;     // need ≥600 servers fetched to trust dead pruning
 
 // ── Event definitions ──────────────────────────────────────────────────────
 const EVENTS = {
@@ -389,7 +391,7 @@ async function handleEvent(eventKey, cfg, servers, state, nowSec) {
 // ── Heartbeat log ──────────────────────────────────────────────────────────
 
 async function sendHeartbeat({ nowIso, liveCount, newCount, diedCount, agedOut,
-                                totalTracked, rateLimited, eventResults }) {
+                                totalTracked, rateLimited, prunedDead, eventResults }) {
   const url = process.env["DISCORD_WEBHOOK_LOG"];
   if (!url) return;
 
@@ -410,9 +412,9 @@ async function sendHeartbeat({ nowIso, liveCount, newCount, diedCount, agedOut,
     title:       "✅ Scan Complete",
     description: [
       `**${timeStr}**${rateLimited ? "  ⚠️ rate-limited" : ""}`,
-      `📡 Scanned: **${liveCount}** servers`,
+      `📡 Scanned: **${liveCount}** servers${rateLimited ? " ⚠️ rate-limited (dead-prune skipped)" : ""}`,
       `📊 Tracked: **${totalTracked}**`,
-      `➕ New: **${newCount}**  |  💀 Dead: **${diedCount}**  |  ⌛ Aged: **${agedOut}**`,
+      `➕ New: **${newCount}**  |  💀 Dead: **${prunedDead ? diedCount : "skipped"}**  |  ⌛ Aged: **${agedOut}**`,
     ].join("\n"),
     color:  newCount > 0 ? 0x00CCFF : 0x44BB66,
     fields: [{
@@ -480,7 +482,13 @@ async function main() {
   }
 
   // ── Remove dead and aged-out servers ────────────────────────────────────
-  const canPruneDead = liveServers.length >= 100;
+  // Only trust dead-server pruning when we fetched enough servers.
+  // If rate-limited mid-scan, missing servers are NOT dead — just unfetched.
+  const canPruneDead = liveServers.length >= MIN_FOR_PRUNE;
+
+  if (!canPruneDead) {
+    console.log(`  Skipping dead-prune — only got ${liveServers.length} servers (rate-limited).`);
+  }
 
   for (const [jobId, entry] of Object.entries(state.servers)) {
     if (canPruneDead && !seenIds.has(jobId)) {
@@ -488,6 +496,7 @@ async function main() {
       diedCount++;
       continue;
     }
+    // Always age out servers older than 4 hours regardless of scan completeness
     if (entry.firstSeen != null && nowSec - entry.firstSeen > MAX_TRACK_AGE_SEC) {
       delete state.servers[jobId];
       agedOut++;
@@ -521,7 +530,9 @@ async function main() {
 
   // ── Heartbeat ──────────────────────────────────────────────────────────
   await sendHeartbeat({ nowIso, liveCount: liveServers.length, newCount, diedCount,
-                        agedOut, totalTracked, rateLimited, eventResults });
+                        agedOut, totalTracked, rateLimited,
+                        prunedDead: liveServers.length >= MIN_FOR_PRUNE,
+                        eventResults });
 
   // ── Save ───────────────────────────────────────────────────────────────
   const eventMeta = {};
