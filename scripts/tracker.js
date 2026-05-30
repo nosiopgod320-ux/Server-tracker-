@@ -1,3 +1,4 @@
+require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
@@ -238,20 +239,46 @@ async function performFullScan() {
 async function sendDiscordWebhook(webhookUrl, embed) {
   try {
     await axios.post(webhookUrl, { embeds: [embed] });
-    console.log(`Webhook sent successfully`);
+    console.log(`✅ Webhook sent successfully`);
   } catch (error) {
-    console.error(`Error sending webhook:`, error.message);
+    console.error(`❌ Error sending webhook:`, error.message);
   }
 }
 
 // Get webhook URL from environment
 function getWebhookUrl(webhookKey) {
-  return process.env[webhookKey];
+  const url = process.env[webhookKey];
+  if (!url) {
+    console.warn(`⚠️  Environment variable ${webhookKey} is not set`);
+  }
+  return url;
+}
+
+// Validate environment variables
+function validateEnvironment() {
+  console.log('\n📋 Checking environment variables...');
+  let isValid = true;
+
+  for (const [seaName, seaConfig] of Object.entries(PLACES)) {
+    const url = process.env[seaConfig.webhookKey];
+    if (url) {
+      console.log(`✅ ${seaConfig.webhookKey}: Configured`);
+    } else {
+      console.log(`❌ ${seaConfig.webhookKey}: NOT SET`);
+      isValid = false;
+    }
+  }
+
+  if (!isValid) {
+    console.log('\n⚠️  Some webhooks are not configured. Messages will not be sent.');
+    console.log('Please set environment variables or create a .env file.\n');
+  }
+  return isValid;
 }
 
 // Scan 1: Initial count
 async function scan1NotifyFirstScan(currentScan) {
-  console.log('Sending Scan 1 notifications...');
+  console.log('\n📤 Sending Scan 1 notifications...');
 
   for (const [seaName, seaConfig] of Object.entries(PLACES)) {
     const seaKey = seaName.toLowerCase();
@@ -259,7 +286,7 @@ async function scan1NotifyFirstScan(currentScan) {
     const webhookUrl = getWebhookUrl(seaConfig.webhookKey);
 
     if (!webhookUrl) {
-      console.warn(`Webhook URL not configured for ${seaName}`);
+      console.warn(`⚠️  Skipping ${seaName} - webhook not configured`);
       continue;
     }
 
@@ -292,7 +319,7 @@ async function scan1NotifyFirstScan(currentScan) {
 
 // Scan 2: New servers detected
 async function scan2NotifyNewServers(currentScan) {
-  console.log('Sending Scan 2 notifications...');
+  console.log('\n📤 Sending Scan 2 notifications...');
 
   for (const [seaName, seaConfig] of Object.entries(PLACES)) {
     const seaKey = seaName.toLowerCase();
@@ -302,6 +329,7 @@ async function scan2NotifyNewServers(currentScan) {
     if (!webhookUrl) continue;
 
     if (seaData.new.length === 0) {
+      console.log(`ℹ️  ${seaName}: No new servers`);
       continue;
     }
 
@@ -338,7 +366,7 @@ async function scan2NotifyNewServers(currentScan) {
 
 // Scan 3 & onwards: Detailed changes
 async function scan3NotifyDetailedChanges(currentScan, scanNumber) {
-  console.log(`Sending Scan ${scanNumber} notifications...`);
+  console.log(`\n📤 Sending Scan ${scanNumber} notifications...`);
 
   for (const [seaName, seaConfig] of Object.entries(PLACES)) {
     const seaKey = seaName.toLowerCase();
@@ -419,7 +447,7 @@ async function scan3NotifyDetailedChanges(currentScan, scanNumber) {
 
 // Send event warning (5 minutes before)
 async function sendEventWarning() {
-  console.log('Sending event warnings...');
+  console.log('\n🔔 Sending event warnings...');
 
   for (const [seaName, seaConfig] of Object.entries(PLACES)) {
     const webhookUrl = getWebhookUrl(seaConfig.webhookKey);
@@ -441,12 +469,20 @@ async function sendEventWarning() {
 let scanCount = 0;
 
 async function startTracking() {
-  console.log('🚀 Server Tracker Started');
+  console.log('\n╔═══════════════════════════════════════╗');
+  console.log('║   🚀 Server Tracker Started            ║');
+  console.log('╚═══════════════════════════════════════╝\n');
+  
   initializeDataFiles();
+  validateEnvironment();
+
+  console.log(`\n⏱️  Scan interval: 5 minutes\n`);
 
   setInterval(async () => {
     scanCount++;
-    console.log(`\n=== SCAN #${scanCount} ===`);
+    console.log(`\n${'═'.repeat(50)}`);
+    console.log(`📍 SCAN #${scanCount} - ${new Date().toLocaleString()}`);
+    console.log(`${'═'.repeat(50)}`);
 
     try {
       const { serverData, currentScan } = await performFullScan();
@@ -460,14 +496,15 @@ async function startTracking() {
       }
 
       // Check if event is within 5 minutes
-      // This is a placeholder - integrate with your event system
       const timeUntilEvent = checkTimeUntilEvent();
       if (timeUntilEvent && timeUntilEvent <= 5 * 60 * 1000) {
         await sendEventWarning();
       }
 
+      console.log(`✅ Scan #${scanCount} completed`);
+
     } catch (error) {
-      console.error(`Error during scan ${scanCount}:`, error.message);
+      console.error(`❌ Error during scan ${scanCount}:`, error.message);
     }
   }, SCAN_INTERVALS.scan1);
 }
@@ -487,7 +524,8 @@ module.exports = {
   readServerData,
   writeServerData,
   readHistory,
-  writeHistory
+  writeHistory,
+  validateEnvironment
 };
 
 // Start if run directly
