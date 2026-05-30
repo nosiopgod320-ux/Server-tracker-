@@ -2,7 +2,6 @@ name: Blox Fruits Server Scanner
 
 on:
   schedule:
-    # Trigger a fresh Actions run every 5 hours so the job stays alive
     - cron: "0 */5 * * *"
   workflow_dispatch:
 
@@ -16,7 +15,6 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    # Run for up to 5 hours 40 minutes (GitHub free limit is 6 hours)
     timeout-minutes: 340
 
     steps:
@@ -35,7 +33,7 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Scan loop (every 171 seconds)
+      - name: Scan loop (every 60 seconds)
         env:
           DISCORD_WEBHOOK_PIRATE_RAID:     ${{ secrets.DISCORD_WEBHOOK_PIRATE_RAID }}
           DISCORD_WEBHOOK_FACTORY_RAID:    ${{ secrets.DISCORD_WEBHOOK_FACTORY_RAID }}
@@ -45,25 +43,21 @@ jobs:
           DISCORD_WEBHOOK_GOD_CHALICE:     ${{ secrets.DISCORD_WEBHOOK_GOD_CHALICE }}
           DISCORD_WEBHOOK_LOG:             ${{ secrets.DISCORD_WEBHOOK_LOG }}
         run: |
-          # Loop for 5.5 hours (19800 seconds), scanning every 171 seconds
           END=$((SECONDS + 19800))
           while [ $SECONDS -lt $END ]; do
-            echo "--- Scan at $(date -u '+%H:%M:%S UTC') ---"
+            echo "--- Scan $(date -u '+%H:%M:%S UTC') ---"
 
-            # Pull latest data so commits don't conflict
             git pull --quiet --rebase origin main 2>/dev/null || true
 
-            # Run the scanner
             node scripts/scan.mjs
 
-            # Commit and push if data changed
             git add data/state.json data/servers.json
             git diff --staged --quiet || (
               git commit -m "scan $(date -u '+%H:%M:%S')"
               git push --quiet
             )
 
-            echo "Next scan in 171 seconds…"
-            sleep 171
+            echo "Next scan in 60s…"
+            sleep 60
           done
-          echo "Loop complete — next scheduled run will take over."
+          echo "Loop complete."
