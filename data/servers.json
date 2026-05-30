@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-30T12:04:37.063Z",
-  "totalTracked": 637,
-  "newThisScan": 91,
-  "diedThisScan": 0,
+  "updatedAt": "2026-05-30T12:06:08.703Z",
+  "totalTracked": 478,
+  "newThisScan": 240,
+  "diedThisScan": 399,
   "eventMeta": {
     "PirateRaid": {
       "label": "⚔️ Pirate / Castle Raid",
@@ -40,401 +40,401 @@
   "events": {
     "PirateRaid": [
       {
-        "jobId": "f31880a2-7d8f-4f33-97c1-4cb4cdc9f67a",
-        "timeUntilEvent": 62,
-        "estimatedAge": 4438,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
         "jobId": "d9aed90a-e396-4749-891f-35a3f98a42c9",
-        "timeUntilEvent": 159,
-        "estimatedAge": 4341,
+        "timeUntilEvent": 67,
+        "estimatedAge": 4433,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7ab1262f-5c2c-48e3-8fcc-a2a125952840",
-        "timeUntilEvent": 252,
-        "estimatedAge": 4248,
+        "timeUntilEvent": 160,
+        "estimatedAge": 4340,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b29ff401-1b54-4185-aaf5-bb05d0770be8",
-        "timeUntilEvent": 345,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "411b2cdb-824e-4779-87f7-c3935dde6ac6",
-        "timeUntilEvent": 345,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b060eaf0-7f3e-48d3-aa05-d6ee498d9cf2",
-        "timeUntilEvent": 345,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "d54401ec-c2f2-4d46-9617-93fb2a6109f7",
-        "timeUntilEvent": 452,
-        "estimatedAge": 4048,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "7817d441-2376-4a1a-a13a-da568dea736e",
-        "timeUntilEvent": 512,
-        "estimatedAge": 8488,
+        "timeUntilEvent": 253,
+        "estimatedAge": 4247,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 59.9
       },
       {
         "jobId": "f8b1e7f0-d573-4a65-8606-5a08480480dd",
-        "timeUntilEvent": 785,
-        "estimatedAge": 3715,
+        "timeUntilEvent": 694,
+        "estimatedAge": 3806,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.3
+        "fps": 57.4
       },
       {
         "jobId": "8810a45d-f351-45cd-81ef-d5b496d2ff7b",
-        "timeUntilEvent": 1155,
-        "estimatedAge": 3345,
+        "timeUntilEvent": 1063,
+        "estimatedAge": 3437,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
-      },
-      {
-        "jobId": "70c7eda1-f7b5-4a00-9d12-b4dfcd57421c",
-        "timeUntilEvent": 1155,
-        "estimatedAge": 3345,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60.1
-      },
-      {
-        "jobId": "50428a19-4fff-4f62-b2cf-c47ba39e408f",
-        "timeUntilEvent": 1389,
-        "estimatedAge": 3111,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 57.7
+        "fps": 59.9
       },
       {
         "jobId": "78caf155-535a-4218-9cc9-799d3bade8d0",
-        "timeUntilEvent": 1532,
-        "estimatedAge": 2968,
+        "timeUntilEvent": 1440,
+        "estimatedAge": 3060,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "6fa24825-3aa0-4c0c-8014-2aae5815a12d",
-        "timeUntilEvent": 1683,
-        "estimatedAge": 2817,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2dba6080-3e7a-46bc-9b8c-113fa5ceef90",
-        "timeUntilEvent": 1911,
-        "estimatedAge": 7089,
+        "timeUntilEvent": 1591,
+        "estimatedAge": 2909,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "4fd9a292-f2fc-42a2-9056-033b8a7ae04b",
-        "timeUntilEvent": 2071,
-        "estimatedAge": 2429,
+        "timeUntilEvent": 1979,
+        "estimatedAge": 2521,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7eeb7e2a-ee18-47b6-8433-69080cd3198c",
-        "timeUntilEvent": 2181,
-        "estimatedAge": 2319,
+        "timeUntilEvent": 2089,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "20f5e27e-cd76-40ac-aaa9-3c67d9a96541",
-        "timeUntilEvent": 2181,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "c1350b46-49a2-469c-892a-c0628c063345",
-        "timeUntilEvent": 2181,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0da634bb-edd6-4115-883d-8516e303211a",
-        "timeUntilEvent": 2181,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "20271c30-9859-4452-8666-5c2c6c3ec4b4",
-        "timeUntilEvent": 2292,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "21dc0d82-11ae-415a-854f-beeb3c562e08",
-        "timeUntilEvent": 2292,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6ec11dbe-e8b1-4b5f-9496-293296f6dd91",
-        "timeUntilEvent": 2292,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6bf23572-72fb-4576-94a8-e7e36c7d82b3",
-        "timeUntilEvent": 2412,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 2089,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "e8e0436d-f5d0-485a-8160-1729f15201b5",
-        "timeUntilEvent": 2412,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 2320,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "92620321-5666-4067-89ef-6d12ff927c2f",
-        "timeUntilEvent": 2412,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 2320,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
+        "fps": 59.3
       },
       {
         "jobId": "72e4bd2c-9234-4da4-a447-3aac37434d6a",
-        "timeUntilEvent": 2537,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 2445,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8fefc9ba-6322-42aa-acdc-4f57048444b5",
-        "timeUntilEvent": 2537,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5d0a00e3-e96c-4e22-ac90-37627f4029f3",
-        "timeUntilEvent": 2537,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 2445,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "09e12876-763e-4475-887c-0944a184f2cf",
-        "timeUntilEvent": 2537,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 2445,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "404ef9fd-d06c-4f46-8d61-861bd1acc797",
-        "timeUntilEvent": 2537,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b79ec9b0-824e-47d7-ad6d-053302691141",
-        "timeUntilEvent": 2537,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0bcb49f1-70eb-4609-9255-e8eba3afc925",
-        "timeUntilEvent": 2671,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 2445,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "3c1b4351-c136-45e4-b2cf-ae5fd28ef7a7",
-        "timeUntilEvent": 2671,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 2579,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8e9372d9-22ad-4b07-92e1-c1275d0434f7",
-        "timeUntilEvent": 2671,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 2579,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60.1
+        "fps": 60
       },
       {
         "jobId": "2e13dad5-aa2a-452b-acec-878e800d48a3",
-        "timeUntilEvent": 2671,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 2579,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
-        "timeUntilEvent": 2766,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2da91fcc-9ba0-4137-849a-680bfead77ec",
-        "timeUntilEvent": 2766,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "1b4a6fd3-a860-448f-be8a-5c9ee389c7f9",
-        "timeUntilEvent": 2766,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "da1ba66e-df62-4432-a1a2-e4ff5b6d5b5d",
-        "timeUntilEvent": 2766,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "622c35fb-1a99-4d9f-880b-da13706e73bd",
-        "timeUntilEvent": 2766,
-        "estimatedAge": 1734,
+        "timeUntilEvent": 2674,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b73feaf0-5aa0-4ed1-aed9-0891e6af7d67",
-        "timeUntilEvent": 2766,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "8162415d-2c84-41c4-81db-9a66d03e27db",
-        "timeUntilEvent": 2766,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "33570824-c195-41d4-b289-cc41fe14ef0e",
-        "timeUntilEvent": 2863,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 2674,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae07a60b-1d87-4eea-b24c-9734eeed3a70",
-        "timeUntilEvent": 2863,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 2772,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "394cb174-8166-4262-b800-671bc402e65c",
-        "timeUntilEvent": 2863,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 2772,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "eb24f8f2-a1b7-41b7-b29f-698635c1110b",
-        "timeUntilEvent": 2863,
-        "estimatedAge": 1637,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "19302670-7159-4f43-b412-72a2726a5bcd",
-        "timeUntilEvent": 2863,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 2772,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "5d7253c8-2a2c-48b1-b35f-953de2f93f13",
-        "timeUntilEvent": 2943,
-        "estimatedAge": 6057,
+        "timeUntilEvent": 2852,
+        "estimatedAge": 6148,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "2eaca052-081c-47f2-8348-9638ee678365",
-        "timeUntilEvent": 2961,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 2870,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ce984f6b-f0cf-4b54-a6c0-59d3db3084db",
+        "timeUntilEvent": 2870,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ae6507ee-6e50-4786-8fa5-2014352605c6",
+        "timeUntilEvent": 2870,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1e45dc0f-22fe-4651-bfbd-1738ea57a2d9",
+        "timeUntilEvent": 2870,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "66888511-73ea-4869-b71e-47729c96fb79",
+        "timeUntilEvent": 2967,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "acf0f316-dc31-4179-ab91-ed34dc090ea7",
+        "timeUntilEvent": 2967,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "ffe4ec2b-0878-402d-9d21-a1e68845005c",
+        "timeUntilEvent": 2967,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "25280aec-1ef8-4a18-b5fa-c9bd09ccc8ca",
+        "timeUntilEvent": 2967,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ed4641a8-4fdb-43f0-9406-bae58e641a06",
+        "timeUntilEvent": 2967,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "77b093ea-f5db-4159-ae53-573fb56c2387",
+        "timeUntilEvent": 2967,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "4b7d8518-1ff4-43b4-a192-f5fd426422a2",
+        "timeUntilEvent": 2967,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e8234227-b6dc-4964-88e2-151921e1dcba",
+        "timeUntilEvent": 2967,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "681bbd2f-34ce-4360-bba8-36256b0a9bee",
+        "timeUntilEvent": 3066,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "93c521c4-6dcd-46b4-9f14-ce3ab323f8c3",
+        "timeUntilEvent": 3066,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "d01cd4aa-c91a-4fa4-a51e-a4d4713fd35d",
+        "timeUntilEvent": 3163,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.8
+      },
+      {
+        "jobId": "23b3932b-8756-4e6a-8301-4c0934af060b",
+        "timeUntilEvent": 3163,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "43ad28e7-024c-48b7-b50e-48580306fb26",
+        "timeUntilEvent": 3163,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "0b94196f-9381-4e70-b9f9-d86be881002d",
+        "timeUntilEvent": 3163,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e2bbfe2a-bd6e-413a-9657-a7c6c651d856",
+        "timeUntilEvent": 3163,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "c0618db2-b577-4785-a09a-f2276aa11104",
+        "timeUntilEvent": 3163,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "3b777c41-9be4-4879-ba78-79242a1ce46c",
+        "timeUntilEvent": 3267,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f0ad440e-6364-441c-b771-b3d5c7ce7f9a",
+        "timeUntilEvent": 3267,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "a18a8e2a-022d-4356-b2eb-ee3f7bb90948",
+        "timeUntilEvent": 3267,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1a40d91b-b240-4c71-8549-97fd9d244141",
+        "timeUntilEvent": 3267,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "20fa8f04-b682-4dae-a7ed-d6e5d79b8e8c",
+        "timeUntilEvent": 3267,
+        "estimatedAge": 1233,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
@@ -442,401 +442,401 @@
     ],
     "FactoryRaid": [
       {
-        "jobId": "ef55a41f-0c25-4cff-b9d0-13127cec4cb0",
-        "timeUntilEvent": 8,
-        "estimatedAge": 5392,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5496db86-3596-40cf-977b-7f6e803b5bbb",
-        "timeUntilEvent": 678,
-        "estimatedAge": 4722,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "466f176c-11d9-4b34-9df8-3fb81a4a8fe0",
-        "timeUntilEvent": 871,
-        "estimatedAge": 4529,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
         "jobId": "f31880a2-7d8f-4f33-97c1-4cb4cdc9f67a",
-        "timeUntilEvent": 962,
-        "estimatedAge": 4438,
+        "timeUntilEvent": 870,
+        "estimatedAge": 4530,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.9
       },
       {
         "jobId": "d9aed90a-e396-4749-891f-35a3f98a42c9",
-        "timeUntilEvent": 1059,
-        "estimatedAge": 4341,
+        "timeUntilEvent": 967,
+        "estimatedAge": 4433,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7ab1262f-5c2c-48e3-8fcc-a2a125952840",
-        "timeUntilEvent": 1152,
-        "estimatedAge": 4248,
+        "timeUntilEvent": 1060,
+        "estimatedAge": 4340,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b29ff401-1b54-4185-aaf5-bb05d0770be8",
-        "timeUntilEvent": 1245,
-        "estimatedAge": 4155,
+        "timeUntilEvent": 1153,
+        "estimatedAge": 4247,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "411b2cdb-824e-4779-87f7-c3935dde6ac6",
-        "timeUntilEvent": 1245,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b060eaf0-7f3e-48d3-aa05-d6ee498d9cf2",
-        "timeUntilEvent": 1245,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "d54401ec-c2f2-4d46-9617-93fb2a6109f7",
-        "timeUntilEvent": 1352,
-        "estimatedAge": 4048,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.9
       },
       {
         "jobId": "f8b1e7f0-d573-4a65-8606-5a08480480dd",
-        "timeUntilEvent": 1685,
-        "estimatedAge": 3715,
+        "timeUntilEvent": 1594,
+        "estimatedAge": 3806,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.3
+        "fps": 57.4
       },
       {
         "jobId": "8810a45d-f351-45cd-81ef-d5b496d2ff7b",
-        "timeUntilEvent": 2055,
-        "estimatedAge": 3345,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.8
-      },
-      {
-        "jobId": "70c7eda1-f7b5-4a00-9d12-b4dfcd57421c",
-        "timeUntilEvent": 2055,
-        "estimatedAge": 3345,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60.1
-      },
-      {
-        "jobId": "50428a19-4fff-4f62-b2cf-c47ba39e408f",
-        "timeUntilEvent": 2289,
-        "estimatedAge": 3111,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 57.7
-      },
-      {
-        "jobId": "7817d441-2376-4a1a-a13a-da568dea736e",
-        "timeUntilEvent": 2312,
-        "estimatedAge": 8488,
+        "timeUntilEvent": 1963,
+        "estimatedAge": 3437,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 59.9
       },
       {
         "jobId": "78caf155-535a-4218-9cc9-799d3bade8d0",
-        "timeUntilEvent": 2432,
-        "estimatedAge": 2968,
+        "timeUntilEvent": 2340,
+        "estimatedAge": 3060,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "6fa24825-3aa0-4c0c-8014-2aae5815a12d",
-        "timeUntilEvent": 2583,
-        "estimatedAge": 2817,
+        "timeUntilEvent": 2491,
+        "estimatedAge": 2909,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "4fd9a292-f2fc-42a2-9056-033b8a7ae04b",
-        "timeUntilEvent": 2971,
-        "estimatedAge": 2429,
+        "timeUntilEvent": 2879,
+        "estimatedAge": 2521,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7eeb7e2a-ee18-47b6-8433-69080cd3198c",
-        "timeUntilEvent": 3081,
-        "estimatedAge": 2319,
+        "timeUntilEvent": 2989,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "20f5e27e-cd76-40ac-aaa9-3c67d9a96541",
-        "timeUntilEvent": 3081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "c1350b46-49a2-469c-892a-c0628c063345",
-        "timeUntilEvent": 3081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0da634bb-edd6-4115-883d-8516e303211a",
-        "timeUntilEvent": 3081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "20271c30-9859-4452-8666-5c2c6c3ec4b4",
-        "timeUntilEvent": 3192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "21dc0d82-11ae-415a-854f-beeb3c562e08",
-        "timeUntilEvent": 3192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6ec11dbe-e8b1-4b5f-9496-293296f6dd91",
-        "timeUntilEvent": 3192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6bf23572-72fb-4576-94a8-e7e36c7d82b3",
-        "timeUntilEvent": 3312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 2989,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "e8e0436d-f5d0-485a-8160-1729f15201b5",
-        "timeUntilEvent": 3312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 3220,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "92620321-5666-4067-89ef-6d12ff927c2f",
-        "timeUntilEvent": 3312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 3220,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
+        "fps": 59.3
       },
       {
         "jobId": "72e4bd2c-9234-4da4-a447-3aac37434d6a",
-        "timeUntilEvent": 3437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 3345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8fefc9ba-6322-42aa-acdc-4f57048444b5",
-        "timeUntilEvent": 3437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5d0a00e3-e96c-4e22-ac90-37627f4029f3",
-        "timeUntilEvent": 3437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 3345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "09e12876-763e-4475-887c-0944a184f2cf",
-        "timeUntilEvent": 3437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 3345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "404ef9fd-d06c-4f46-8d61-861bd1acc797",
-        "timeUntilEvent": 3437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b79ec9b0-824e-47d7-ad6d-053302691141",
-        "timeUntilEvent": 3437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0bcb49f1-70eb-4609-9255-e8eba3afc925",
-        "timeUntilEvent": 3571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 3345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "3c1b4351-c136-45e4-b2cf-ae5fd28ef7a7",
-        "timeUntilEvent": 3571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 3479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8e9372d9-22ad-4b07-92e1-c1275d0434f7",
-        "timeUntilEvent": 3571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 3479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60.1
+        "fps": 60
       },
       {
         "jobId": "2e13dad5-aa2a-452b-acec-878e800d48a3",
-        "timeUntilEvent": 3571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 3479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
-        "timeUntilEvent": 3666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2da91fcc-9ba0-4137-849a-680bfead77ec",
-        "timeUntilEvent": 3666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "1b4a6fd3-a860-448f-be8a-5c9ee389c7f9",
-        "timeUntilEvent": 3666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "da1ba66e-df62-4432-a1a2-e4ff5b6d5b5d",
-        "timeUntilEvent": 3666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "622c35fb-1a99-4d9f-880b-da13706e73bd",
-        "timeUntilEvent": 3666,
-        "estimatedAge": 1734,
+        "timeUntilEvent": 3574,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b73feaf0-5aa0-4ed1-aed9-0891e6af7d67",
-        "timeUntilEvent": 3666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "8162415d-2c84-41c4-81db-9a66d03e27db",
-        "timeUntilEvent": 3666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2dba6080-3e7a-46bc-9b8c-113fa5ceef90",
-        "timeUntilEvent": 3711,
-        "estimatedAge": 7089,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "33570824-c195-41d4-b289-cc41fe14ef0e",
-        "timeUntilEvent": 3763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 3574,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae07a60b-1d87-4eea-b24c-9734eeed3a70",
-        "timeUntilEvent": 3763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 3672,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "394cb174-8166-4262-b800-671bc402e65c",
-        "timeUntilEvent": 3763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 3672,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "eb24f8f2-a1b7-41b7-b29f-698635c1110b",
-        "timeUntilEvent": 3763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 3672,
+        "estimatedAge": 1728,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "2eaca052-081c-47f2-8348-9638ee678365",
+        "timeUntilEvent": 3770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ce984f6b-f0cf-4b54-a6c0-59d3db3084db",
+        "timeUntilEvent": 3770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ae6507ee-6e50-4786-8fa5-2014352605c6",
+        "timeUntilEvent": 3770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1e45dc0f-22fe-4651-bfbd-1738ea57a2d9",
+        "timeUntilEvent": 3770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "66888511-73ea-4869-b71e-47729c96fb79",
+        "timeUntilEvent": 3867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "acf0f316-dc31-4179-ab91-ed34dc090ea7",
+        "timeUntilEvent": 3867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "ffe4ec2b-0878-402d-9d21-a1e68845005c",
+        "timeUntilEvent": 3867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "25280aec-1ef8-4a18-b5fa-c9bd09ccc8ca",
+        "timeUntilEvent": 3867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ed4641a8-4fdb-43f0-9406-bae58e641a06",
+        "timeUntilEvent": 3867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "77b093ea-f5db-4159-ae53-573fb56c2387",
+        "timeUntilEvent": 3867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "4b7d8518-1ff4-43b4-a192-f5fd426422a2",
+        "timeUntilEvent": 3867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e8234227-b6dc-4964-88e2-151921e1dcba",
+        "timeUntilEvent": 3867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "681bbd2f-34ce-4360-bba8-36256b0a9bee",
+        "timeUntilEvent": 3966,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "93c521c4-6dcd-46b4-9f14-ce3ab323f8c3",
+        "timeUntilEvent": 3966,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "d01cd4aa-c91a-4fa4-a51e-a4d4713fd35d",
+        "timeUntilEvent": 4063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.8
+      },
+      {
+        "jobId": "23b3932b-8756-4e6a-8301-4c0934af060b",
+        "timeUntilEvent": 4063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "43ad28e7-024c-48b7-b50e-48580306fb26",
+        "timeUntilEvent": 4063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "0b94196f-9381-4e70-b9f9-d86be881002d",
+        "timeUntilEvent": 4063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e2bbfe2a-bd6e-413a-9657-a7c6c651d856",
+        "timeUntilEvent": 4063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "c0618db2-b577-4785-a09a-f2276aa11104",
+        "timeUntilEvent": 4063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "3b777c41-9be4-4879-ba78-79242a1ce46c",
+        "timeUntilEvent": 4167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f0ad440e-6364-441c-b771-b3d5c7ce7f9a",
+        "timeUntilEvent": 4167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "a18a8e2a-022d-4356-b2eb-ee3f7bb90948",
+        "timeUntilEvent": 4167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1a40d91b-b240-4c71-8549-97fd9d244141",
+        "timeUntilEvent": 4167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "20fa8f04-b682-4dae-a7ed-d6e5d79b8e8c",
+        "timeUntilEvent": 4167,
+        "estimatedAge": 1233,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
@@ -844,401 +844,401 @@
     ],
     "FruitSpawnSea1": [
       {
-        "jobId": "ef55a41f-0c25-4cff-b9d0-13127cec4cb0",
-        "timeUntilEvent": 8,
-        "estimatedAge": 5392,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
         "jobId": "4fd9a292-f2fc-42a2-9056-033b8a7ae04b",
-        "timeUntilEvent": 271,
-        "estimatedAge": 2429,
+        "timeUntilEvent": 179,
+        "estimatedAge": 2521,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7eeb7e2a-ee18-47b6-8433-69080cd3198c",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
+        "timeUntilEvent": 289,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "20f5e27e-cd76-40ac-aaa9-3c67d9a96541",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "c1350b46-49a2-469c-892a-c0628c063345",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0da634bb-edd6-4115-883d-8516e303211a",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "20271c30-9859-4452-8666-5c2c6c3ec4b4",
-        "timeUntilEvent": 492,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "21dc0d82-11ae-415a-854f-beeb3c562e08",
-        "timeUntilEvent": 492,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6ec11dbe-e8b1-4b5f-9496-293296f6dd91",
-        "timeUntilEvent": 492,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6bf23572-72fb-4576-94a8-e7e36c7d82b3",
-        "timeUntilEvent": 612,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 289,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "e8e0436d-f5d0-485a-8160-1729f15201b5",
-        "timeUntilEvent": 612,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 520,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "92620321-5666-4067-89ef-6d12ff927c2f",
-        "timeUntilEvent": 612,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 520,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
-      },
-      {
-        "jobId": "5496db86-3596-40cf-977b-7f6e803b5bbb",
-        "timeUntilEvent": 678,
-        "estimatedAge": 4722,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.3
       },
       {
         "jobId": "72e4bd2c-9234-4da4-a447-3aac37434d6a",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8fefc9ba-6322-42aa-acdc-4f57048444b5",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5d0a00e3-e96c-4e22-ac90-37627f4029f3",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "09e12876-763e-4475-887c-0944a184f2cf",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "404ef9fd-d06c-4f46-8d61-861bd1acc797",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b79ec9b0-824e-47d7-ad6d-053302691141",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "466f176c-11d9-4b34-9df8-3fb81a4a8fe0",
-        "timeUntilEvent": 871,
-        "estimatedAge": 4529,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0bcb49f1-70eb-4609-9255-e8eba3afc925",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "3c1b4351-c136-45e4-b2cf-ae5fd28ef7a7",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 779,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8e9372d9-22ad-4b07-92e1-c1275d0434f7",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 779,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60.1
+        "fps": 60
       },
       {
         "jobId": "2e13dad5-aa2a-452b-acec-878e800d48a3",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 779,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "f31880a2-7d8f-4f33-97c1-4cb4cdc9f67a",
-        "timeUntilEvent": 962,
-        "estimatedAge": 4438,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2da91fcc-9ba0-4137-849a-680bfead77ec",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "1b4a6fd3-a860-448f-be8a-5c9ee389c7f9",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "da1ba66e-df62-4432-a1a2-e4ff5b6d5b5d",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
+        "timeUntilEvent": 870,
+        "estimatedAge": 4530,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 59.9
       },
       {
-        "jobId": "622c35fb-1a99-4d9f-880b-da13706e73bd",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
+        "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
+        "timeUntilEvent": 874,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b73feaf0-5aa0-4ed1-aed9-0891e6af7d67",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "8162415d-2c84-41c4-81db-9a66d03e27db",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2dba6080-3e7a-46bc-9b8c-113fa5ceef90",
-        "timeUntilEvent": 1011,
-        "estimatedAge": 7089,
+        "timeUntilEvent": 874,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "d9aed90a-e396-4749-891f-35a3f98a42c9",
-        "timeUntilEvent": 1059,
-        "estimatedAge": 4341,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "33570824-c195-41d4-b289-cc41fe14ef0e",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 967,
+        "estimatedAge": 4433,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae07a60b-1d87-4eea-b24c-9734eeed3a70",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 972,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "394cb174-8166-4262-b800-671bc402e65c",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 972,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "eb24f8f2-a1b7-41b7-b29f-698635c1110b",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "19302670-7159-4f43-b412-72a2726a5bcd",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 972,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7ab1262f-5c2c-48e3-8fcc-a2a125952840",
-        "timeUntilEvent": 1152,
-        "estimatedAge": 4248,
+        "timeUntilEvent": 1060,
+        "estimatedAge": 4340,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "2eaca052-081c-47f2-8348-9638ee678365",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ce984f6b-f0cf-4b54-a6c0-59d3db3084db",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae6507ee-6e50-4786-8fa5-2014352605c6",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "a9be2212-cbb4-45eb-a7be-ed549af86865",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0dec28dc-2cda-43f0-8dd6-343c083b5ed3",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "7fa30db4-8763-4ca6-ae4a-eaae8a092b3e",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "1e45dc0f-22fe-4651-bfbd-1738ea57a2d9",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b3c2cf03-839c-486c-9091-1bf622d6630a",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b29ff401-1b54-4185-aaf5-bb05d0770be8",
-        "timeUntilEvent": 1245,
-        "estimatedAge": 4155,
+        "timeUntilEvent": 1153,
+        "estimatedAge": 4247,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "66888511-73ea-4869-b71e-47729c96fb79",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
-        "jobId": "411b2cdb-824e-4779-87f7-c3935dde6ac6",
-        "timeUntilEvent": 1245,
-        "estimatedAge": 4155,
+        "jobId": "acf0f316-dc31-4179-ab91-ed34dc090ea7",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "ffe4ec2b-0878-402d-9d21-a1e68845005c",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "25280aec-1ef8-4a18-b5fa-c9bd09ccc8ca",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ed4641a8-4fdb-43f0-9406-bae58e641a06",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "77b093ea-f5db-4159-ae53-573fb56c2387",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "4b7d8518-1ff4-43b4-a192-f5fd426422a2",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e8234227-b6dc-4964-88e2-151921e1dcba",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "681bbd2f-34ce-4360-bba8-36256b0a9bee",
+        "timeUntilEvent": 1266,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "93c521c4-6dcd-46b4-9f14-ce3ab323f8c3",
+        "timeUntilEvent": 1266,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "d01cd4aa-c91a-4fa4-a51e-a4d4713fd35d",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.8
+      },
+      {
+        "jobId": "23b3932b-8756-4e6a-8301-4c0934af060b",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "43ad28e7-024c-48b7-b50e-48580306fb26",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "0b94196f-9381-4e70-b9f9-d86be881002d",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e2bbfe2a-bd6e-413a-9657-a7c6c651d856",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "c0618db2-b577-4785-a09a-f2276aa11104",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "3b777c41-9be4-4879-ba78-79242a1ce46c",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f0ad440e-6364-441c-b771-b3d5c7ce7f9a",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "a18a8e2a-022d-4356-b2eb-ee3f7bb90948",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1a40d91b-b240-4c71-8549-97fd9d244141",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "20fa8f04-b682-4dae-a7ed-d6e5d79b8e8c",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1dcb3a25-c42a-415b-9bd5-8f4b6ec39654",
+        "timeUntilEvent": 1584,
+        "estimatedAge": 1116,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f8b1e7f0-d573-4a65-8606-5a08480480dd",
+        "timeUntilEvent": 1594,
+        "estimatedAge": 3806,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 57.4
+      },
+      {
+        "jobId": "01c82ec4-9ecf-48ee-8531-9afea4e1a22d",
+        "timeUntilEvent": 1698,
+        "estimatedAge": 1002,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ae5c923e-d972-4a17-a57b-aac24c0c4a27",
+        "timeUntilEvent": 1698,
+        "estimatedAge": 1002,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
@@ -1246,401 +1246,401 @@
     ],
     "FruitSpawnSea2": [
       {
-        "jobId": "ef55a41f-0c25-4cff-b9d0-13127cec4cb0",
-        "timeUntilEvent": 8,
-        "estimatedAge": 5392,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
         "jobId": "4fd9a292-f2fc-42a2-9056-033b8a7ae04b",
-        "timeUntilEvent": 271,
-        "estimatedAge": 2429,
+        "timeUntilEvent": 179,
+        "estimatedAge": 2521,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7eeb7e2a-ee18-47b6-8433-69080cd3198c",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
+        "timeUntilEvent": 289,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "20f5e27e-cd76-40ac-aaa9-3c67d9a96541",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "c1350b46-49a2-469c-892a-c0628c063345",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0da634bb-edd6-4115-883d-8516e303211a",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "20271c30-9859-4452-8666-5c2c6c3ec4b4",
-        "timeUntilEvent": 492,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "21dc0d82-11ae-415a-854f-beeb3c562e08",
-        "timeUntilEvent": 492,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6ec11dbe-e8b1-4b5f-9496-293296f6dd91",
-        "timeUntilEvent": 492,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6bf23572-72fb-4576-94a8-e7e36c7d82b3",
-        "timeUntilEvent": 612,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 289,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "e8e0436d-f5d0-485a-8160-1729f15201b5",
-        "timeUntilEvent": 612,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 520,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "92620321-5666-4067-89ef-6d12ff927c2f",
-        "timeUntilEvent": 612,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 520,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
-      },
-      {
-        "jobId": "5496db86-3596-40cf-977b-7f6e803b5bbb",
-        "timeUntilEvent": 678,
-        "estimatedAge": 4722,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.3
       },
       {
         "jobId": "72e4bd2c-9234-4da4-a447-3aac37434d6a",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8fefc9ba-6322-42aa-acdc-4f57048444b5",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5d0a00e3-e96c-4e22-ac90-37627f4029f3",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "09e12876-763e-4475-887c-0944a184f2cf",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "404ef9fd-d06c-4f46-8d61-861bd1acc797",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b79ec9b0-824e-47d7-ad6d-053302691141",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "466f176c-11d9-4b34-9df8-3fb81a4a8fe0",
-        "timeUntilEvent": 871,
-        "estimatedAge": 4529,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0bcb49f1-70eb-4609-9255-e8eba3afc925",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "3c1b4351-c136-45e4-b2cf-ae5fd28ef7a7",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 779,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8e9372d9-22ad-4b07-92e1-c1275d0434f7",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 779,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60.1
+        "fps": 60
       },
       {
         "jobId": "2e13dad5-aa2a-452b-acec-878e800d48a3",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 779,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "f31880a2-7d8f-4f33-97c1-4cb4cdc9f67a",
-        "timeUntilEvent": 962,
-        "estimatedAge": 4438,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2da91fcc-9ba0-4137-849a-680bfead77ec",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "1b4a6fd3-a860-448f-be8a-5c9ee389c7f9",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "da1ba66e-df62-4432-a1a2-e4ff5b6d5b5d",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
+        "timeUntilEvent": 870,
+        "estimatedAge": 4530,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 59.9
       },
       {
-        "jobId": "622c35fb-1a99-4d9f-880b-da13706e73bd",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
+        "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
+        "timeUntilEvent": 874,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b73feaf0-5aa0-4ed1-aed9-0891e6af7d67",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "8162415d-2c84-41c4-81db-9a66d03e27db",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2dba6080-3e7a-46bc-9b8c-113fa5ceef90",
-        "timeUntilEvent": 1011,
-        "estimatedAge": 7089,
+        "timeUntilEvent": 874,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "d9aed90a-e396-4749-891f-35a3f98a42c9",
-        "timeUntilEvent": 1059,
-        "estimatedAge": 4341,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "33570824-c195-41d4-b289-cc41fe14ef0e",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 967,
+        "estimatedAge": 4433,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae07a60b-1d87-4eea-b24c-9734eeed3a70",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 972,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "394cb174-8166-4262-b800-671bc402e65c",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 972,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "eb24f8f2-a1b7-41b7-b29f-698635c1110b",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "19302670-7159-4f43-b412-72a2726a5bcd",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 972,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7ab1262f-5c2c-48e3-8fcc-a2a125952840",
-        "timeUntilEvent": 1152,
-        "estimatedAge": 4248,
+        "timeUntilEvent": 1060,
+        "estimatedAge": 4340,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "2eaca052-081c-47f2-8348-9638ee678365",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ce984f6b-f0cf-4b54-a6c0-59d3db3084db",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae6507ee-6e50-4786-8fa5-2014352605c6",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "a9be2212-cbb4-45eb-a7be-ed549af86865",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0dec28dc-2cda-43f0-8dd6-343c083b5ed3",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "7fa30db4-8763-4ca6-ae4a-eaae8a092b3e",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "1e45dc0f-22fe-4651-bfbd-1738ea57a2d9",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b3c2cf03-839c-486c-9091-1bf622d6630a",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b29ff401-1b54-4185-aaf5-bb05d0770be8",
-        "timeUntilEvent": 1245,
-        "estimatedAge": 4155,
+        "timeUntilEvent": 1153,
+        "estimatedAge": 4247,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "66888511-73ea-4869-b71e-47729c96fb79",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
-        "jobId": "411b2cdb-824e-4779-87f7-c3935dde6ac6",
-        "timeUntilEvent": 1245,
-        "estimatedAge": 4155,
+        "jobId": "acf0f316-dc31-4179-ab91-ed34dc090ea7",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "ffe4ec2b-0878-402d-9d21-a1e68845005c",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "25280aec-1ef8-4a18-b5fa-c9bd09ccc8ca",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ed4641a8-4fdb-43f0-9406-bae58e641a06",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "77b093ea-f5db-4159-ae53-573fb56c2387",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "4b7d8518-1ff4-43b4-a192-f5fd426422a2",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e8234227-b6dc-4964-88e2-151921e1dcba",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "681bbd2f-34ce-4360-bba8-36256b0a9bee",
+        "timeUntilEvent": 1266,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "93c521c4-6dcd-46b4-9f14-ce3ab323f8c3",
+        "timeUntilEvent": 1266,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "d01cd4aa-c91a-4fa4-a51e-a4d4713fd35d",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.8
+      },
+      {
+        "jobId": "23b3932b-8756-4e6a-8301-4c0934af060b",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "43ad28e7-024c-48b7-b50e-48580306fb26",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "0b94196f-9381-4e70-b9f9-d86be881002d",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e2bbfe2a-bd6e-413a-9657-a7c6c651d856",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "c0618db2-b577-4785-a09a-f2276aa11104",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "3b777c41-9be4-4879-ba78-79242a1ce46c",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f0ad440e-6364-441c-b771-b3d5c7ce7f9a",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "a18a8e2a-022d-4356-b2eb-ee3f7bb90948",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1a40d91b-b240-4c71-8549-97fd9d244141",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "20fa8f04-b682-4dae-a7ed-d6e5d79b8e8c",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1dcb3a25-c42a-415b-9bd5-8f4b6ec39654",
+        "timeUntilEvent": 1584,
+        "estimatedAge": 1116,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f8b1e7f0-d573-4a65-8606-5a08480480dd",
+        "timeUntilEvent": 1594,
+        "estimatedAge": 3806,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 57.4
+      },
+      {
+        "jobId": "01c82ec4-9ecf-48ee-8531-9afea4e1a22d",
+        "timeUntilEvent": 1698,
+        "estimatedAge": 1002,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ae5c923e-d972-4a17-a57b-aac24c0c4a27",
+        "timeUntilEvent": 1698,
+        "estimatedAge": 1002,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
@@ -1648,401 +1648,401 @@
     ],
     "FruitSpawnSea3": [
       {
-        "jobId": "ef55a41f-0c25-4cff-b9d0-13127cec4cb0",
-        "timeUntilEvent": 8,
-        "estimatedAge": 5392,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
         "jobId": "4fd9a292-f2fc-42a2-9056-033b8a7ae04b",
-        "timeUntilEvent": 271,
-        "estimatedAge": 2429,
+        "timeUntilEvent": 179,
+        "estimatedAge": 2521,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7eeb7e2a-ee18-47b6-8433-69080cd3198c",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
+        "timeUntilEvent": 289,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "20f5e27e-cd76-40ac-aaa9-3c67d9a96541",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "c1350b46-49a2-469c-892a-c0628c063345",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0da634bb-edd6-4115-883d-8516e303211a",
-        "timeUntilEvent": 381,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "20271c30-9859-4452-8666-5c2c6c3ec4b4",
-        "timeUntilEvent": 492,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "21dc0d82-11ae-415a-854f-beeb3c562e08",
-        "timeUntilEvent": 492,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6ec11dbe-e8b1-4b5f-9496-293296f6dd91",
-        "timeUntilEvent": 492,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6bf23572-72fb-4576-94a8-e7e36c7d82b3",
-        "timeUntilEvent": 612,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 289,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "e8e0436d-f5d0-485a-8160-1729f15201b5",
-        "timeUntilEvent": 612,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 520,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "92620321-5666-4067-89ef-6d12ff927c2f",
-        "timeUntilEvent": 612,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 520,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
-      },
-      {
-        "jobId": "5496db86-3596-40cf-977b-7f6e803b5bbb",
-        "timeUntilEvent": 678,
-        "estimatedAge": 4722,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.3
       },
       {
         "jobId": "72e4bd2c-9234-4da4-a447-3aac37434d6a",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8fefc9ba-6322-42aa-acdc-4f57048444b5",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5d0a00e3-e96c-4e22-ac90-37627f4029f3",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "09e12876-763e-4475-887c-0944a184f2cf",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "404ef9fd-d06c-4f46-8d61-861bd1acc797",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b79ec9b0-824e-47d7-ad6d-053302691141",
-        "timeUntilEvent": 737,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "466f176c-11d9-4b34-9df8-3fb81a4a8fe0",
-        "timeUntilEvent": 871,
-        "estimatedAge": 4529,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0bcb49f1-70eb-4609-9255-e8eba3afc925",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 645,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "3c1b4351-c136-45e4-b2cf-ae5fd28ef7a7",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 779,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8e9372d9-22ad-4b07-92e1-c1275d0434f7",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 779,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60.1
+        "fps": 60
       },
       {
         "jobId": "2e13dad5-aa2a-452b-acec-878e800d48a3",
-        "timeUntilEvent": 871,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 779,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "f31880a2-7d8f-4f33-97c1-4cb4cdc9f67a",
-        "timeUntilEvent": 962,
-        "estimatedAge": 4438,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2da91fcc-9ba0-4137-849a-680bfead77ec",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "1b4a6fd3-a860-448f-be8a-5c9ee389c7f9",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "da1ba66e-df62-4432-a1a2-e4ff5b6d5b5d",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
+        "timeUntilEvent": 870,
+        "estimatedAge": 4530,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 59.9
       },
       {
-        "jobId": "622c35fb-1a99-4d9f-880b-da13706e73bd",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
+        "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
+        "timeUntilEvent": 874,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b73feaf0-5aa0-4ed1-aed9-0891e6af7d67",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "8162415d-2c84-41c4-81db-9a66d03e27db",
-        "timeUntilEvent": 966,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2dba6080-3e7a-46bc-9b8c-113fa5ceef90",
-        "timeUntilEvent": 1011,
-        "estimatedAge": 7089,
+        "timeUntilEvent": 874,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "d9aed90a-e396-4749-891f-35a3f98a42c9",
-        "timeUntilEvent": 1059,
-        "estimatedAge": 4341,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "33570824-c195-41d4-b289-cc41fe14ef0e",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 967,
+        "estimatedAge": 4433,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae07a60b-1d87-4eea-b24c-9734eeed3a70",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 972,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "394cb174-8166-4262-b800-671bc402e65c",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 972,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "eb24f8f2-a1b7-41b7-b29f-698635c1110b",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "19302670-7159-4f43-b412-72a2726a5bcd",
-        "timeUntilEvent": 1063,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 972,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7ab1262f-5c2c-48e3-8fcc-a2a125952840",
-        "timeUntilEvent": 1152,
-        "estimatedAge": 4248,
+        "timeUntilEvent": 1060,
+        "estimatedAge": 4340,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "2eaca052-081c-47f2-8348-9638ee678365",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ce984f6b-f0cf-4b54-a6c0-59d3db3084db",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae6507ee-6e50-4786-8fa5-2014352605c6",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "a9be2212-cbb4-45eb-a7be-ed549af86865",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0dec28dc-2cda-43f0-8dd6-343c083b5ed3",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "7fa30db4-8763-4ca6-ae4a-eaae8a092b3e",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "1e45dc0f-22fe-4651-bfbd-1738ea57a2d9",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b3c2cf03-839c-486c-9091-1bf622d6630a",
-        "timeUntilEvent": 1161,
-        "estimatedAge": 1539,
+        "timeUntilEvent": 1070,
+        "estimatedAge": 1630,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b29ff401-1b54-4185-aaf5-bb05d0770be8",
-        "timeUntilEvent": 1245,
-        "estimatedAge": 4155,
+        "timeUntilEvent": 1153,
+        "estimatedAge": 4247,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "66888511-73ea-4869-b71e-47729c96fb79",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
-        "jobId": "411b2cdb-824e-4779-87f7-c3935dde6ac6",
-        "timeUntilEvent": 1245,
-        "estimatedAge": 4155,
+        "jobId": "acf0f316-dc31-4179-ab91-ed34dc090ea7",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "ffe4ec2b-0878-402d-9d21-a1e68845005c",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "25280aec-1ef8-4a18-b5fa-c9bd09ccc8ca",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ed4641a8-4fdb-43f0-9406-bae58e641a06",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "77b093ea-f5db-4159-ae53-573fb56c2387",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "4b7d8518-1ff4-43b4-a192-f5fd426422a2",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e8234227-b6dc-4964-88e2-151921e1dcba",
+        "timeUntilEvent": 1167,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "681bbd2f-34ce-4360-bba8-36256b0a9bee",
+        "timeUntilEvent": 1266,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "93c521c4-6dcd-46b4-9f14-ce3ab323f8c3",
+        "timeUntilEvent": 1266,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "d01cd4aa-c91a-4fa4-a51e-a4d4713fd35d",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.8
+      },
+      {
+        "jobId": "23b3932b-8756-4e6a-8301-4c0934af060b",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "43ad28e7-024c-48b7-b50e-48580306fb26",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "0b94196f-9381-4e70-b9f9-d86be881002d",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e2bbfe2a-bd6e-413a-9657-a7c6c651d856",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "c0618db2-b577-4785-a09a-f2276aa11104",
+        "timeUntilEvent": 1363,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "3b777c41-9be4-4879-ba78-79242a1ce46c",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f0ad440e-6364-441c-b771-b3d5c7ce7f9a",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "a18a8e2a-022d-4356-b2eb-ee3f7bb90948",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1a40d91b-b240-4c71-8549-97fd9d244141",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "20fa8f04-b682-4dae-a7ed-d6e5d79b8e8c",
+        "timeUntilEvent": 1467,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1dcb3a25-c42a-415b-9bd5-8f4b6ec39654",
+        "timeUntilEvent": 1584,
+        "estimatedAge": 1116,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f8b1e7f0-d573-4a65-8606-5a08480480dd",
+        "timeUntilEvent": 1594,
+        "estimatedAge": 3806,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 57.4
+      },
+      {
+        "jobId": "01c82ec4-9ecf-48ee-8531-9afea4e1a22d",
+        "timeUntilEvent": 1698,
+        "estimatedAge": 1002,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ae5c923e-d972-4a17-a57b-aac24c0c4a27",
+        "timeUntilEvent": 1698,
+        "estimatedAge": 1002,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
@@ -2050,401 +2050,401 @@
     ],
     "LegendarySword": [
       {
-        "jobId": "7817d441-2376-4a1a-a13a-da568dea736e",
-        "timeUntilEvent": 5912,
-        "estimatedAge": 8488,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "2dba6080-3e7a-46bc-9b8c-113fa5ceef90",
-        "timeUntilEvent": 7311,
-        "estimatedAge": 7089,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
         "jobId": "5d7253c8-2a2c-48b1-b35f-953de2f93f13",
-        "timeUntilEvent": 8343,
-        "estimatedAge": 6057,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "ef55a41f-0c25-4cff-b9d0-13127cec4cb0",
-        "timeUntilEvent": 9008,
-        "estimatedAge": 5392,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5496db86-3596-40cf-977b-7f6e803b5bbb",
-        "timeUntilEvent": 9678,
-        "estimatedAge": 4722,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "466f176c-11d9-4b34-9df8-3fb81a4a8fe0",
-        "timeUntilEvent": 9871,
-        "estimatedAge": 4529,
+        "timeUntilEvent": 8252,
+        "estimatedAge": 6148,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "f31880a2-7d8f-4f33-97c1-4cb4cdc9f67a",
-        "timeUntilEvent": 9962,
-        "estimatedAge": 4438,
+        "timeUntilEvent": 9870,
+        "estimatedAge": 4530,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.9
       },
       {
         "jobId": "d9aed90a-e396-4749-891f-35a3f98a42c9",
-        "timeUntilEvent": 10059,
-        "estimatedAge": 4341,
+        "timeUntilEvent": 9967,
+        "estimatedAge": 4433,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7ab1262f-5c2c-48e3-8fcc-a2a125952840",
-        "timeUntilEvent": 10152,
-        "estimatedAge": 4248,
+        "timeUntilEvent": 10060,
+        "estimatedAge": 4340,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b29ff401-1b54-4185-aaf5-bb05d0770be8",
-        "timeUntilEvent": 10245,
-        "estimatedAge": 4155,
+        "timeUntilEvent": 10153,
+        "estimatedAge": 4247,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "411b2cdb-824e-4779-87f7-c3935dde6ac6",
-        "timeUntilEvent": 10245,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b060eaf0-7f3e-48d3-aa05-d6ee498d9cf2",
-        "timeUntilEvent": 10245,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "d54401ec-c2f2-4d46-9617-93fb2a6109f7",
-        "timeUntilEvent": 10352,
-        "estimatedAge": 4048,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.9
       },
       {
         "jobId": "f8b1e7f0-d573-4a65-8606-5a08480480dd",
-        "timeUntilEvent": 10685,
-        "estimatedAge": 3715,
+        "timeUntilEvent": 10594,
+        "estimatedAge": 3806,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.3
+        "fps": 57.4
       },
       {
         "jobId": "8810a45d-f351-45cd-81ef-d5b496d2ff7b",
-        "timeUntilEvent": 11055,
-        "estimatedAge": 3345,
+        "timeUntilEvent": 10963,
+        "estimatedAge": 3437,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
-      },
-      {
-        "jobId": "70c7eda1-f7b5-4a00-9d12-b4dfcd57421c",
-        "timeUntilEvent": 11055,
-        "estimatedAge": 3345,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60.1
-      },
-      {
-        "jobId": "50428a19-4fff-4f62-b2cf-c47ba39e408f",
-        "timeUntilEvent": 11289,
-        "estimatedAge": 3111,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 57.7
+        "fps": 59.9
       },
       {
         "jobId": "78caf155-535a-4218-9cc9-799d3bade8d0",
-        "timeUntilEvent": 11432,
-        "estimatedAge": 2968,
+        "timeUntilEvent": 11340,
+        "estimatedAge": 3060,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "6fa24825-3aa0-4c0c-8014-2aae5815a12d",
-        "timeUntilEvent": 11583,
-        "estimatedAge": 2817,
+        "timeUntilEvent": 11491,
+        "estimatedAge": 2909,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "4fd9a292-f2fc-42a2-9056-033b8a7ae04b",
-        "timeUntilEvent": 11971,
-        "estimatedAge": 2429,
+        "timeUntilEvent": 11879,
+        "estimatedAge": 2521,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7eeb7e2a-ee18-47b6-8433-69080cd3198c",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
+        "timeUntilEvent": 11989,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "20f5e27e-cd76-40ac-aaa9-3c67d9a96541",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "c1350b46-49a2-469c-892a-c0628c063345",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0da634bb-edd6-4115-883d-8516e303211a",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "20271c30-9859-4452-8666-5c2c6c3ec4b4",
-        "timeUntilEvent": 12192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "21dc0d82-11ae-415a-854f-beeb3c562e08",
-        "timeUntilEvent": 12192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6ec11dbe-e8b1-4b5f-9496-293296f6dd91",
-        "timeUntilEvent": 12192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6bf23572-72fb-4576-94a8-e7e36c7d82b3",
-        "timeUntilEvent": 12312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 11989,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "e8e0436d-f5d0-485a-8160-1729f15201b5",
-        "timeUntilEvent": 12312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 12220,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "92620321-5666-4067-89ef-6d12ff927c2f",
-        "timeUntilEvent": 12312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 12220,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
+        "fps": 59.3
       },
       {
         "jobId": "72e4bd2c-9234-4da4-a447-3aac37434d6a",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8fefc9ba-6322-42aa-acdc-4f57048444b5",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5d0a00e3-e96c-4e22-ac90-37627f4029f3",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "09e12876-763e-4475-887c-0944a184f2cf",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "404ef9fd-d06c-4f46-8d61-861bd1acc797",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b79ec9b0-824e-47d7-ad6d-053302691141",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0bcb49f1-70eb-4609-9255-e8eba3afc925",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "3c1b4351-c136-45e4-b2cf-ae5fd28ef7a7",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8e9372d9-22ad-4b07-92e1-c1275d0434f7",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60.1
+        "fps": 60
       },
       {
         "jobId": "2e13dad5-aa2a-452b-acec-878e800d48a3",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2da91fcc-9ba0-4137-849a-680bfead77ec",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "1b4a6fd3-a860-448f-be8a-5c9ee389c7f9",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "da1ba66e-df62-4432-a1a2-e4ff5b6d5b5d",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "622c35fb-1a99-4d9f-880b-da13706e73bd",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
+        "timeUntilEvent": 12574,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b73feaf0-5aa0-4ed1-aed9-0891e6af7d67",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "8162415d-2c84-41c4-81db-9a66d03e27db",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "33570824-c195-41d4-b289-cc41fe14ef0e",
-        "timeUntilEvent": 12763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 12574,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae07a60b-1d87-4eea-b24c-9734eeed3a70",
-        "timeUntilEvent": 12763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 12672,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "394cb174-8166-4262-b800-671bc402e65c",
-        "timeUntilEvent": 12763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 12672,
+        "estimatedAge": 1728,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "eb24f8f2-a1b7-41b7-b29f-698635c1110b",
+        "timeUntilEvent": 12672,
+        "estimatedAge": 1728,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "2eaca052-081c-47f2-8348-9638ee678365",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ce984f6b-f0cf-4b54-a6c0-59d3db3084db",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ae6507ee-6e50-4786-8fa5-2014352605c6",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1e45dc0f-22fe-4651-bfbd-1738ea57a2d9",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "66888511-73ea-4869-b71e-47729c96fb79",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "acf0f316-dc31-4179-ab91-ed34dc090ea7",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "ffe4ec2b-0878-402d-9d21-a1e68845005c",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "25280aec-1ef8-4a18-b5fa-c9bd09ccc8ca",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ed4641a8-4fdb-43f0-9406-bae58e641a06",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "77b093ea-f5db-4159-ae53-573fb56c2387",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "4b7d8518-1ff4-43b4-a192-f5fd426422a2",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e8234227-b6dc-4964-88e2-151921e1dcba",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "681bbd2f-34ce-4360-bba8-36256b0a9bee",
+        "timeUntilEvent": 12966,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "93c521c4-6dcd-46b4-9f14-ce3ab323f8c3",
+        "timeUntilEvent": 12966,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "d01cd4aa-c91a-4fa4-a51e-a4d4713fd35d",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.8
+      },
+      {
+        "jobId": "23b3932b-8756-4e6a-8301-4c0934af060b",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "43ad28e7-024c-48b7-b50e-48580306fb26",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "0b94196f-9381-4e70-b9f9-d86be881002d",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e2bbfe2a-bd6e-413a-9657-a7c6c651d856",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "c0618db2-b577-4785-a09a-f2276aa11104",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "3b777c41-9be4-4879-ba78-79242a1ce46c",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f0ad440e-6364-441c-b771-b3d5c7ce7f9a",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "a18a8e2a-022d-4356-b2eb-ee3f7bb90948",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1a40d91b-b240-4c71-8549-97fd9d244141",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
@@ -2452,401 +2452,401 @@
     ],
     "FistOfDarkness": [
       {
-        "jobId": "7817d441-2376-4a1a-a13a-da568dea736e",
-        "timeUntilEvent": 5912,
-        "estimatedAge": 8488,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "2dba6080-3e7a-46bc-9b8c-113fa5ceef90",
-        "timeUntilEvent": 7311,
-        "estimatedAge": 7089,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
         "jobId": "5d7253c8-2a2c-48b1-b35f-953de2f93f13",
-        "timeUntilEvent": 8343,
-        "estimatedAge": 6057,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "ef55a41f-0c25-4cff-b9d0-13127cec4cb0",
-        "timeUntilEvent": 9008,
-        "estimatedAge": 5392,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5496db86-3596-40cf-977b-7f6e803b5bbb",
-        "timeUntilEvent": 9678,
-        "estimatedAge": 4722,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "466f176c-11d9-4b34-9df8-3fb81a4a8fe0",
-        "timeUntilEvent": 9871,
-        "estimatedAge": 4529,
+        "timeUntilEvent": 8252,
+        "estimatedAge": 6148,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "f31880a2-7d8f-4f33-97c1-4cb4cdc9f67a",
-        "timeUntilEvent": 9962,
-        "estimatedAge": 4438,
+        "timeUntilEvent": 9870,
+        "estimatedAge": 4530,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.9
       },
       {
         "jobId": "d9aed90a-e396-4749-891f-35a3f98a42c9",
-        "timeUntilEvent": 10059,
-        "estimatedAge": 4341,
+        "timeUntilEvent": 9967,
+        "estimatedAge": 4433,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7ab1262f-5c2c-48e3-8fcc-a2a125952840",
-        "timeUntilEvent": 10152,
-        "estimatedAge": 4248,
+        "timeUntilEvent": 10060,
+        "estimatedAge": 4340,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b29ff401-1b54-4185-aaf5-bb05d0770be8",
-        "timeUntilEvent": 10245,
-        "estimatedAge": 4155,
+        "timeUntilEvent": 10153,
+        "estimatedAge": 4247,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "411b2cdb-824e-4779-87f7-c3935dde6ac6",
-        "timeUntilEvent": 10245,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b060eaf0-7f3e-48d3-aa05-d6ee498d9cf2",
-        "timeUntilEvent": 10245,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "d54401ec-c2f2-4d46-9617-93fb2a6109f7",
-        "timeUntilEvent": 10352,
-        "estimatedAge": 4048,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.9
       },
       {
         "jobId": "f8b1e7f0-d573-4a65-8606-5a08480480dd",
-        "timeUntilEvent": 10685,
-        "estimatedAge": 3715,
+        "timeUntilEvent": 10594,
+        "estimatedAge": 3806,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.3
+        "fps": 57.4
       },
       {
         "jobId": "8810a45d-f351-45cd-81ef-d5b496d2ff7b",
-        "timeUntilEvent": 11055,
-        "estimatedAge": 3345,
+        "timeUntilEvent": 10963,
+        "estimatedAge": 3437,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
-      },
-      {
-        "jobId": "70c7eda1-f7b5-4a00-9d12-b4dfcd57421c",
-        "timeUntilEvent": 11055,
-        "estimatedAge": 3345,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60.1
-      },
-      {
-        "jobId": "50428a19-4fff-4f62-b2cf-c47ba39e408f",
-        "timeUntilEvent": 11289,
-        "estimatedAge": 3111,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 57.7
+        "fps": 59.9
       },
       {
         "jobId": "78caf155-535a-4218-9cc9-799d3bade8d0",
-        "timeUntilEvent": 11432,
-        "estimatedAge": 2968,
+        "timeUntilEvent": 11340,
+        "estimatedAge": 3060,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "6fa24825-3aa0-4c0c-8014-2aae5815a12d",
-        "timeUntilEvent": 11583,
-        "estimatedAge": 2817,
+        "timeUntilEvent": 11491,
+        "estimatedAge": 2909,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "4fd9a292-f2fc-42a2-9056-033b8a7ae04b",
-        "timeUntilEvent": 11971,
-        "estimatedAge": 2429,
+        "timeUntilEvent": 11879,
+        "estimatedAge": 2521,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7eeb7e2a-ee18-47b6-8433-69080cd3198c",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
+        "timeUntilEvent": 11989,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "20f5e27e-cd76-40ac-aaa9-3c67d9a96541",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "c1350b46-49a2-469c-892a-c0628c063345",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0da634bb-edd6-4115-883d-8516e303211a",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "20271c30-9859-4452-8666-5c2c6c3ec4b4",
-        "timeUntilEvent": 12192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "21dc0d82-11ae-415a-854f-beeb3c562e08",
-        "timeUntilEvent": 12192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6ec11dbe-e8b1-4b5f-9496-293296f6dd91",
-        "timeUntilEvent": 12192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6bf23572-72fb-4576-94a8-e7e36c7d82b3",
-        "timeUntilEvent": 12312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 11989,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "e8e0436d-f5d0-485a-8160-1729f15201b5",
-        "timeUntilEvent": 12312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 12220,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "92620321-5666-4067-89ef-6d12ff927c2f",
-        "timeUntilEvent": 12312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 12220,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
+        "fps": 59.3
       },
       {
         "jobId": "72e4bd2c-9234-4da4-a447-3aac37434d6a",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8fefc9ba-6322-42aa-acdc-4f57048444b5",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5d0a00e3-e96c-4e22-ac90-37627f4029f3",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "09e12876-763e-4475-887c-0944a184f2cf",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "404ef9fd-d06c-4f46-8d61-861bd1acc797",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b79ec9b0-824e-47d7-ad6d-053302691141",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0bcb49f1-70eb-4609-9255-e8eba3afc925",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "3c1b4351-c136-45e4-b2cf-ae5fd28ef7a7",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8e9372d9-22ad-4b07-92e1-c1275d0434f7",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60.1
+        "fps": 60
       },
       {
         "jobId": "2e13dad5-aa2a-452b-acec-878e800d48a3",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2da91fcc-9ba0-4137-849a-680bfead77ec",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "1b4a6fd3-a860-448f-be8a-5c9ee389c7f9",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "da1ba66e-df62-4432-a1a2-e4ff5b6d5b5d",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "622c35fb-1a99-4d9f-880b-da13706e73bd",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
+        "timeUntilEvent": 12574,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b73feaf0-5aa0-4ed1-aed9-0891e6af7d67",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "8162415d-2c84-41c4-81db-9a66d03e27db",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "33570824-c195-41d4-b289-cc41fe14ef0e",
-        "timeUntilEvent": 12763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 12574,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae07a60b-1d87-4eea-b24c-9734eeed3a70",
-        "timeUntilEvent": 12763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 12672,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "394cb174-8166-4262-b800-671bc402e65c",
-        "timeUntilEvent": 12763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 12672,
+        "estimatedAge": 1728,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "eb24f8f2-a1b7-41b7-b29f-698635c1110b",
+        "timeUntilEvent": 12672,
+        "estimatedAge": 1728,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "2eaca052-081c-47f2-8348-9638ee678365",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ce984f6b-f0cf-4b54-a6c0-59d3db3084db",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ae6507ee-6e50-4786-8fa5-2014352605c6",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1e45dc0f-22fe-4651-bfbd-1738ea57a2d9",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "66888511-73ea-4869-b71e-47729c96fb79",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "acf0f316-dc31-4179-ab91-ed34dc090ea7",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "ffe4ec2b-0878-402d-9d21-a1e68845005c",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "25280aec-1ef8-4a18-b5fa-c9bd09ccc8ca",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ed4641a8-4fdb-43f0-9406-bae58e641a06",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "77b093ea-f5db-4159-ae53-573fb56c2387",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "4b7d8518-1ff4-43b4-a192-f5fd426422a2",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e8234227-b6dc-4964-88e2-151921e1dcba",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "681bbd2f-34ce-4360-bba8-36256b0a9bee",
+        "timeUntilEvent": 12966,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "93c521c4-6dcd-46b4-9f14-ce3ab323f8c3",
+        "timeUntilEvent": 12966,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "d01cd4aa-c91a-4fa4-a51e-a4d4713fd35d",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.8
+      },
+      {
+        "jobId": "23b3932b-8756-4e6a-8301-4c0934af060b",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "43ad28e7-024c-48b7-b50e-48580306fb26",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "0b94196f-9381-4e70-b9f9-d86be881002d",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e2bbfe2a-bd6e-413a-9657-a7c6c651d856",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "c0618db2-b577-4785-a09a-f2276aa11104",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "3b777c41-9be4-4879-ba78-79242a1ce46c",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f0ad440e-6364-441c-b771-b3d5c7ce7f9a",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "a18a8e2a-022d-4356-b2eb-ee3f7bb90948",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1a40d91b-b240-4c71-8549-97fd9d244141",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
@@ -2854,401 +2854,401 @@
     ],
     "GodChalice": [
       {
-        "jobId": "7817d441-2376-4a1a-a13a-da568dea736e",
-        "timeUntilEvent": 5912,
-        "estimatedAge": 8488,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "2dba6080-3e7a-46bc-9b8c-113fa5ceef90",
-        "timeUntilEvent": 7311,
-        "estimatedAge": 7089,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
         "jobId": "5d7253c8-2a2c-48b1-b35f-953de2f93f13",
-        "timeUntilEvent": 8343,
-        "estimatedAge": 6057,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "ef55a41f-0c25-4cff-b9d0-13127cec4cb0",
-        "timeUntilEvent": 9008,
-        "estimatedAge": 5392,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5496db86-3596-40cf-977b-7f6e803b5bbb",
-        "timeUntilEvent": 9678,
-        "estimatedAge": 4722,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "466f176c-11d9-4b34-9df8-3fb81a4a8fe0",
-        "timeUntilEvent": 9871,
-        "estimatedAge": 4529,
+        "timeUntilEvent": 8252,
+        "estimatedAge": 6148,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "f31880a2-7d8f-4f33-97c1-4cb4cdc9f67a",
-        "timeUntilEvent": 9962,
-        "estimatedAge": 4438,
+        "timeUntilEvent": 9870,
+        "estimatedAge": 4530,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.9
       },
       {
         "jobId": "d9aed90a-e396-4749-891f-35a3f98a42c9",
-        "timeUntilEvent": 10059,
-        "estimatedAge": 4341,
+        "timeUntilEvent": 9967,
+        "estimatedAge": 4433,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7ab1262f-5c2c-48e3-8fcc-a2a125952840",
-        "timeUntilEvent": 10152,
-        "estimatedAge": 4248,
+        "timeUntilEvent": 10060,
+        "estimatedAge": 4340,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b29ff401-1b54-4185-aaf5-bb05d0770be8",
-        "timeUntilEvent": 10245,
-        "estimatedAge": 4155,
+        "timeUntilEvent": 10153,
+        "estimatedAge": 4247,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "411b2cdb-824e-4779-87f7-c3935dde6ac6",
-        "timeUntilEvent": 10245,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b060eaf0-7f3e-48d3-aa05-d6ee498d9cf2",
-        "timeUntilEvent": 10245,
-        "estimatedAge": 4155,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "d54401ec-c2f2-4d46-9617-93fb2a6109f7",
-        "timeUntilEvent": 10352,
-        "estimatedAge": 4048,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
+        "fps": 59.9
       },
       {
         "jobId": "f8b1e7f0-d573-4a65-8606-5a08480480dd",
-        "timeUntilEvent": 10685,
-        "estimatedAge": 3715,
+        "timeUntilEvent": 10594,
+        "estimatedAge": 3806,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.3
+        "fps": 57.4
       },
       {
         "jobId": "8810a45d-f351-45cd-81ef-d5b496d2ff7b",
-        "timeUntilEvent": 11055,
-        "estimatedAge": 3345,
+        "timeUntilEvent": 10963,
+        "estimatedAge": 3437,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
-      },
-      {
-        "jobId": "70c7eda1-f7b5-4a00-9d12-b4dfcd57421c",
-        "timeUntilEvent": 11055,
-        "estimatedAge": 3345,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60.1
-      },
-      {
-        "jobId": "50428a19-4fff-4f62-b2cf-c47ba39e408f",
-        "timeUntilEvent": 11289,
-        "estimatedAge": 3111,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 57.7
+        "fps": 59.9
       },
       {
         "jobId": "78caf155-535a-4218-9cc9-799d3bade8d0",
-        "timeUntilEvent": 11432,
-        "estimatedAge": 2968,
+        "timeUntilEvent": 11340,
+        "estimatedAge": 3060,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "6fa24825-3aa0-4c0c-8014-2aae5815a12d",
-        "timeUntilEvent": 11583,
-        "estimatedAge": 2817,
+        "timeUntilEvent": 11491,
+        "estimatedAge": 2909,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "4fd9a292-f2fc-42a2-9056-033b8a7ae04b",
-        "timeUntilEvent": 11971,
-        "estimatedAge": 2429,
+        "timeUntilEvent": 11879,
+        "estimatedAge": 2521,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "7eeb7e2a-ee18-47b6-8433-69080cd3198c",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
+        "timeUntilEvent": 11989,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "20f5e27e-cd76-40ac-aaa9-3c67d9a96541",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "c1350b46-49a2-469c-892a-c0628c063345",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0da634bb-edd6-4115-883d-8516e303211a",
-        "timeUntilEvent": 12081,
-        "estimatedAge": 2319,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "20271c30-9859-4452-8666-5c2c6c3ec4b4",
-        "timeUntilEvent": 12192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "21dc0d82-11ae-415a-854f-beeb3c562e08",
-        "timeUntilEvent": 12192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6ec11dbe-e8b1-4b5f-9496-293296f6dd91",
-        "timeUntilEvent": 12192,
-        "estimatedAge": 2208,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "6bf23572-72fb-4576-94a8-e7e36c7d82b3",
-        "timeUntilEvent": 12312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 11989,
+        "estimatedAge": 2411,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "e8e0436d-f5d0-485a-8160-1729f15201b5",
-        "timeUntilEvent": 12312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 12220,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "92620321-5666-4067-89ef-6d12ff927c2f",
-        "timeUntilEvent": 12312,
-        "estimatedAge": 2088,
+        "timeUntilEvent": 12220,
+        "estimatedAge": 2180,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 59.8
+        "fps": 59.3
       },
       {
         "jobId": "72e4bd2c-9234-4da4-a447-3aac37434d6a",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8fefc9ba-6322-42aa-acdc-4f57048444b5",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "5d0a00e3-e96c-4e22-ac90-37627f4029f3",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "09e12876-763e-4475-887c-0944a184f2cf",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "404ef9fd-d06c-4f46-8d61-861bd1acc797",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "b79ec9b0-824e-47d7-ad6d-053302691141",
-        "timeUntilEvent": 12437,
-        "estimatedAge": 1963,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "0bcb49f1-70eb-4609-9255-e8eba3afc925",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12345,
+        "estimatedAge": 2055,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "3c1b4351-c136-45e4-b2cf-ae5fd28ef7a7",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "8e9372d9-22ad-4b07-92e1-c1275d0434f7",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
-        "fps": 60.1
+        "fps": 60
       },
       {
         "jobId": "2e13dad5-aa2a-452b-acec-878e800d48a3",
-        "timeUntilEvent": 12571,
-        "estimatedAge": 1829,
+        "timeUntilEvent": 12479,
+        "estimatedAge": 1921,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "5912e792-2f9d-4049-893a-78fb2a94b732",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "2da91fcc-9ba0-4137-849a-680bfead77ec",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "1b4a6fd3-a860-448f-be8a-5c9ee389c7f9",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "da1ba66e-df62-4432-a1a2-e4ff5b6d5b5d",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "622c35fb-1a99-4d9f-880b-da13706e73bd",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
+        "timeUntilEvent": 12574,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "b73feaf0-5aa0-4ed1-aed9-0891e6af7d67",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "8162415d-2c84-41c4-81db-9a66d03e27db",
-        "timeUntilEvent": 12666,
-        "estimatedAge": 1734,
-        "playing": 1,
-        "maxPlayers": 12,
-        "fps": 60
-      },
-      {
-        "jobId": "33570824-c195-41d4-b289-cc41fe14ef0e",
-        "timeUntilEvent": 12763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 12574,
+        "estimatedAge": 1826,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "ae07a60b-1d87-4eea-b24c-9734eeed3a70",
-        "timeUntilEvent": 12763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 12672,
+        "estimatedAge": 1728,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
       },
       {
         "jobId": "394cb174-8166-4262-b800-671bc402e65c",
-        "timeUntilEvent": 12763,
-        "estimatedAge": 1637,
+        "timeUntilEvent": 12672,
+        "estimatedAge": 1728,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "eb24f8f2-a1b7-41b7-b29f-698635c1110b",
+        "timeUntilEvent": 12672,
+        "estimatedAge": 1728,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "2eaca052-081c-47f2-8348-9638ee678365",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ce984f6b-f0cf-4b54-a6c0-59d3db3084db",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ae6507ee-6e50-4786-8fa5-2014352605c6",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1e45dc0f-22fe-4651-bfbd-1738ea57a2d9",
+        "timeUntilEvent": 12770,
+        "estimatedAge": 1630,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "66888511-73ea-4869-b71e-47729c96fb79",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "acf0f316-dc31-4179-ab91-ed34dc090ea7",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "ffe4ec2b-0878-402d-9d21-a1e68845005c",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "25280aec-1ef8-4a18-b5fa-c9bd09ccc8ca",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "ed4641a8-4fdb-43f0-9406-bae58e641a06",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "77b093ea-f5db-4159-ae53-573fb56c2387",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "4b7d8518-1ff4-43b4-a192-f5fd426422a2",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e8234227-b6dc-4964-88e2-151921e1dcba",
+        "timeUntilEvent": 12867,
+        "estimatedAge": 1533,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "681bbd2f-34ce-4360-bba8-36256b0a9bee",
+        "timeUntilEvent": 12966,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "93c521c4-6dcd-46b4-9f14-ce3ab323f8c3",
+        "timeUntilEvent": 12966,
+        "estimatedAge": 1434,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "d01cd4aa-c91a-4fa4-a51e-a4d4713fd35d",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.8
+      },
+      {
+        "jobId": "23b3932b-8756-4e6a-8301-4c0934af060b",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "43ad28e7-024c-48b7-b50e-48580306fb26",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "0b94196f-9381-4e70-b9f9-d86be881002d",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "e2bbfe2a-bd6e-413a-9657-a7c6c651d856",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "c0618db2-b577-4785-a09a-f2276aa11104",
+        "timeUntilEvent": 13063,
+        "estimatedAge": 1337,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "3b777c41-9be4-4879-ba78-79242a1ce46c",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "f0ad440e-6364-441c-b771-b3d5c7ce7f9a",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 59.9
+      },
+      {
+        "jobId": "a18a8e2a-022d-4356-b2eb-ee3f7bb90948",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
+        "playing": 1,
+        "maxPlayers": 12,
+        "fps": 60
+      },
+      {
+        "jobId": "1a40d91b-b240-4c71-8549-97fd9d244141",
+        "timeUntilEvent": 13167,
+        "estimatedAge": 1233,
         "playing": 1,
         "maxPlayers": 12,
         "fps": 60
