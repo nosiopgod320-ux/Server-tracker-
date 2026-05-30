@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-05-30T04:31:07.259Z",
-  "totalKnown": 299,
-  "totalTracked": 299,
+  "updatedAt": "2026-05-30T04:34:06.545Z",
+  "totalKnown": 272,
+  "totalTracked": 272,
   "totalUnknown": 0,
-  "newThisScan": 169,
-  "diedThisScan": 215,
+  "newThisScan": 155,
+  "diedThisScan": 182,
   "eventMeta": {
     "PirateRaid": {
       "label": "⚔️ Pirate / Castle Raid",
@@ -35,643 +35,643 @@
     "PirateRaid": [
       {
         "jobId": "384e7c2e-8aa9-4690-a363-93a6a04d3a29",
-        "timeUntilEvent": 721,
-        "estimatedAge": 3779,
+        "timeUntilEvent": 541,
+        "estimatedAge": 3959,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "f6c7e870-ba71-4642-8013-4cde11ec8fa5",
-        "timeUntilEvent": 1980,
-        "estimatedAge": 2520,
+        "timeUntilEvent": 1800,
+        "estimatedAge": 2700,
         "playing": 11,
-        "fps": 59.9
+        "fps": 60
       },
       {
         "jobId": "74b078fd-98ff-4860-a46b-98d7f7adc428",
-        "timeUntilEvent": 2700,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 2521,
+        "estimatedAge": 1979,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "27b4e73e-3a64-4a97-a038-f2e2d099406d",
-        "timeUntilEvent": 2700,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 2521,
+        "estimatedAge": 1979,
         "playing": 11,
-        "fps": 60
-      },
-      {
-        "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
-        "timeUntilEvent": 2880,
-        "estimatedAge": 1620,
-        "playing": 12,
         "fps": 59.9
       },
       {
-        "jobId": "303b5007-9a99-47ac-a730-40ef4104b48f",
-        "timeUntilEvent": 3239,
-        "estimatedAge": 1261,
-        "playing": 11,
+        "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
+        "timeUntilEvent": 2701,
+        "estimatedAge": 1799,
+        "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "c1aa934d-f5d8-4b38-a59a-e5bf4355736e",
-        "timeUntilEvent": 3420,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
+        "timeUntilEvent": 3241,
+        "estimatedAge": 1259,
+        "playing": 12,
+        "fps": 58.2
       },
       {
         "jobId": "8b68cfe2-479b-487e-90bd-b773398a5d33",
-        "timeUntilEvent": 3420,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "f6442b19-10ab-497c-bd02-4a4b2dcdce4c",
-        "timeUntilEvent": 3601,
-        "estimatedAge": 899,
+        "timeUntilEvent": 3241,
+        "estimatedAge": 1259,
         "playing": 12,
-        "fps": 59.8
+        "fps": 59.9
       },
       {
         "jobId": "fef3a4da-fdc4-4b02-a116-e3909ab8874a",
-        "timeUntilEvent": 3601,
-        "estimatedAge": 899,
-        "playing": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
-        "timeUntilEvent": 3601,
-        "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
-        "timeUntilEvent": 3601,
-        "estimatedAge": 899,
+        "timeUntilEvent": 3422,
+        "estimatedAge": 1078,
         "playing": 12,
         "fps": 60
       },
       {
-        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
-        "timeUntilEvent": 3601,
-        "estimatedAge": 899,
+        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
+        "timeUntilEvent": 3422,
+        "estimatedAge": 1078,
         "playing": 11,
+        "fps": 58.8
+      },
+      {
+        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
+        "timeUntilEvent": 3422,
+        "estimatedAge": 1078,
+        "playing": 12,
         "fps": 59.9
       },
       {
+        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
+        "timeUntilEvent": 3422,
+        "estimatedAge": 1078,
+        "playing": 12,
+        "fps": 59.8
+      },
+      {
         "jobId": "361fabe2-7825-4b84-b271-64474629f596",
-        "timeUntilEvent": 3601,
-        "estimatedAge": 899,
+        "timeUntilEvent": 3422,
+        "estimatedAge": 1078,
         "playing": 11,
         "fps": 59.8
       },
       {
         "jobId": "5e417189-5b67-4cb1-9032-936937b7783b",
+        "timeUntilEvent": 3422,
+        "estimatedAge": 1078,
+        "playing": 11,
+        "fps": 60
+      },
+      {
+        "jobId": "d0d98720-cfbb-452c-82ff-0814f91cf666",
         "timeUntilEvent": 3601,
         "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
+        "playing": 12,
+        "fps": 52.4
+      },
+      {
+        "jobId": "07a86471-5191-4c46-8bdd-2a145492807a",
+        "timeUntilEvent": 3601,
+        "estimatedAge": 899,
+        "playing": 12,
+        "fps": 60
       }
     ],
     "FactoryRaid": [
       {
         "jobId": "384e7c2e-8aa9-4690-a363-93a6a04d3a29",
-        "timeUntilEvent": 1621,
-        "estimatedAge": 3779,
+        "timeUntilEvent": 1441,
+        "estimatedAge": 3959,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "f6c7e870-ba71-4642-8013-4cde11ec8fa5",
-        "timeUntilEvent": 2880,
-        "estimatedAge": 2520,
+        "timeUntilEvent": 2700,
+        "estimatedAge": 2700,
         "playing": 11,
-        "fps": 59.9
+        "fps": 60
       },
       {
         "jobId": "74b078fd-98ff-4860-a46b-98d7f7adc428",
-        "timeUntilEvent": 3600,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 3421,
+        "estimatedAge": 1979,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "27b4e73e-3a64-4a97-a038-f2e2d099406d",
-        "timeUntilEvent": 3600,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 3421,
+        "estimatedAge": 1979,
         "playing": 11,
-        "fps": 60
-      },
-      {
-        "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
-        "timeUntilEvent": 3780,
-        "estimatedAge": 1620,
-        "playing": 12,
         "fps": 59.9
       },
       {
-        "jobId": "303b5007-9a99-47ac-a730-40ef4104b48f",
-        "timeUntilEvent": 4139,
-        "estimatedAge": 1261,
-        "playing": 11,
+        "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
+        "timeUntilEvent": 3601,
+        "estimatedAge": 1799,
+        "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "c1aa934d-f5d8-4b38-a59a-e5bf4355736e",
-        "timeUntilEvent": 4320,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
+        "timeUntilEvent": 4141,
+        "estimatedAge": 1259,
+        "playing": 12,
+        "fps": 58.2
       },
       {
         "jobId": "8b68cfe2-479b-487e-90bd-b773398a5d33",
-        "timeUntilEvent": 4320,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "f6442b19-10ab-497c-bd02-4a4b2dcdce4c",
-        "timeUntilEvent": 4501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 4141,
+        "estimatedAge": 1259,
         "playing": 12,
-        "fps": 59.8
+        "fps": 59.9
       },
       {
         "jobId": "fef3a4da-fdc4-4b02-a116-e3909ab8874a",
-        "timeUntilEvent": 4501,
-        "estimatedAge": 899,
-        "playing": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
-        "timeUntilEvent": 4501,
-        "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
-        "timeUntilEvent": 4501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 4322,
+        "estimatedAge": 1078,
         "playing": 12,
         "fps": 60
       },
       {
-        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
-        "timeUntilEvent": 4501,
-        "estimatedAge": 899,
+        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
+        "timeUntilEvent": 4322,
+        "estimatedAge": 1078,
         "playing": 11,
+        "fps": 58.8
+      },
+      {
+        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
+        "timeUntilEvent": 4322,
+        "estimatedAge": 1078,
+        "playing": 12,
         "fps": 59.9
       },
       {
+        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
+        "timeUntilEvent": 4322,
+        "estimatedAge": 1078,
+        "playing": 12,
+        "fps": 59.8
+      },
+      {
         "jobId": "361fabe2-7825-4b84-b271-64474629f596",
-        "timeUntilEvent": 4501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 4322,
+        "estimatedAge": 1078,
         "playing": 11,
         "fps": 59.8
       },
       {
         "jobId": "5e417189-5b67-4cb1-9032-936937b7783b",
+        "timeUntilEvent": 4322,
+        "estimatedAge": 1078,
+        "playing": 11,
+        "fps": 60
+      },
+      {
+        "jobId": "d0d98720-cfbb-452c-82ff-0814f91cf666",
         "timeUntilEvent": 4501,
         "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
+        "playing": 12,
+        "fps": 52.4
+      },
+      {
+        "jobId": "07a86471-5191-4c46-8bdd-2a145492807a",
+        "timeUntilEvent": 4501,
+        "estimatedAge": 899,
+        "playing": 12,
+        "fps": 60
       }
     ],
     "FruitSpawn": [
       {
         "jobId": "f6c7e870-ba71-4642-8013-4cde11ec8fa5",
-        "timeUntilEvent": 180,
-        "estimatedAge": 2520,
+        "timeUntilEvent": 0,
+        "estimatedAge": 2700,
         "playing": 11,
-        "fps": 59.9
+        "fps": 60
       },
       {
         "jobId": "74b078fd-98ff-4860-a46b-98d7f7adc428",
-        "timeUntilEvent": 900,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 721,
+        "estimatedAge": 1979,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "27b4e73e-3a64-4a97-a038-f2e2d099406d",
-        "timeUntilEvent": 900,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 721,
+        "estimatedAge": 1979,
         "playing": 11,
-        "fps": 60
+        "fps": 59.9
       },
       {
         "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
-        "timeUntilEvent": 1080,
-        "estimatedAge": 1620,
+        "timeUntilEvent": 901,
+        "estimatedAge": 1799,
         "playing": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "303b5007-9a99-47ac-a730-40ef4104b48f",
-        "timeUntilEvent": 1439,
-        "estimatedAge": 1261,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "c1aa934d-f5d8-4b38-a59a-e5bf4355736e",
-        "timeUntilEvent": 1620,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "8b68cfe2-479b-487e-90bd-b773398a5d33",
-        "timeUntilEvent": 1620,
-        "estimatedAge": 1080,
-        "playing": 11,
         "fps": 59.9
       },
       {
         "jobId": "384e7c2e-8aa9-4690-a363-93a6a04d3a29",
-        "timeUntilEvent": 1621,
-        "estimatedAge": 3779,
+        "timeUntilEvent": 1441,
+        "estimatedAge": 3959,
         "playing": 12,
         "fps": 59.9
       },
       {
-        "jobId": "f6442b19-10ab-497c-bd02-4a4b2dcdce4c",
-        "timeUntilEvent": 1801,
-        "estimatedAge": 899,
+        "jobId": "c1aa934d-f5d8-4b38-a59a-e5bf4355736e",
+        "timeUntilEvent": 1441,
+        "estimatedAge": 1259,
         "playing": 12,
-        "fps": 59.8
+        "fps": 58.2
+      },
+      {
+        "jobId": "8b68cfe2-479b-487e-90bd-b773398a5d33",
+        "timeUntilEvent": 1441,
+        "estimatedAge": 1259,
+        "playing": 12,
+        "fps": 59.9
       },
       {
         "jobId": "fef3a4da-fdc4-4b02-a116-e3909ab8874a",
-        "timeUntilEvent": 1801,
-        "estimatedAge": 899,
-        "playing": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
-        "timeUntilEvent": 1801,
-        "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
-        "timeUntilEvent": 1801,
-        "estimatedAge": 899,
+        "timeUntilEvent": 1622,
+        "estimatedAge": 1078,
         "playing": 12,
         "fps": 60
       },
       {
-        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
-        "timeUntilEvent": 1801,
-        "estimatedAge": 899,
+        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
+        "timeUntilEvent": 1622,
+        "estimatedAge": 1078,
         "playing": 11,
+        "fps": 58.8
+      },
+      {
+        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
+        "timeUntilEvent": 1622,
+        "estimatedAge": 1078,
+        "playing": 12,
         "fps": 59.9
       },
       {
+        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
+        "timeUntilEvent": 1622,
+        "estimatedAge": 1078,
+        "playing": 12,
+        "fps": 59.8
+      },
+      {
         "jobId": "361fabe2-7825-4b84-b271-64474629f596",
-        "timeUntilEvent": 1801,
-        "estimatedAge": 899,
+        "timeUntilEvent": 1622,
+        "estimatedAge": 1078,
         "playing": 11,
         "fps": 59.8
       },
       {
         "jobId": "5e417189-5b67-4cb1-9032-936937b7783b",
+        "timeUntilEvent": 1622,
+        "estimatedAge": 1078,
+        "playing": 11,
+        "fps": 60
+      },
+      {
+        "jobId": "d0d98720-cfbb-452c-82ff-0814f91cf666",
         "timeUntilEvent": 1801,
         "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
+        "playing": 12,
+        "fps": 52.4
+      },
+      {
+        "jobId": "07a86471-5191-4c46-8bdd-2a145492807a",
+        "timeUntilEvent": 1801,
+        "estimatedAge": 899,
+        "playing": 12,
+        "fps": 60
       }
     ],
     "LegendarySword": [
       {
         "jobId": "384e7c2e-8aa9-4690-a363-93a6a04d3a29",
-        "timeUntilEvent": 10621,
-        "estimatedAge": 3779,
+        "timeUntilEvent": 10441,
+        "estimatedAge": 3959,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "f6c7e870-ba71-4642-8013-4cde11ec8fa5",
-        "timeUntilEvent": 11880,
-        "estimatedAge": 2520,
+        "timeUntilEvent": 11700,
+        "estimatedAge": 2700,
         "playing": 11,
-        "fps": 59.9
+        "fps": 60
       },
       {
         "jobId": "74b078fd-98ff-4860-a46b-98d7f7adc428",
-        "timeUntilEvent": 12600,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 12421,
+        "estimatedAge": 1979,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "27b4e73e-3a64-4a97-a038-f2e2d099406d",
-        "timeUntilEvent": 12600,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 12421,
+        "estimatedAge": 1979,
         "playing": 11,
-        "fps": 60
-      },
-      {
-        "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
-        "timeUntilEvent": 12780,
-        "estimatedAge": 1620,
-        "playing": 12,
         "fps": 59.9
       },
       {
-        "jobId": "303b5007-9a99-47ac-a730-40ef4104b48f",
-        "timeUntilEvent": 13139,
-        "estimatedAge": 1261,
-        "playing": 11,
+        "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
+        "timeUntilEvent": 12601,
+        "estimatedAge": 1799,
+        "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "c1aa934d-f5d8-4b38-a59a-e5bf4355736e",
-        "timeUntilEvent": 13320,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
+        "timeUntilEvent": 13141,
+        "estimatedAge": 1259,
+        "playing": 12,
+        "fps": 58.2
       },
       {
         "jobId": "8b68cfe2-479b-487e-90bd-b773398a5d33",
-        "timeUntilEvent": 13320,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "f6442b19-10ab-497c-bd02-4a4b2dcdce4c",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 13141,
+        "estimatedAge": 1259,
         "playing": 12,
-        "fps": 59.8
+        "fps": 59.9
       },
       {
         "jobId": "fef3a4da-fdc4-4b02-a116-e3909ab8874a",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
-        "playing": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
         "playing": 12,
         "fps": 60
       },
       {
-        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
         "playing": 11,
+        "fps": 58.8
+      },
+      {
+        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
+        "playing": 12,
         "fps": 59.9
       },
       {
+        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
+        "playing": 12,
+        "fps": 59.8
+      },
+      {
         "jobId": "361fabe2-7825-4b84-b271-64474629f596",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
         "playing": 11,
         "fps": 59.8
       },
       {
         "jobId": "5e417189-5b67-4cb1-9032-936937b7783b",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
+        "playing": 11,
+        "fps": 60
+      },
+      {
+        "jobId": "d0d98720-cfbb-452c-82ff-0814f91cf666",
         "timeUntilEvent": 13501,
         "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
+        "playing": 12,
+        "fps": 52.4
+      },
+      {
+        "jobId": "07a86471-5191-4c46-8bdd-2a145492807a",
+        "timeUntilEvent": 13501,
+        "estimatedAge": 899,
+        "playing": 12,
+        "fps": 60
       }
     ],
     "FistOfDarkness": [
       {
         "jobId": "384e7c2e-8aa9-4690-a363-93a6a04d3a29",
-        "timeUntilEvent": 10621,
-        "estimatedAge": 3779,
+        "timeUntilEvent": 10441,
+        "estimatedAge": 3959,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "f6c7e870-ba71-4642-8013-4cde11ec8fa5",
-        "timeUntilEvent": 11880,
-        "estimatedAge": 2520,
+        "timeUntilEvent": 11700,
+        "estimatedAge": 2700,
         "playing": 11,
-        "fps": 59.9
+        "fps": 60
       },
       {
         "jobId": "74b078fd-98ff-4860-a46b-98d7f7adc428",
-        "timeUntilEvent": 12600,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 12421,
+        "estimatedAge": 1979,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "27b4e73e-3a64-4a97-a038-f2e2d099406d",
-        "timeUntilEvent": 12600,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 12421,
+        "estimatedAge": 1979,
         "playing": 11,
-        "fps": 60
-      },
-      {
-        "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
-        "timeUntilEvent": 12780,
-        "estimatedAge": 1620,
-        "playing": 12,
         "fps": 59.9
       },
       {
-        "jobId": "303b5007-9a99-47ac-a730-40ef4104b48f",
-        "timeUntilEvent": 13139,
-        "estimatedAge": 1261,
-        "playing": 11,
+        "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
+        "timeUntilEvent": 12601,
+        "estimatedAge": 1799,
+        "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "c1aa934d-f5d8-4b38-a59a-e5bf4355736e",
-        "timeUntilEvent": 13320,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
+        "timeUntilEvent": 13141,
+        "estimatedAge": 1259,
+        "playing": 12,
+        "fps": 58.2
       },
       {
         "jobId": "8b68cfe2-479b-487e-90bd-b773398a5d33",
-        "timeUntilEvent": 13320,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "f6442b19-10ab-497c-bd02-4a4b2dcdce4c",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 13141,
+        "estimatedAge": 1259,
         "playing": 12,
-        "fps": 59.8
+        "fps": 59.9
       },
       {
         "jobId": "fef3a4da-fdc4-4b02-a116-e3909ab8874a",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
-        "playing": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
         "playing": 12,
         "fps": 60
       },
       {
-        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
         "playing": 11,
+        "fps": 58.8
+      },
+      {
+        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
+        "playing": 12,
         "fps": 59.9
       },
       {
+        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
+        "playing": 12,
+        "fps": 59.8
+      },
+      {
         "jobId": "361fabe2-7825-4b84-b271-64474629f596",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
         "playing": 11,
         "fps": 59.8
       },
       {
         "jobId": "5e417189-5b67-4cb1-9032-936937b7783b",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
+        "playing": 11,
+        "fps": 60
+      },
+      {
+        "jobId": "d0d98720-cfbb-452c-82ff-0814f91cf666",
         "timeUntilEvent": 13501,
         "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
+        "playing": 12,
+        "fps": 52.4
+      },
+      {
+        "jobId": "07a86471-5191-4c46-8bdd-2a145492807a",
+        "timeUntilEvent": 13501,
+        "estimatedAge": 899,
+        "playing": 12,
+        "fps": 60
       }
     ],
     "GodChalice": [
       {
         "jobId": "384e7c2e-8aa9-4690-a363-93a6a04d3a29",
-        "timeUntilEvent": 10621,
-        "estimatedAge": 3779,
+        "timeUntilEvent": 10441,
+        "estimatedAge": 3959,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "f6c7e870-ba71-4642-8013-4cde11ec8fa5",
-        "timeUntilEvent": 11880,
-        "estimatedAge": 2520,
+        "timeUntilEvent": 11700,
+        "estimatedAge": 2700,
         "playing": 11,
-        "fps": 59.9
+        "fps": 60
       },
       {
         "jobId": "74b078fd-98ff-4860-a46b-98d7f7adc428",
-        "timeUntilEvent": 12600,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 12421,
+        "estimatedAge": 1979,
         "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "27b4e73e-3a64-4a97-a038-f2e2d099406d",
-        "timeUntilEvent": 12600,
-        "estimatedAge": 1800,
+        "timeUntilEvent": 12421,
+        "estimatedAge": 1979,
         "playing": 11,
-        "fps": 60
-      },
-      {
-        "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
-        "timeUntilEvent": 12780,
-        "estimatedAge": 1620,
-        "playing": 12,
         "fps": 59.9
       },
       {
-        "jobId": "303b5007-9a99-47ac-a730-40ef4104b48f",
-        "timeUntilEvent": 13139,
-        "estimatedAge": 1261,
-        "playing": 11,
+        "jobId": "e0ec6ffe-b595-450f-a23f-1479868b8b15",
+        "timeUntilEvent": 12601,
+        "estimatedAge": 1799,
+        "playing": 12,
         "fps": 59.9
       },
       {
         "jobId": "c1aa934d-f5d8-4b38-a59a-e5bf4355736e",
-        "timeUntilEvent": 13320,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
+        "timeUntilEvent": 13141,
+        "estimatedAge": 1259,
+        "playing": 12,
+        "fps": 58.2
       },
       {
         "jobId": "8b68cfe2-479b-487e-90bd-b773398a5d33",
-        "timeUntilEvent": 13320,
-        "estimatedAge": 1080,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "f6442b19-10ab-497c-bd02-4a4b2dcdce4c",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 13141,
+        "estimatedAge": 1259,
         "playing": 12,
-        "fps": 59.8
+        "fps": 59.9
       },
       {
         "jobId": "fef3a4da-fdc4-4b02-a116-e3909ab8874a",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
-        "playing": 12,
-        "fps": 59.9
-      },
-      {
-        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
-      },
-      {
-        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
         "playing": 12,
         "fps": 60
       },
       {
-        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "jobId": "14610540-31ff-40f1-93ee-924b261e5e2e",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
         "playing": 11,
+        "fps": 58.8
+      },
+      {
+        "jobId": "d31e1e4b-0058-48f1-b4cf-84cbb4a01b93",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
+        "playing": 12,
         "fps": 59.9
       },
       {
+        "jobId": "5f39562d-b122-433c-a832-1deb02d763f0",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
+        "playing": 12,
+        "fps": 59.8
+      },
+      {
         "jobId": "361fabe2-7825-4b84-b271-64474629f596",
-        "timeUntilEvent": 13501,
-        "estimatedAge": 899,
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
         "playing": 11,
         "fps": 59.8
       },
       {
         "jobId": "5e417189-5b67-4cb1-9032-936937b7783b",
+        "timeUntilEvent": 13322,
+        "estimatedAge": 1078,
+        "playing": 11,
+        "fps": 60
+      },
+      {
+        "jobId": "d0d98720-cfbb-452c-82ff-0814f91cf666",
         "timeUntilEvent": 13501,
         "estimatedAge": 899,
-        "playing": 11,
-        "fps": 59.9
+        "playing": 12,
+        "fps": 52.4
+      },
+      {
+        "jobId": "07a86471-5191-4c46-8bdd-2a145492807a",
+        "timeUntilEvent": 13501,
+        "estimatedAge": 899,
+        "playing": 12,
+        "fps": 60
       }
     ]
   }
