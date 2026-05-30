@@ -1,30 +1,32 @@
 /**
- * Blox Fruits Server Scanner
- * - Runs every 171 seconds inside a GitHub Actions loop job.
- * - Tracks servers for up to 4 hours, then drops them.
- * - Sends a Discord alert 5 min before each event, then EDITS that
- *   same message every scan cycle so the countdown stays live.
- * - Fires a separate "EVENT NOW" message the moment time hits 0.
- * - Each event posts to its own webhook / channel.
+ * Blox Fruits Server Scanner — v3
+ *
+ * Key design:
+ *  - No baseline delay — all servers tracked from scan 1.
+ *  - Scans 10 pages (up to 1000 servers) per cycle.
+ *  - Workflow calls this every 60 seconds.
+ *  - Alerts when event is ≤10 min away, one Discord message per server.
+ *  - Edits that message every scan cycle with live countdown.
+ *  - Fires @everyone "NOW" ping when ≤15 seconds remain.
+ *  - Heartbeat log message every scan.
  */
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
-const __dirname   = dirname(fileURLToPath(import.meta.url));
-const ROOT        = join(__dirname, "..");
-const DATA_DIR    = join(ROOT, "data");
-const STATE_FILE  = join(DATA_DIR, "state.json");
+const __dirname    = dirname(fileURLToPath(import.meta.url));
+const ROOT         = join(__dirname, "..");
+const DATA_DIR     = join(ROOT, "data");
+const STATE_FILE   = join(DATA_DIR, "state.json");
 const SERVERS_FILE = join(DATA_DIR, "servers.json");
 
-const PLACE_ID = 2753915549;
-
-// Drop servers older than 4 hours
-const MAX_TRACK_AGE_SEC = 14400;
-
-// Send first ping when this many seconds remain
-const ALERT_THRESHOLD_SEC = 300;   // 5 minutes
+const PLACE_ID            = 2753915549;
+const MAX_TRACK_AGE_SEC   = 14400;   // drop servers older than 4 h
+const ALERT_THRESHOLD_SEC = 600;     // alert when ≤10 min to event
+const MAX_PAGES           = 10;      // 10 × 100 = up to 1 000 servers
+const PAGE_DELAY_MS       = 1500;    // delay between pages
+const TOP_N               = 50;      // servers stored per event
 
 // ── Event definitions ──────────────────────────────────────────────────────
 const EVENTS = {
@@ -34,7 +36,7 @@ const EVENTS = {
     sea:        "Sea 3",
     color:      0xDC3C3C,
     offset:     0,
-    interval:   4500,     // 75 min
+    interval:   4500,      // 75 min
     webhookEnv: "DISCORD_WEBHOOK_PIRATE_RAID",
   },
   FactoryRaid: {
@@ -43,19 +45,34 @@ const EVENTS = {
     sea:        "Sea 2",
     color:      0xDC8232,
     offset:     0,
-    interval:   5400,     // 90 min
+    interval:   5400,      // 90 min
     webhookEnv: "DISCORD_WEBHOOK_FACTORY_RAID",
   },
-  FruitSpawn: {
-    label:      "🍎 Fruit Spawn",
+  FruitSpawnSea1: {
+    label:      "🍎 Fruit Spawn (Sea 1)",
     emoji:      "🍎",
-    sea:        "All Seas",
+    sea:        "Sea 1",
     color:      0x32BE50,
     offset:     0,
-    interval:   () => {
-      const day = new Date().getUTCDay();
-      return (day === 0 || day === 6) ? 2700 : 3600; // 45 min weekends / 60 min weekdays
-    },
+    interval:   () => isWeekend() ? 2700 : 3600,
+    webhookEnv: "DISCORD_WEBHOOK_FRUIT_SPAWN",
+  },
+  FruitSpawnSea2: {
+    label:      "🍎 Fruit Spawn (Sea 2)",
+    emoji:      "🍎",
+    sea:        "Sea 2",
+    color:      0x28A844,
+    offset:     0,
+    interval:   () => isWeekend() ? 2700 : 3600,
+    webhookEnv: "DISCORD_WEBHOOK_FRUIT_SPAWN",
+  },
+  FruitSpawnSea3: {
+    label:      "🍎 Fruit Spawn (Sea 3)",
+    emoji:      "🍎",
+    sea:        "Sea 3",
+    color:      0x1E8A38,
+    offset:     0,
+    interval:   () => isWeekend() ? 2700 : 3600,
     webhookEnv: "DISCORD_WEBHOOK_FRUIT_SPAWN",
   },
   LegendarySword: {
@@ -63,8 +80,8 @@ const EVENTS = {
     emoji:      "🗡️",
     sea:        "Sea 2",
     color:      0x3C82DC,
-    offset:     14400,    // first at ~4 hr
-    interval:   14400,
+    offset:     14400,
+    interval:   14400,     // 4 h
     webhookEnv: "DISCORD_WEBHOOK_LEGENDARY_SWORD",
   },
   FistOfDarkness: {
@@ -87,70 +104,62 @@ const EVENTS = {
   },
 };
 
-// Scan config
-const MAX_PAGES     = 6;
-const PAGE_DELAY_MS = 2000;
-const TOP_N         = 15;
+function isWeekend() {
+  const d = new Date().getUTCDay();
+  return d === 0 || d === 6;
+}
 
-// ── State helpers ──────────────────────────────────────────────────────────
+// ── State ──────────────────────────────────────────────────────────────────
 
 function loadState() {
   if (!existsSync(STATE_FILE)) {
-    return { isFirstScan: true, servers: {}, lastScanAt: null, alertedJobs: {}, liveMessages: {} };
+    return { servers: {}, lastScanAt: null, alertedJobs: {}, liveMessages: {} };
   }
   try {
     const s = JSON.parse(readFileSync(STATE_FILE, "utf8"));
-    s.alertedJobs   ??= {};
-    s.liveMessages  ??= {};
+    s.alertedJobs  ??= {};
+    s.liveMessages ??= {};
     return s;
   } catch {
-    console.warn("state.json unreadable — starting fresh");
-    return { isFirstScan: true, servers: {}, lastScanAt: null, alertedJobs: {}, liveMessages: {} };
+    return { servers: {}, lastScanAt: null, alertedJobs: {}, liveMessages: {} };
   }
 }
 
-function saveState(state) {
+function saveState(s) {
   mkdirSync(DATA_DIR, { recursive: true });
-  writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
+  writeFileSync(STATE_FILE, JSON.stringify(s, null, 2));
 }
 
-function saveServers(data) {
+function saveServers(d) {
   mkdirSync(DATA_DIR, { recursive: true });
-  writeFileSync(SERVERS_FILE, JSON.stringify(data, null, 2));
+  writeFileSync(SERVERS_FILE, JSON.stringify(d, null, 2));
 }
 
-function sleep(ms) {
-  return new Promise(r => setTimeout(r, ms));
-}
+function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 // ── Roblox API ─────────────────────────────────────────────────────────────
 
 async function fetchPage(cursor, pageNum) {
-  let url = `https://games.roblox.com/v1/games/${PLACE_ID}/servers/Public?limit=100`;
+  let url = `https://games.roblox.com/v1/games/${PLACE_ID}/servers/Public?limit=100&sortOrder=Asc`;
   if (cursor) url += `&cursor=${encodeURIComponent(cursor)}`;
 
-  console.log(`  Fetching page ${pageNum}…`);
-
+  console.log(`  Page ${pageNum}…`);
   const res = await fetch(url, {
-    headers: {
-      "User-Agent": "Mozilla/5.0",
-      "Accept":     "application/json",
-    },
+    headers: { "User-Agent": "Mozilla/5.0", "Accept": "application/json" },
   });
 
   if (res.status === 429) {
-    console.warn(`  Rate-limited on page ${pageNum}.`);
+    console.warn("  Rate-limited.");
     return { servers: [], nextCursor: null, rateLimited: true };
   }
-  if (!res.ok) {
-    throw new Error(`Roblox API ${res.status} on page ${pageNum}`);
-  }
+  if (!res.ok) throw new Error(`Roblox API ${res.status}`);
 
   const data = await res.json();
   const servers = (data.data ?? []).map(s => ({
-    id:      s.id,
-    playing: s.playing ?? 0,
-    fps:     s.fps     ?? 60,
+    id:         s.id,
+    playing:    typeof s.playing  === "number" ? s.playing  : 0,
+    maxPlayers: typeof s.maxPlayers === "number" ? s.maxPlayers : 0,
+    fps:        typeof s.fps      === "number" ? s.fps      : 60,
   }));
 
   console.log(`  Page ${pageNum}: ${servers.length} servers`);
@@ -162,15 +171,14 @@ async function fetchAllServers() {
   let cursor = null;
   let rateLimited = false;
 
-  for (let page = 0; page < MAX_PAGES; page++) {
-    const result = await fetchPage(cursor, page + 1);
-    all.push(...result.servers);
-    if (result.rateLimited) { rateLimited = true; break; }
-    if (!result.nextCursor) break;
+  for (let p = 0; p < MAX_PAGES; p++) {
+    const r = await fetchPage(cursor, p + 1);
+    all.push(...r.servers);
+    if (r.rateLimited) { rateLimited = true; break; }
+    if (!r.nextCursor) break;
     await sleep(PAGE_DELAY_MS);
-    cursor = result.nextCursor;
+    cursor = r.nextCursor;
   }
-
   return { servers: all, rateLimited };
 }
 
@@ -189,8 +197,8 @@ function buildEventResults(state, nowSec) {
     const list = [];
 
     for (const [jobId, entry] of Object.entries(state.servers)) {
-      if (entry.status !== "tracked" || entry.firstSeen == null) continue;
-      if ((entry.fps ?? 60) < 20) continue;
+      if (entry.firstSeen == null) continue;
+      if ((entry.fps ?? 60) < 15) continue;   // skip laggy servers
 
       const age            = nowSec - entry.firstSeen;
       const timeUntilEvent = calcTimeUntilEvent(age, cfg.offset, interval);
@@ -198,9 +206,10 @@ function buildEventResults(state, nowSec) {
       list.push({
         jobId,
         timeUntilEvent,
-        estimatedAge: Math.round(age),
-        playing:      entry.playing ?? 0,
-        fps:          Math.round((entry.fps ?? 60) * 10) / 10,
+        estimatedAge:  Math.round(age),
+        playing:       entry.playing    ?? 0,
+        maxPlayers:    entry.maxPlayers ?? 0,
+        fps:           Math.round((entry.fps ?? 60) * 10) / 10,
       });
     }
 
@@ -213,12 +222,8 @@ function buildEventResults(state, nowSec) {
 
 // ── Discord helpers ─────────────────────────────────────────────────────────
 
-/**
- * Parse a Discord webhook URL into { id, token, base }
- * URL shape: https://discord.com/api/webhooks/{id}/{token}
- */
 function parseWebhook(url) {
-  const parts = url.replace(/\/$/, "").split("/");
+  const parts = url.trim().replace(/\/$/, "").split("/");
   const token = parts.pop();
   const id    = parts.pop();
   return { id, token, base: `https://discord.com/api/webhooks/${id}/${token}` };
@@ -228,187 +233,214 @@ function fmtCountdown(sec) {
   if (sec <= 0) return "**NOW!** 🚨";
   const m = Math.floor(sec / 60);
   const s = sec % 60;
-  return `**${m}m ${String(s).padStart(2,"0")}s**`;
+  return `**${m}m ${String(s).padStart(2, "0")}s**`;
 }
 
-function buildAlertEmbed(cfg, servers, nowSec) {
-  const topServers = servers.slice(0, 5);
-  const lowestTime = topServers[0]?.timeUntilEvent ?? 0;
+function buildServerEmbed(cfg, server, nowSec) {
+  const timeLeft = server.timeUntilEvent;
+  let urgencyColor = cfg.color;
+  let urgencyBar   = "";
+  if (timeLeft <= 60)  { urgencyColor = 0xFF0000; urgencyBar = "🔴🔴🔴 URGENT"; }
+  else if (timeLeft <= 180) { urgencyColor = 0xFF6600; urgencyBar = "🟠🟠 VERY SOON"; }
+  else if (timeLeft <= 300) { urgencyColor = 0xFFCC00; urgencyBar = "🟡 SOON"; }
+  else                 { urgencyColor = cfg.color;  urgencyBar = "🟢 UPCOMING"; }
 
-  const fields = topServers.map((s, i) => ({
-    name:   `Server ${i + 1}`,
-    value:  [
-      `\`\`${s.jobId}\`\``,
-      `⏱ ${fmtCountdown(s.timeUntilEvent)}  |  👥 ${s.playing} players  |  🕐 age ${Math.round(s.estimatedAge / 60)}m`,
-    ].join("\n"),
-    inline: false,
-  }));
+  const ageMin = Math.round(server.estimatedAge / 60);
 
   return {
     title:       `${cfg.emoji}  ${cfg.label}`,
-    description: `**${cfg.sea}** — event in ${fmtCountdown(lowestTime)}\n${servers.length} server${servers.length !== 1 ? "s" : ""} tracked`,
-    color:       cfg.color,
-    fields,
-    footer: { text: `Blox Fruits Tracker  •  Updated ${new Date(nowSec * 1000).toUTCString()}` },
+    description: [
+      urgencyBar,
+      `⏱ Event in: ${fmtCountdown(timeLeft)}`,
+      `🌊 Sea: **${cfg.sea}**`,
+    ].join("\n"),
+    color: urgencyColor,
+    fields: [
+      {
+        name:   "Server ID (copy this to hop)",
+        value:  `\`\`\`${server.jobId}\`\`\``,
+        inline: false,
+      },
+      {
+        name:   "👥 Players",
+        value:  `${server.playing}/${server.maxPlayers}`,
+        inline: true,
+      },
+      {
+        name:   "⏳ Server Age",
+        value:  `~${ageMin} min`,
+        inline: true,
+      },
+      {
+        name:   "🖥️ FPS",
+        value:  `${server.fps}`,
+        inline: true,
+      },
+    ],
+    footer:    { text: `Blox Fruits Tracker  •  Next update in ~60s` },
     timestamp: new Date(nowSec * 1000).toISOString(),
   };
 }
 
-/** POST a new webhook message; returns message id or null */
-async function sendWebhookMessage(webhookUrl, payload) {
+async function discordPost(webhookUrl, payload) {
   const { base } = parseWebhook(webhookUrl);
   try {
     const res = await fetch(`${base}?wait=true`, {
-      method:  "POST",
-      headers: { "Content-Type": "application/json" },
-      body:    JSON.stringify(payload),
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
     });
     if (!res.ok) {
-      const txt = await res.text();
-      console.warn(`  Discord POST ${res.status}: ${txt.slice(0, 200)}`);
+      console.warn(`  POST ${res.status}: ${(await res.text()).slice(0, 150)}`);
       return null;
     }
-    const data = await res.json();
-    return data.id ?? null;
-  } catch (err) {
-    console.warn(`  Discord POST failed: ${err.message}`);
-    return null;
-  }
+    return (await res.json()).id ?? null;
+  } catch (e) { console.warn(`  POST failed: ${e.message}`); return null; }
 }
 
-/** PATCH (edit) an existing webhook message */
-async function editWebhookMessage(webhookUrl, messageId, payload) {
+async function discordPatch(webhookUrl, messageId, payload) {
   const { base } = parseWebhook(webhookUrl);
   try {
     const res = await fetch(`${base}/messages/${messageId}`, {
-      method:  "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body:    JSON.stringify(payload),
+      method: "PATCH", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
     });
-    if (!res.ok) {
-      const txt = await res.text();
-      console.warn(`  Discord PATCH ${res.status}: ${txt.slice(0, 200)}`);
-      return false;
-    }
-    return true;
-  } catch (err) {
-    console.warn(`  Discord PATCH failed: ${err.message}`);
-    return false;
-  }
+    return res.ok;
+  } catch (e) { console.warn(`  PATCH failed: ${e.message}`); return false; }
 }
 
-/** DELETE a webhook message (used after "NOW" fires) */
-async function deleteWebhookMessage(webhookUrl, messageId) {
+async function discordDelete(webhookUrl, messageId) {
   const { base } = parseWebhook(webhookUrl);
-  try {
-    await fetch(`${base}/messages/${messageId}`, { method: "DELETE" });
-  } catch { /* ignore */ }
+  try { await fetch(`${base}/messages/${messageId}`, { method: "DELETE" }); } catch {}
 }
 
-// ── Main Discord notification logic ────────────────────────────────────────
+// Rate-limit Discord to avoid 429 errors (max 5 msg / 2 sec per webhook)
+async function rateLimitedPost(webhookUrl, payload) {
+  const id = await discordPost(webhookUrl, payload);
+  await sleep(400);  // stay well under rate limit
+  return id;
+}
 
-async function handleDiscordNotifications(eventKey, cfg, servers, state, nowSec) {
+// ── Per-event Discord logic ────────────────────────────────────────────────
+
+async function handleEvent(eventKey, cfg, servers, state, nowSec) {
   const webhookUrl = process.env[cfg.webhookEnv];
-  if (!webhookUrl) return;   // secret not configured — skip silently
+  if (!webhookUrl) return;
 
   const alerted      = state.alertedJobs;
   const liveMessages = state.liveMessages;
 
-  // Servers whose countdown is within alert threshold and are actually tracked
-  const alertable = servers.filter(s => s.timeUntilEvent <= ALERT_THRESHOLD_SEC);
-
-  // ── 1. Edit existing live messages with updated countdown ──────────────
+  // ── Edit existing live messages ────────────────────────────────────────
   for (const [msgKey, msgData] of Object.entries(liveMessages)) {
     if (!msgKey.startsWith(eventKey + ":")) continue;
     const jobId  = msgKey.slice(eventKey.length + 1);
     const server = servers.find(s => s.jobId === jobId);
 
-    if (!server || server.timeUntilEvent > ALERT_THRESHOLD_SEC + 300) {
-      // Server gone or event just rolled over — clean up message
-      await deleteWebhookMessage(webhookUrl, msgData.messageId);
+    // Server gone or event cycled over — clean up
+    if (!server || server.timeUntilEvent > ALERT_THRESHOLD_SEC + 120) {
+      await discordDelete(webhookUrl, msgData.messageId);
       delete liveMessages[msgKey];
       delete alerted[msgKey];
-      console.log(`  Discord [${eventKey}]: cleaned up message for ${jobId}`);
       continue;
     }
 
-    if (server.timeUntilEvent <= 10) {
-      // ── Event is NOW — fire a loud ping then clean up ──────────────────
-      const nowPayload = {
-        content: `@everyone 🚨 **${cfg.label}** is happening **RIGHT NOW** in ${cfg.sea}!\n\`${server.jobId}\` | ${server.playing} players`,
-        embeds:  [{
-          title:       `🚨  ${cfg.label}  —  NOW!`,
-          description: `Join immediately — event is starting in **${cfg.sea}**!`,
+    // Event is NOW — send loud ping and clean up
+    if (server.timeUntilEvent <= 15) {
+      await discordPatch(webhookUrl, msgData.messageId, {
+        content: `@everyone 🚨 **${cfg.label}** is **STARTING NOW** — ${cfg.sea}!`,
+        embeds: [{
+          title:       `🚨 ${cfg.label} — NOW!`,
+          description: `**Join immediately!** Event starting in **${cfg.sea}**\n\nServer ID:\n\`\`\`${server.jobId}\`\`\``,
           color:       0xFF0000,
-          fields: [{
-            name:  "Server ID",
-            value: `\`\`${server.jobId}\`\``,
-          }],
-          timestamp: new Date().toISOString(),
+          timestamp:   new Date().toISOString(),
         }],
-      };
-      await editWebhookMessage(webhookUrl, msgData.messageId, nowPayload);
+      });
       delete liveMessages[msgKey];
-      // Don't delete alerted key so we don't re-alert the same cycle
-      console.log(`  Discord [${eventKey}]: fired NOW alert for ${jobId}`);
+      console.log(`  [${eventKey}] NOW fired for ${jobId}`);
       continue;
     }
 
-    // ── Still counting down — update the embed ─────────────────────────
-    const embed   = buildAlertEmbed(cfg, [server], nowSec);
-    const updated = await editWebhookMessage(webhookUrl, msgData.messageId, { embeds: [embed] });
-    if (updated) {
-      console.log(`  Discord [${eventKey}]: updated countdown → ${fmtCountdown(server.timeUntilEvent)} for ${jobId}`);
-    }
+    // Update countdown embed
+    const embed = buildServerEmbed(cfg, server, nowSec);
+    await discordPatch(webhookUrl, msgData.messageId, { embeds: [embed] });
+    console.log(`  [${eventKey}] updated → ${fmtCountdown(server.timeUntilEvent)} for ${jobId.slice(0,8)}…`);
+    await sleep(300);
   }
 
-  // ── 2. Send new alerts for servers just entering the threshold ─────────
-  for (const server of alertable) {
-    const alertKey = `${eventKey}:${server.jobId}`;
-    if (alerted[alertKey] || liveMessages[alertKey]) continue;  // already alerted
+  // ── Send new alerts ───────────────────────────────────────────────────
+  const newAlerts = servers.filter(s => {
+    const k = `${eventKey}:${s.jobId}`;
+    return s.timeUntilEvent <= ALERT_THRESHOLD_SEC && !alerted[k] && !liveMessages[k];
+  });
 
-    const embed   = buildAlertEmbed(cfg, [server], nowSec);
-    const content = `@everyone ${cfg.emoji}  **${cfg.label}** in ${fmtCountdown(server.timeUntilEvent)} — ${cfg.sea}!`;
+  for (const server of newAlerts.slice(0, 10)) {   // max 10 new alerts per scan
+    const msgKey  = `${eventKey}:${server.jobId}`;
+    const content = `@everyone ${cfg.emoji} **${cfg.label}** in ${fmtCountdown(server.timeUntilEvent)} — **${cfg.sea}**!`;
+    const embed   = buildServerEmbed(cfg, server, nowSec);
 
-    const messageId = await sendWebhookMessage(webhookUrl, { content, embeds: [embed] });
-
+    const messageId = await rateLimitedPost(webhookUrl, { content, embeds: [embed] });
     if (messageId) {
-      liveMessages[alertKey] = { messageId, sentAt: nowSec };
-      alerted[alertKey]      = true;
-      console.log(`  Discord [${eventKey}]: sent alert for ${server.jobId} (msg ${messageId})`);
+      liveMessages[msgKey] = { messageId, sentAt: nowSec };
+      alerted[msgKey]      = true;
+      console.log(`  [${eventKey}] alert sent → ${fmtCountdown(server.timeUntilEvent)} for ${server.jobId.slice(0,8)}…`);
     }
   }
 }
 
-// Clean up alerted/liveMessage entries for servers no longer tracked
-function pruneAlertedJobs(state) {
-  for (const key of Object.keys(state.alertedJobs)) {
-    const jobId = key.split(":")[1];
-    if (!state.servers[jobId]) delete state.alertedJobs[key];
-  }
-  for (const key of Object.keys(state.liveMessages)) {
-    const jobId = key.split(":")[1];
-    if (!state.servers[jobId]) delete state.liveMessages[key];
-  }
+// ── Heartbeat log ──────────────────────────────────────────────────────────
+
+async function sendHeartbeat({ nowIso, liveCount, newCount, diedCount, agedOut,
+                                totalTracked, rateLimited, eventResults }) {
+  const url = process.env["DISCORD_WEBHOOK_LOG"];
+  if (!url) return;
+
+  const timeStr = nowIso.replace("T", " ").slice(0, 19) + " UTC";
+
+  const eventLines = Object.entries(EVENTS).map(([key, cfg]) => {
+    const list    = eventResults[key] ?? [];
+    const under10 = list.filter(s => s.timeUntilEvent <= 600).length;
+    const best    = list[0];
+    const bestStr = best
+      ? `${Math.floor(best.timeUntilEvent / 60)}m ${best.timeUntilEvent % 60}s`
+      : "—";
+    const dot = under10 > 0 ? "🔴" : list.length > 0 ? "🟡" : "⚫";
+    return `${dot} ${cfg.emoji} **${cfg.label}** — ${list.length} tracked | next: ${bestStr}`;
+  });
+
+  const embed = {
+    title:       "✅ Scan Complete",
+    description: [
+      `**${timeStr}**${rateLimited ? "  ⚠️ rate-limited" : ""}`,
+      `📡 Scanned: **${liveCount}** servers`,
+      `📊 Tracked: **${totalTracked}**`,
+      `➕ New: **${newCount}**  |  💀 Dead: **${diedCount}**  |  ⌛ Aged: **${agedOut}**`,
+    ].join("\n"),
+    color:  newCount > 0 ? 0x00CCFF : 0x44BB66,
+    fields: [{
+      name:  "Event Overview",
+      value: eventLines.join("\n"),
+    }],
+    footer:    { text: "Blox Fruits Tracker  •  Next scan in ~60s" },
+    timestamp: nowIso,
+  };
+
+  try {
+    await fetch(parseWebhook(url).base, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ embeds: [embed] }),
+    });
+    console.log("  Heartbeat sent.");
+  } catch (e) { console.warn("  Heartbeat failed:", e.message); }
 }
 
 // ── Main ───────────────────────────────────────────────────────────────────
 
 async function main() {
-  console.log("=== Blox Fruits Scanner ===");
-  console.log(`Time: ${new Date().toISOString()}`);
+  console.log(`\n=== Blox Fruits Scanner  ${new Date().toISOString()} ===`);
 
-  const state   = loadState();
-  const isFirst = state.isFirstScan;
-  state.isFirstScan = false;
+  const state = loadState();
 
-  if (isFirst) {
-    console.log("First scan — building baseline. All current servers marked as unknown age.");
-  } else {
-    console.log(`Scanning (${Object.keys(state.servers).length} servers in state)`);
-  }
-
-  console.log("Fetching server list from Roblox…");
+  console.log(`State: ${Object.keys(state.servers).length} servers known`);
+  console.log("Fetching from Roblox…");
 
   let liveServers, rateLimited;
   try {
@@ -418,30 +450,36 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Total fetched: ${liveServers.length} servers${rateLimited ? " (rate-limited)" : ""}`);
+  console.log(`Fetched: ${liveServers.length} servers${rateLimited ? " (rate-limited)" : ""}`);
 
   const nowSec  = Date.now() / 1000;
   const nowIso  = new Date().toISOString();
   const seenIds = new Set();
-  let newCount  = 0, diedCount = 0, agedOut = 0;
+  let newCount = 0, diedCount = 0, agedOut = 0;
 
-  // ── Process live servers ───────────────────────────────────────────────
+  // ── Track all servers — no baseline, track from scan 1 ──────────────────
   for (const s of liveServers) {
     seenIds.add(s.id);
     const existing = state.servers[s.id];
-
     if (existing) {
-      existing.playing = s.playing;
-      existing.fps     = s.fps;
-    } else if (isFirst) {
-      state.servers[s.id] = { firstSeen: null, firstSeenTs: null, status: "unknown", playing: s.playing, fps: s.fps };
+      // Update live stats
+      existing.playing    = s.playing;
+      existing.maxPlayers = s.maxPlayers;
+      existing.fps        = s.fps;
     } else {
-      state.servers[s.id] = { firstSeen: nowSec, firstSeenTs: nowIso, status: "tracked", playing: s.playing, fps: s.fps };
+      // Brand new server — start tracking immediately
+      state.servers[s.id] = {
+        firstSeen:   nowSec,
+        firstSeenTs: nowIso,
+        playing:     s.playing,
+        maxPlayers:  s.maxPlayers,
+        fps:         s.fps,
+      };
       newCount++;
     }
   }
 
-  // ── Prune dead and aged-out servers ────────────────────────────────────
+  // ── Remove dead and aged-out servers ────────────────────────────────────
   const canPruneDead = liveServers.length >= 100;
 
   for (const [jobId, entry] of Object.entries(state.servers)) {
@@ -450,61 +488,61 @@ async function main() {
       diedCount++;
       continue;
     }
-    if (entry.status === "tracked" && entry.firstSeen != null) {
-      if (nowSec - entry.firstSeen > MAX_TRACK_AGE_SEC) {
-        delete state.servers[jobId];
-        agedOut++;
-      }
+    if (entry.firstSeen != null && nowSec - entry.firstSeen > MAX_TRACK_AGE_SEC) {
+      delete state.servers[jobId];
+      agedOut++;
     }
   }
 
-  pruneAlertedJobs(state);
+  // Clean up alert state for removed servers
+  for (const key of Object.keys(state.alertedJobs)) {
+    const jobId = key.split(":").slice(1).join(":");
+    if (!state.servers[jobId]) delete state.alertedJobs[key];
+  }
+  for (const key of Object.keys(state.liveMessages)) {
+    const jobId = key.split(":").slice(1).join(":");
+    if (!state.servers[jobId]) delete state.liveMessages[key];
+  }
+
   state.lastScanAt = nowIso;
 
-  const totalKnown   = Object.keys(state.servers).length;
-  const totalTracked = Object.values(state.servers).filter(e => e.status === "tracked").length;
-  const totalUnknown = totalKnown - totalTracked;
-
-  console.log(`+${newCount} new | -${diedCount} dead | -${agedOut} aged out | tracked: ${totalTracked} | unknown: ${totalUnknown}`);
+  const totalTracked = Object.keys(state.servers).length;
+  console.log(`+${newCount} new | -${diedCount} dead | -${agedOut} aged | total: ${totalTracked}`);
 
   // ── Build event results ────────────────────────────────────────────────
   const eventResults = buildEventResults(state, nowSec);
 
-  // ── Discord notifications ──────────────────────────────────────────────
-  if (!isFirst) {
-    const notifyPromises = [];
-    for (const [key, cfg] of Object.entries(EVENTS)) {
-      if (eventResults[key]?.length > 0) {
-        notifyPromises.push(handleDiscordNotifications(key, cfg, eventResults[key], state, nowSec));
-      }
+  // ── Discord event alerts ───────────────────────────────────────────────
+  for (const [key, cfg] of Object.entries(EVENTS)) {
+    if ((eventResults[key]?.length ?? 0) > 0) {
+      await handleEvent(key, cfg, eventResults[key], state, nowSec);
     }
-    if (notifyPromises.length > 0) await Promise.all(notifyPromises);
   }
 
-  // ── Build public data for the dashboard ────────────────────────────────
+  // ── Heartbeat ──────────────────────────────────────────────────────────
+  await sendHeartbeat({ nowIso, liveCount: liveServers.length, newCount, diedCount,
+                        agedOut, totalTracked, rateLimited, eventResults });
+
+  // ── Save ───────────────────────────────────────────────────────────────
   const eventMeta = {};
   for (const [key, cfg] of Object.entries(EVENTS)) {
     eventMeta[key] = { label: cfg.label, sea: cfg.sea };
   }
 
-  const publicData = {
-    updatedAt:    nowIso,
-    totalKnown,
+  saveState(state);
+  saveServers({
+    updatedAt: nowIso,
     totalTracked,
-    totalUnknown,
     newThisScan:  newCount,
     diedThisScan: diedCount,
     eventMeta,
-    events:       eventResults,
-  };
+    events: eventResults,
+  });
 
-  saveState(state);
-  saveServers(publicData);
-
-  console.log("Done. state.json and servers.json saved.");
+  console.log("Done.");
 }
 
 main().catch(err => {
-  console.error("Fatal error:", err);
+  console.error("Fatal:", err);
   process.exit(1);
 });
