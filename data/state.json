@@ -1,2348 +1,1749 @@
 {
   "isFirstScan": false,
   "servers": {
-    "74b078fd-98ff-4860-a46b-98d7f7adc428": {
-      "firstSeen": 1780113667.12,
-      "firstSeenTs": "2026-05-30T04:01:07.120Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.987518
-    },
-    "3835081d-f051-42f4-af17-742ad392a6d8": {
-      "firstSeen": 1780115827.618,
-      "firstSeenTs": "2026-05-30T04:37:07.618Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.916824
-    },
-    "a72c6257-5654-4afa-8ff2-042bbda38b60": {
-      "firstSeen": 1780116187.876,
-      "firstSeenTs": "2026-05-30T04:43:07.876Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.868908
-    },
-    "63e8fbd5-cc83-406c-8ba2-b62f48ce645b": {
-      "firstSeen": 1780116187.876,
-      "firstSeenTs": "2026-05-30T04:43:07.876Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.938576
-    },
-    "e0ec6ffe-b595-450f-a23f-1479868b8b15": {
-      "firstSeen": 1780116187.876,
-      "firstSeenTs": "2026-05-30T04:43:07.876Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.915249
-    },
-    "daaadb70-2394-471a-ae7c-aa19453d88dc": {
-      "firstSeen": 1780116187.876,
-      "firstSeenTs": "2026-05-30T04:43:07.876Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.973316
-    },
-    "56fb4f19-102c-4fdd-a8e5-c979874b028c": {
-      "firstSeen": 1780116187.876,
-      "firstSeenTs": "2026-05-30T04:43:07.876Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.881123
-    },
-    "3c0bd8ca-0ab2-4d9f-95fa-88ea6494a3b3": {
-      "firstSeen": 1780116187.876,
-      "firstSeenTs": "2026-05-30T04:43:07.876Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.98539
-    },
-    "49c61841-f013-4d5c-893f-7fd498afcd12": {
-      "firstSeen": 1780116366.898,
-      "firstSeenTs": "2026-05-30T04:46:06.898Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.95826
-    },
     "5f39562d-b122-433c-a832-1deb02d763f0": {
       "firstSeen": 1780116366.898,
       "firstSeenTs": "2026-05-30T04:46:06.898Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 59.937054
+      "playing": 12,
+      "fps": 58.59277
     },
     "30eaa3e4-844c-4a54-8061-06ed097dcb12": {
       "firstSeen": 1780116366.898,
       "firstSeenTs": "2026-05-30T04:46:06.898Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 57.627148
-    },
-    "c9bbdff8-49d0-447e-8a76-cfd308946c59": {
-      "firstSeen": 1780116366.898,
-      "firstSeenTs": "2026-05-30T04:46:06.898Z",
-      "status": "tracked",
       "playing": 12,
-      "fps": 59.916073
-    },
-    "ed573053-0a63-4c03-8e9f-02d06f204740": {
-      "firstSeen": 1780116366.898,
-      "firstSeenTs": "2026-05-30T04:46:06.898Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.974346
+      "fps": 58.675484
     },
     "3e3928f9-689b-4e68-9482-dee0e407c6b0": {
       "firstSeen": 1780116366.898,
       "firstSeenTs": "2026-05-30T04:46:06.898Z",
       "status": "tracked",
       "playing": 12,
-      "fps": 59.887959
-    },
-    "09be5bf5-c37b-4fee-943c-794c14d528ea": {
-      "firstSeen": 1780116366.898,
-      "firstSeenTs": "2026-05-30T04:46:06.898Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.861691
-    },
-    "e804f993-2b20-4925-93dd-d57cbe6de043": {
-      "firstSeen": 1780116366.898,
-      "firstSeenTs": "2026-05-30T04:46:06.898Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.932983
-    },
-    "2dca5fee-9a6a-417d-b46f-ca4281540e6e": {
-      "firstSeen": 1780116366.898,
-      "firstSeenTs": "2026-05-30T04:46:06.898Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.943527
-    },
-    "476e8e03-8a84-41f4-8b6b-86fd87707182": {
-      "firstSeen": 1780116366.898,
-      "firstSeenTs": "2026-05-30T04:46:06.898Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.934181
-    },
-    "8ea2242e-1cf2-4cba-88e3-ce20bc712746": {
-      "firstSeen": 1780116366.898,
-      "firstSeenTs": "2026-05-30T04:46:06.898Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.957184
-    },
-    "2c9f4f9e-c5ac-4c96-b301-94fbb60a30d5": {
-      "firstSeen": 1780116366.898,
-      "firstSeenTs": "2026-05-30T04:46:06.898Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.757446
-    },
-    "e854ad63-707d-451b-b351-bf52c3938e01": {
-      "firstSeen": 1780116366.898,
-      "firstSeenTs": "2026-05-30T04:46:06.898Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 58.315422
-    },
-    "ad6c5aff-9f73-44d1-bfe5-d83d3c32744d": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 52.477554
-    },
-    "9d3d9d82-31a0-4a61-b4e6-64f293fe3f4d": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.846581
-    },
-    "6648258b-c0a9-4160-8fa9-83542ff45261": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 60.008553
-    },
-    "5194ad08-e3b4-4724-ac51-9f76d617179a": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.933445
-    },
-    "f6c7e870-ba71-4642-8013-4cde11ec8fa5": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.804443
-    },
-    "36c3e6c5-8a07-441e-8ca5-5a8a41b878b2": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.774113
-    },
-    "d82e9119-df6e-4a9b-a025-423e0927e148": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 54.096489
+      "fps": 59.979729
     },
     "33e65876-f797-478e-a320-6b7bb751044b": {
       "firstSeen": 1780116548.011,
       "firstSeenTs": "2026-05-30T04:49:08.011Z",
       "status": "tracked",
-      "playing": 12,
-      "fps": 59.862717
-    },
-    "4cadf934-478e-4711-ba62-0565b2f2abe4": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.902115
-    },
-    "2e55f4a1-5427-4aa8-8276-d6017f60729b": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.947186
-    },
-    "0850d397-5a81-45a6-a585-cb6a7ec3dc81": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 56.373631
+      "playing": 11,
+      "fps": 59.972336
     },
     "4cbccc61-2d61-4ff7-ab21-9fe8ee1a4ecb": {
       "firstSeen": 1780116548.011,
       "firstSeenTs": "2026-05-30T04:49:08.011Z",
       "status": "tracked",
-      "playing": 12,
-      "fps": 59.87738
-    },
-    "c93dd7c3-65e3-455d-8f47-3b955eadaadd": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.92804
-    },
-    "ccac6d14-e8a6-4b94-bc21-e60a83b28346": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
       "playing": 11,
-      "fps": 59.928444
-    },
-    "642f5cc9-32e4-43d9-8258-bc374a1872bc": {
-      "firstSeen": 1780116548.011,
-      "firstSeenTs": "2026-05-30T04:49:08.011Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.856956
+      "fps": 59.87236
     },
     "c3f1a145-23ca-432b-95f5-4147b40e0298": {
       "firstSeen": 1780116726.856,
       "firstSeenTs": "2026-05-30T04:52:06.856Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 59.881546
-    },
-    "c256fc3d-3e46-4f4c-a9be-47bea2bc4293": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
       "playing": 12,
-      "fps": 59.934105
-    },
-    "10e7f398-c0ea-43ec-9605-6cad065d974d": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.468472
-    },
-    "18d5c7ed-29a2-44f4-af3b-379066505437": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.955486
-    },
-    "f898d170-5a9a-40cf-8c63-726c1ad70f7d": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.781731
+      "fps": 59.843052
     },
     "8716fd85-5c10-424e-8da0-5636c7447926": {
       "firstSeen": 1780116726.856,
       "firstSeenTs": "2026-05-30T04:52:06.856Z",
       "status": "tracked",
-      "playing": 12,
-      "fps": 59.767162
-    },
-    "df5932cd-45b0-4364-b6b5-4b445cbf09e9": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.957512
-    },
-    "8f49ab77-2957-446f-b5cf-df471553667f": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
       "playing": 11,
-      "fps": 59.941162
+      "fps": 59.992798
     },
     "3088c4da-116f-4526-9391-e85671064c18": {
       "firstSeen": 1780116726.856,
       "firstSeenTs": "2026-05-30T04:52:06.856Z",
       "status": "tracked",
       "playing": 12,
-      "fps": 59.89901
-    },
-    "a0b948c7-1232-4607-968b-e1a516ae6c42": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.970406
-    },
-    "005bd6bd-262b-46f5-854d-a9c59c14472c": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.948334
-    },
-    "dd00988d-d3d5-494c-bb5f-89fc04de1cc7": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.918159
-    },
-    "de008a06-26b5-4982-ad8a-7c109363cd7d": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.878838
-    },
-    "3715faa8-2ce9-447f-838d-ef9c38b30f8c": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.620697
-    },
-    "16912b45-f7cb-4f69-92b8-9f090d7d8182": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.964722
-    },
-    "da837737-e2c6-463b-9f77-6c614308d16a": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.878265
-    },
-    "7fd71be9-07c4-4398-8d78-d2a5919448cf": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.883778
-    },
-    "3a2ee524-b7d2-4d3f-852f-ac08a98c53b2": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.906475
-    },
-    "3d4c4887-f003-433a-8245-4d1d5d0ca636": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.930916
-    },
-    "9f1d9e6d-5a16-4361-a55c-341214fe155e": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 49.716213
-    },
-    "9644bfc0-404f-4d72-9fb4-6b450bacf37b": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.938751
-    },
-    "00b8da85-8557-49ee-8055-5fdf2654822a": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.950058
+      "fps": 59.866932
     },
     "2691a1bf-7a3d-41cc-a345-465c632cb6e1": {
       "firstSeen": 1780116726.856,
       "firstSeenTs": "2026-05-30T04:52:06.856Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 59.808376
-    },
-    "e8161bf5-9dd6-4691-9a73-0188dc88d91e": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.8619
-    },
-    "d0174f86-eab5-4d68-a62d-85e301325fe7": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.90316
-    },
-    "d59308e3-736d-4e0b-b6eb-34f8b29a1701": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.925343
-    },
-    "a7474e0e-3ab5-4d66-be9b-0d9c4a1c49da": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 57.838352
-    },
-    "e9192d1b-f854-4f8e-b981-b0e24d9942fd": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 60.007904
+      "fps": 59.904766
     },
     "9d752655-4cfd-4c87-86ef-5395adc5d125": {
       "firstSeen": 1780116726.856,
       "firstSeenTs": "2026-05-30T04:52:06.856Z",
       "status": "tracked",
-      "playing": 12,
-      "fps": 59.616184
+      "playing": 11,
+      "fps": 59.885704
     },
     "cb661a5a-0371-413b-adc8-4dc51027c74c": {
       "firstSeen": 1780116726.856,
       "firstSeenTs": "2026-05-30T04:52:06.856Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 59.802711
-    },
-    "4a59e1e4-c8da-460a-aa87-737f43a2219c": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.919582
-    },
-    "bca9e895-5c8c-4454-8c49-343c1b21479b": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.953674
+      "fps": 59.882832
     },
     "cec2e882-7399-42aa-89dc-0b01b5642e5c": {
       "firstSeen": 1780116726.856,
       "firstSeenTs": "2026-05-30T04:52:06.856Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.933395
-    },
-    "153d32ab-2835-447b-a81c-130b8099962d": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
       "playing": 11,
-      "fps": 59.832767
+      "fps": 59.898361
     },
     "8746d4b7-3404-483c-9e3e-4f13fecbad37": {
       "firstSeen": 1780116726.856,
       "firstSeenTs": "2026-05-30T04:52:06.856Z",
       "status": "tracked",
-      "playing": 12,
-      "fps": 59.505207
-    },
-    "b94011d8-e8b6-4506-87ac-ba347422cee5": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.980976
-    },
-    "5e417189-5b67-4cb1-9032-936937b7783b": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
       "playing": 11,
-      "fps": 59.961655
-    },
-    "f1ec0134-4438-470d-9c8d-f1133c164259": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.857742
-    },
-    "5e760eae-cfb6-4ffc-89cb-ddea541e792e": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 55.285778
-    },
-    "ed52feda-85c9-409f-905a-3f4118b8c8be": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.913666
-    },
-    "ba5b651b-d6cf-48c0-807b-b47dab79bb36": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.858185
-    },
-    "f590e9cd-0efd-4390-834d-b5578c54e3f8": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.54353
-    },
-    "d2eedc37-941a-4372-ba7a-b007c66e2a44": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.779636
+      "fps": 59.743958
     },
     "f754e34d-5155-488b-bead-58ad2169e040": {
       "firstSeen": 1780116726.856,
       "firstSeenTs": "2026-05-30T04:52:06.856Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 57.787838
-    },
-    "9388f41e-349d-496c-aa5c-0408786fa475": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.913059
-    },
-    "7f1b67ee-caf0-4baf-9b32-e8d702c618ca": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.94067
-    },
-    "ce63419f-b23a-4439-99a0-ddb681a87a64": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.966515
-    },
-    "84ddfdd3-2368-4e15-b225-738fe035a24e": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.965801
-    },
-    "3666faf1-d640-40a7-9c5b-49801585b5df": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.950954
-    },
-    "8cdd8dd9-296c-4082-af7a-cbaad3b937a9": {
-      "firstSeen": 1780116726.856,
-      "firstSeenTs": "2026-05-30T04:52:06.856Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 60.051018
+      "fps": 59.905396
     },
     "35b150e8-fc89-417a-8c10-09fedf237302": {
       "firstSeen": 1780116726.856,
       "firstSeenTs": "2026-05-30T04:52:06.856Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 50.980785
-    },
-    "662e9739-c266-4063-bacd-7a52a92ffa05": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
       "playing": 12,
-      "fps": 59.879295
-    },
-    "f6442b19-10ab-497c-bd02-4a4b2dcdce4c": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.937057
-    },
-    "a0a467f6-96bb-4276-b704-53f6ce830cdb": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.578445
-    },
-    "88d9e586-4076-442a-b2b0-72b382017495": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.939903
-    },
-    "0311e747-bd56-462c-828e-7d0f4fbb7d2a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.815311
-    },
-    "4ad8920a-d926-4775-9784-a55be213cd39": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.931572
-    },
-    "cf763d32-6645-4fd4-809e-39517525f6af": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 56.814655
-    },
-    "34d732cb-ae30-49b8-9a1a-3d1faf066c49": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.839283
-    },
-    "d2b9621c-ecbb-4bd4-8faf-573b5815e6ba": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.932941
-    },
-    "f9b7a3d4-3689-4526-a63f-cf7c782053b3": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.892075
-    },
-    "7af8d85d-6090-499d-bbcf-cb6cad228ef7": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.892891
-    },
-    "30ee7ccd-0be7-4c3e-b7ec-20d670d501a8": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.931004
-    },
-    "1b50f3b3-299c-49a9-b805-2eac51773f85": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.837234
-    },
-    "720e34ab-a3f4-4e0a-b475-91c869bc1b79": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.962238
+      "fps": 51.954708
     },
     "e108bd24-4782-475f-9c2f-6bb401555a67": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 60.031734
-    },
-    "bd6678b7-f354-46d4-a53e-479c25d792b2": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
       "playing": 12,
-      "fps": 59.913464
-    },
-    "22813b16-9514-4111-9b00-9348fabffaee": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 58.385635
-    },
-    "1e8563a0-1b23-4ce4-b765-6226c0686930": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.946613
+      "fps": 58.909645
     },
     "ef8f0779-4a0c-487a-8d90-2fbdc30b7bdc": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 12,
-      "fps": 59.926651
-    },
-    "9b01e454-03ba-47d7-a80d-d8bca1470a35": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.927429
-    },
-    "fd89e8db-c857-4b10-8434-5bc76ecbca3c": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.81065
-    },
-    "0eab480c-ce87-49ba-b483-88ff8df8bf14": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.927162
-    },
-    "c5b256c9-a8f1-4f1d-838c-5288d9d40db0": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.944603
-    },
-    "fc6d8fb8-fe56-41ce-a003-82108b1f99c1": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 60.005058
-    },
-    "302bed02-63fb-4598-8c92-fcd34796433a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.845512
-    },
-    "374f32de-a427-4395-8142-291035bf1e0a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.851234
+      "fps": 59.881054
     },
     "3e4c8f53-df60-4377-b09f-318d928df649": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.80159
-    },
-    "700f00fb-daea-43a9-9cb9-573512b4555e": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
       "playing": 12,
-      "fps": 59.900352
-    },
-    "ca9a3c83-e75f-43fd-b572-8fe6917c41f5": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.81995
+      "fps": 53.607521
     },
     "9a630a80-7b58-4fe5-b0a6-5d82ea2771b0": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 59.911625
-    },
-    "5bd6cc67-3411-4803-b8b5-20eacfa4afa0": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.972511
-    },
-    "025ba5ca-f0c9-447f-9032-14b4ca3b5a81": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.947807
-    },
-    "74cfd959-e6fd-404b-a189-f19bd1bd4b9e": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.965611
-    },
-    "12e3f57d-b567-4108-9757-bd3ad391a08d": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 57.974236
-    },
-    "0fe6e22c-61a4-4421-a685-dcfbfbcf1b4d": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.277321
-    },
-    "a8876d70-f4ff-4a7f-8401-118746716a7b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.867737
+      "fps": 59.931931
     },
     "0209986d-fa5b-401f-b045-07b876f638e6": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 12,
-      "fps": 59.941692
-    },
-    "4a583b76-3923-4649-a79e-7ac48cda994a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.196293
-    },
-    "2c78945e-3f1f-43f5-b10d-de89b7ac9683": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.893829
+      "fps": 59.338329
     },
     "34ae828e-f34a-40c1-8223-2db002f104f0": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 12,
-      "fps": 53.93203
+      "fps": 53.511234
     },
     "25b512fa-032b-4508-bed0-d12c710e797c": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 59.862934
-    },
-    "e751897f-ac3b-4de3-99f0-6f56e2b028e2": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
       "playing": 12,
-      "fps": 59.898594
-    },
-    "1bc0a3a6-3b7e-4955-ae8e-372e7518d39e": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.909279
-    },
-    "c95b8d2b-4af5-43be-8114-84366d35d6a6": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.922607
-    },
-    "945133c6-830d-47df-8844-f52ce6b0f0d1": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.951565
-    },
-    "08449374-8701-4033-bfe5-5e72f4633e9a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 55.988449
-    },
-    "57ff1dcb-076f-4b76-b1cb-6427306f57ad": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.92823
-    },
-    "9ee60aa7-88b2-443e-a8f0-d33a15039a90": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.803715
-    },
-    "6f1e1366-e764-4960-ae79-5217d7522a7d": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.928802
+      "fps": 59.867447
     },
     "dbccdce9-bbe2-42ec-a3e3-ccc3d8647554": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 59.8321
+      "playing": 12,
+      "fps": 58.462284
     },
     "33c36097-ecdc-494d-b09e-06c9ac3c7c4f": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 12,
-      "fps": 59.976028
-    },
-    "0518a98a-568e-4244-aea1-aa41d1e40424": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.639919
-    },
-    "e13fba3b-91c8-45a7-bb69-42e8db34efb2": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.948994
-    },
-    "83f8d29c-3df0-4dce-b96f-8e7bbc92bf15": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.680981
-    },
-    "2a8cdab2-8636-4373-aed7-f0ab86cf2065": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 60.019375
-    },
-    "cd3a6d51-7417-4cf5-b9de-824d099c0e62": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.647354
-    },
-    "6d505de4-4049-4edb-8cda-164458b27eb9": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.940037
-    },
-    "4534768c-4d61-4eb6-a189-bf744bb7c7f4": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.932362
-    },
-    "0545836c-41fc-48d5-b4ee-059af9f10927": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.895527
-    },
-    "2a990a37-5bd5-4584-a423-be7116099d50": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.941807
-    },
-    "04ec483b-8df4-413c-ae7e-d19037cc03c3": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 53.711964
+      "playing": 11,
+      "fps": 59.08205
     },
     "48fc6b28-61b8-4f3f-80e2-b22199ab5478": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 12,
-      "fps": 59.93185
-    },
-    "5e9547c5-e0a4-41b1-9e2c-0ca410eb29a6": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.920319
-    },
-    "8e386c6f-7885-4e17-9f62-9e2e3e4690e5": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.951218
-    },
-    "4bb6d42c-64d1-42ab-a649-2ab3648dc856": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.803516
-    },
-    "a7bac137-e22b-4e9c-ad85-faa2602e0b5e": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.062252
-    },
-    "c15083a1-89ae-449d-bb71-5537a890880b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.973534
-    },
-    "2ae5b939-e0a7-4f33-b1c1-7c685c026fc7": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.688232
+      "fps": 57.574993
     },
     "98318ccd-c257-4567-98cd-c865c437ca22": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 12,
-      "fps": 59.86058
+      "playing": 11,
+      "fps": 59.937359
     },
     "9b20ba49-a80c-4740-ba2f-2d1f47993140": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 12,
-      "fps": 59.38308
-    },
-    "945c9208-6f79-4a54-bc85-d95d5d01f2ba": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.877056
-    },
-    "bc77a1fe-a0b8-4155-b399-697c9641060b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 12,
-      "fps": 59.940716
-    },
-    "d2be25e3-e568-4061-a1f2-184121386388": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.861496
-    },
-    "c225d4d1-803a-4127-82fa-690d4fb439e3": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.98444
-    },
-    "4c4f20c2-f546-448a-a7c1-48ac1ed55b5a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.965439
+      "fps": 59.920353
     },
     "9610f251-2adb-45d9-a17f-927c7fabca3e": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 54.215
-    },
-    "c36947af-c7ff-4cea-b851-e79b87346d4f": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.981674
-    },
-    "0007ef76-8bc1-4aea-a94b-340b258491aa": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.843933
-    },
-    "0aa40e31-71d9-4e33-8f9e-82c59611b3f5": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.909515
-    },
-    "9f07d67f-c2be-4a02-81f3-0f4be6949c29": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.921608
-    },
-    "a29852d0-89da-435c-9326-4d12f4546c93": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.802799
-    },
-    "a6c88f7c-d930-421c-9cf9-a379cbf014da": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.908199
-    },
-    "7fea30e2-c15c-4a65-991d-81e8e9d7e537": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.915245
-    },
-    "b7ee30cc-6050-4c07-9259-f58b370a2701": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.919334
-    },
-    "949cd2b3-bf95-4ab2-8f96-154fb79caeee": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 58.886692
-    },
-    "4e8736ab-2a39-4caf-9ab5-3222a092e2d3": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.894836
-    },
-    "6fa1b206-1665-4f9f-957b-5a5ebb6262a3": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.959721
-    },
-    "c181c14c-e2ec-4119-a3f0-51ad971f96fd": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.841545
-    },
-    "d31ba8d4-1d82-4256-81b2-05888deef546": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.908749
-    },
-    "8b68cfe2-479b-487e-90bd-b773398a5d33": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.732525
-    },
-    "412de5d7-64ce-40e1-b0f6-163477ed36bd": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 58.840172
-    },
-    "f9f90de5-e71f-4831-aa32-81e604693c62": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.952614
-    },
-    "82bb98a7-a66c-4bb5-86ba-715149943f08": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 43.188435
-    },
-    "5908db12-2770-449c-8d3f-eaefb98047d1": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 46.466335
-    },
-    "a000753c-ac4f-4028-b171-415d3b45dc37": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.884556
-    },
-    "09453b9c-0f9f-4007-afea-6750dad5b75a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.970276
-    },
-    "2cd456e2-a884-4f7f-be50-fbf04a847796": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 53.559113
-    },
-    "542a0ecf-fe21-4952-9deb-6bb18947c87a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.910591
+      "playing": 12,
+      "fps": 59.958389
     },
     "fee92ec1-a73c-46d7-abf2-be51377ba034": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 59.938034
-    },
-    "3b09c729-1458-483c-ac2d-8080fa2a70c5": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.957123
-    },
-    "952dc448-cd2b-4169-bb87-9eb35b0782f1": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.952881
-    },
-    "f817e438-f2d2-47ef-80fe-c07563ece183": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.926247
-    },
-    "600f178d-08b3-4c8c-968a-41ee97a939ac": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 54.310646
-    },
-    "cd5f274d-90e2-43ff-b60a-c2cd03a2edf9": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.9631
+      "playing": 12,
+      "fps": 59.909378
     },
     "ae6cc83b-bbb4-4d28-9217-45343e795e63": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 59.944412
-    },
-    "41ced2e4-35fd-4ab6-9070-cee5aad521e1": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 58.600945
+      "fps": 59.905602
     },
     "9db1929e-e305-40a9-8207-966a74432c71": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 59.931549
-    },
-    "6a068da2-5e90-46fb-8a11-7891bc9d9287": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.864456
-    },
-    "729732a2-5b5b-4319-a670-d7659c8ff2e5": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.735996
-    },
-    "6ee4ada0-8f19-49d6-b7d4-db9d2b52fcbd": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.856659
-    },
-    "125720d6-dac8-46f3-8ea7-e4a3b7bf7c7c": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.878288
-    },
-    "d0d98720-cfbb-452c-82ff-0814f91cf666": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.970093
-    },
-    "915bdcb1-c082-4c16-9d41-534cb6bdcf6d": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 58.17506
-    },
-    "3323ab4d-e1a8-4545-8878-7ce542b86d78": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.905708
-    },
-    "eb616aa3-0148-41a6-bc4f-356f429b3d5c": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 58.689651
-    },
-    "45014d25-620e-48e9-aa6b-e22c73947b40": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.914505
-    },
-    "df667dc0-ae10-4036-8524-ad10166fe91d": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.622311
-    },
-    "d46cd22e-77e7-4da2-8c87-b984682f9b6c": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 57.228191
+      "fps": 59.848095
     },
     "179ee1bc-7199-42b1-84b8-2e71d38a9986": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 54.717033
-    },
-    "85a26167-4350-4f52-b895-b86f97eefdf1": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 60.025749
-    },
-    "427ab84f-1ced-4b02-86c2-097517f7adf7": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.810551
-    },
-    "d951fa21-8ce9-4ad9-8e76-e41eea57c68f": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.883419
-    },
-    "6ddb336e-1cc1-4417-86ea-260a2933fe32": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.945465
-    },
-    "abf305fa-fab6-4fff-aaca-c0245537b414": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.937443
-    },
-    "aae298ed-3b09-4223-8199-831fda68df97": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.856987
-    },
-    "f4dc77d0-c05d-4182-9ae3-c39ae462b68b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.931049
-    },
-    "77c8d6ca-d0b5-48db-a5b3-0bc352683899": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.934399
+      "fps": 52.537479
     },
     "2bb23304-cecc-46f6-b4c9-449f855574dd": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 59.799282
-    },
-    "53816e5c-afcc-46a7-b187-e75cd77586d2": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.819897
-    },
-    "bfd0c777-d3ba-4d14-848e-4b0d6fe65963": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.910728
-    },
-    "8128ec58-fd2e-4d36-b216-47127adfaa2a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.933495
-    },
-    "e2fcfebd-3f4a-4a25-ab0f-3da03e4845e4": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.904648
-    },
-    "af6fc896-149b-4235-9a8b-a76be3484e41": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.966114
-    },
-    "b3137dae-9c7a-4824-80f3-92029ac58786": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.897289
-    },
-    "0156f939-cc57-4143-8ae4-a868f3678319": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.825127
+      "playing": 12,
+      "fps": 59.914421
     },
     "381cd80a-e42a-4825-ae4f-1850809ea15d": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 59.953716
-    },
-    "1b2e7675-bbde-4bf0-870d-516269f0ad93": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.893154
-    },
-    "384e7c2e-8aa9-4690-a363-93a6a04d3a29": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.940296
-    },
-    "e2655fa4-4768-4d8d-9684-ed8216ad7cd8": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.922554
-    },
-    "83f013e4-a406-4eb5-99ee-4f2d047286f4": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.928146
+      "playing": 12,
+      "fps": 58.545918
     },
     "b657236f-943b-46a6-9772-3eebe56739e1": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 59.944473
-    },
-    "78bc6aab-4893-4cf6-ad2f-abc31b7e436e": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.941566
-    },
-    "0bf9bde2-c954-4036-b239-75440614f2be": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.918903
-    },
-    "369c51de-ddf2-406f-95e5-a3398b545357": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.977177
-    },
-    "7743be84-fbbb-471e-ace1-5c4b6182c846": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 60.062328
+      "fps": 59.753475
     },
     "19be836d-5b47-4bba-8327-7d6623de095f": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 49.76186
-    },
-    "4bedd8e4-7c7a-41f1-9a9f-cf4837ed167b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 60.025257
-    },
-    "1235f921-60d8-4ec3-90c4-bb5b28529b2f": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.964737
-    },
-    "5ceafddb-b2c1-4f0b-86dd-fd05a0441a98": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.940113
-    },
-    "8ee812cb-fe43-4c6f-9afc-04f91c82a37d": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.952698
-    },
-    "c25fb3ae-abea-46f7-a903-79fc4ce55f8c": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.1022
-    },
-    "df9e3f7e-5cce-400e-9f5b-fa4afcfcb320": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 53.377823
+      "playing": 12,
+      "fps": 59.365967
     },
     "6bf0e653-5d62-4173-99f6-8628054e8d79": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 59.935345
-    },
-    "d1f47a28-0ce8-4006-98b0-33ef2e2c1bcd": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.960304
-    },
-    "6662fd57-0676-49d3-8f53-e909dadeb1e1": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.886616
-    },
-    "394b05c3-6eb7-4f01-b650-17c8df23ec3b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.958427
-    },
-    "d25040e4-5027-4610-b304-49077c040bae": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.955658
-    },
-    "7accdbac-e424-4c04-9d32-15f9bbf70bb9": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.818512
+      "fps": 59.872807
     },
     "3ba7dde6-39f5-4efe-8df5-ffebdc89e80e": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 59.928696
-    },
-    "d429155f-0592-4b5e-86ee-19f4bb4f92ea": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.965668
-    },
-    "b9379d33-412b-4a5a-9329-09523fa7e7dc": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.945026
-    },
-    "188b06c6-ebe7-4aa7-9b9e-cd3ccd534ce9": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 56.391003
-    },
-    "1f4da8b5-bf9b-4845-ada3-4ddcd876ae4f": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.881893
-    },
-    "4b92c3a6-ccc1-4bb6-952a-75a4368de420": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.950592
-    },
-    "52948f77-1837-499f-bcf5-94ce7e89b5ef": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.960888
-    },
-    "8088096a-ff4e-4510-880b-4fe11d51027c": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.854664
-    },
-    "a2fa9453-8eff-4a69-8e42-7b3a2e286c88": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.951302
-    },
-    "2dffae03-7add-459f-8d4b-771e2122a9e1": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.981537
-    },
-    "a526b9d5-3d5b-481b-bb45-a2368a6fe9a2": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 60.053959
-    },
-    "348361d6-acf4-4259-b47a-5fa5a1cbabde": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.946472
+      "fps": 59.962482
     },
     "24401520-2d18-45a0-a2a8-48032b8b04fd": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 59.4422
-    },
-    "af410663-b782-4980-9cad-5007fe92e7dd": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.489098
-    },
-    "74f41640-3238-4d66-afad-a95d2a608f5a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 54.191563
-    },
-    "0cdb38cc-1d2b-4dd4-9b06-deadb486adbb": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.954185
-    },
-    "18bedfa3-2594-4910-b837-01f08f4c76c3": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.807068
+      "playing": 12,
+      "fps": 53.981731
     },
     "5c26d127-11b8-48c2-942c-ea3ee6b049c9": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
       "playing": 11,
-      "fps": 60.00703
-    },
-    "c3fee302-b2f4-4ab9-934a-0b2a637cafdd": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.968494
-    },
-    "9dc8ea4a-aa2b-4bce-ada5-b0b5999e1d57": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.960144
+      "fps": 59.849373
     },
     "f90918a2-5589-4d72-aa7e-e6feb39371e5": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 11,
-      "fps": 59.689869
-    },
-    "da614d04-4554-4924-9cd3-db08a2567953": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.862209
-    },
-    "fef3a4da-fdc4-4b02-a116-e3909ab8874a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 60.020943
-    },
-    "c98273a7-ec23-40a8-abb6-9e72ffedbd2d": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.979763
-    },
-    "3aed7a83-ab5e-42f5-b23a-8e6289490cda": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 11,
-      "fps": 59.945705
-    },
-    "b912f196-56ef-47ae-a159-d4bb16485d12": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.962456
-    },
-    "b5d98654-7aa7-41bc-8bfb-a1f42a71ce62": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.961731
+      "playing": 12,
+      "fps": 59.637634
     },
     "99da3a10-8a5d-454d-be11-ee06f09070d6": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.456764
-    },
-    "beb5384c-2ee3-4d45-b4ef-310af2b6953c": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.921253
-    },
-    "78314402-24a3-4954-923e-119b9752c932": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.84713
-    },
-    "ce871f96-df7b-4c29-a4b8-dfccc038179a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.879128
-    },
-    "8f1ee15c-55ee-470c-bb4e-bda6b332325e": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.762676
-    },
-    "e51a4114-6306-4b27-9426-2d7c8bf9931e": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.979572
-    },
-    "e54d6fd4-0a53-4218-857a-aade47e54e75": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.936584
-    },
-    "8be2627c-aa3b-4ab1-99cd-b19ba1c4ecd4": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.934189
-    },
-    "ea0f117c-54b4-4cc9-aa3a-255db01f9663": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.850506
-    },
-    "4bb32e77-1007-4587-8992-d589f67d5461": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.933479
-    },
-    "591589f5-6f6e-4b50-ba7f-7cfe563b83d5": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.745808
-    },
-    "a9907af2-44f7-4532-98ad-0053dde2d578": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 55.010384
-    },
-    "0a8b0a6f-8c66-4428-af13-386844cfd4ff": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.888054
-    },
-    "c2b7e6de-5e8b-45fe-a9c7-1029ee69b794": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.914261
-    },
-    "40ca6a6a-868c-4923-a5ba-a3da0043ad65": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.978325
-    },
-    "e42929d8-ec78-4b76-ba6d-3f926dfffe71": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.05751
-    },
-    "fbfda02c-d691-436b-a6e8-3d045101e190": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.827339
-    },
-    "eba3eae7-6c91-4f2d-8e66-4cca5e06e0c6": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.788631
-    },
-    "5e8d2c75-0349-462c-95f2-23575b543d95": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.928825
-    },
-    "6d9007f4-73cd-408a-960c-463f5177897a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.947636
-    },
-    "dc2b2339-1abe-492b-abce-dd5319f1fd4b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 54.822407
-    },
-    "adcf7898-c64c-4d3a-8cfa-538503f70792": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 54.289307
-    },
-    "f5c18fa9-4dd0-492c-af28-0ccf1e25ea66": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.506271
-    },
-    "1244130e-9e26-42a7-9e50-97f240d771d9": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.837574
-    },
-    "0552d25e-3f50-4bae-bab2-60a8e83aa22a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.90321
-    },
-    "cdffbd85-3731-483a-bb09-fc399f3a967c": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.918804
+      "playing": 11,
+      "fps": 59.884949
     },
     "4ba4edcb-f1f2-44de-9cd9-9adfef022f69": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.896538
-    },
-    "82fa2e95-2566-47e4-85fe-1800fa8467c6": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.933849
-    },
-    "93fac34b-0a0e-4789-a21a-76a16cb287ac": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.953167
-    },
-    "d951f498-7d11-4b32-a56c-ae812ad732f3": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.934124
-    },
-    "924a56ca-c36b-43f2-b732-d3e0ef67e79a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 39.810738
-    },
-    "47a0b21f-733c-4c7d-a674-2a7781540d20": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.925747
-    },
-    "313f2765-51ec-4ea1-ae2c-2cf63620a9e1": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.939793
-    },
-    "0cb3b034-c2f1-476d-9ef6-68fbf479bbfe": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.947124
-    },
-    "61e34fe3-9fbb-4ca6-aa52-f5f7d74702f8": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 60.0224
-    },
-    "bef13ec6-5a9b-4a55-8928-729cd5f06f3b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.999416
-    },
-    "ff6c113a-e068-4a67-add4-4bce13f37aca": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.975735
-    },
-    "db642f74-1510-4ca8-8e8e-47fb92bbf37b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 40.724258
-    },
-    "01f11762-201f-4683-98e6-798d0b3a5e52": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.942776
-    },
-    "4f46376e-f25c-4a2f-bdce-499221dc7cf0": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.915432
-    },
-    "1c1922ab-7a68-4422-95a7-034dc8b6b2ad": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.958229
-    },
-    "123cecf3-9911-4bf8-87cb-3237b6d27b5b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.826557
-    },
-    "7bd173ef-7556-444b-a8af-f6ee240fc561": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.942806
-    },
-    "32ba46f2-41cb-4d6c-8448-15a307f60cab": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.781387
-    },
-    "2da314b4-f7a6-42f3-846f-bd1d9ee6ebd4": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
-      "status": "tracked",
-      "playing": 10,
-      "fps": 59.832081
+      "playing": 11,
+      "fps": 59.815792
     },
     "86288c73-ba12-4dc0-a939-f84e40b6fac6": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.91695
+      "playing": 11,
+      "fps": 58.940228
     },
     "9bc18d46-3d70-4643-a28e-7bcc0bd620e8": {
       "firstSeen": 1780116907.805,
       "firstSeenTs": "2026-05-30T04:55:07.805Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.320679
+      "playing": 11,
+      "fps": 59.375576
     },
-    "cb8eb425-81db-416b-b0d0-50e8be5ac8ed": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "f5c0ea55-56c4-42ad-9f9b-5ba7b3b84822": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.863457
+      "playing": 11,
+      "fps": 59.966671
     },
-    "a9bc7e99-fc24-454c-871c-b243d52109b1": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "b25bfbf5-95a4-4d1c-944e-a492df56d5cf": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.917652
+      "playing": 12,
+      "fps": 59.922787
     },
-    "aa2f5553-ffe4-4e3b-a195-271c8b347a0b": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "5220fe16-311a-4e17-b23e-ecaf7dc72a95": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.969257
+      "playing": 12,
+      "fps": 59.465519
     },
-    "d297e511-051d-4ed0-b7ac-9a462fd7108f": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "e17a96be-1fed-4043-ac08-49aa86ac258b": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.977341
+      "playing": 12,
+      "fps": 59.903225
     },
-    "01c51299-de54-4f31-919d-1bfeb9bb095c": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "b9b946a8-59c3-4ecd-96df-35f61841bd27": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.773415
+      "playing": 12,
+      "fps": 59.908859
     },
-    "8d151df8-229e-4351-8f36-90d502c8c698": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "6b22c6a5-7f92-4036-bdbe-7b6189c5c411": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.955151
+      "playing": 12,
+      "fps": 57.426319
     },
-    "1a833b06-c086-497e-9c09-f115bfe3426a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "ad9786a2-1615-4f8d-b7f5-9bd4667f5f74": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.94199
+      "playing": 11,
+      "fps": 59.893532
     },
-    "521c3e3c-1ef3-49cc-babe-ac41b8c96a25": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "322318f1-4dbe-4d59-8e9f-26d9e600278c": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.918598
+      "playing": 12,
+      "fps": 59.94286
     },
-    "ea0da0bf-253f-417e-93b8-491806585bc7": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "bd1cd8d0-7364-4609-9004-3df277e15c2b": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.82605
+      "playing": 12,
+      "fps": 52.865036
     },
-    "11effd66-e6d8-4b8a-8fdd-3d8b24e5244a": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "1be5cff9-62cf-4d10-9b41-a5c80efb6666": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.898922
+      "playing": 12,
+      "fps": 59.81028
     },
-    "648ccab4-7dcf-4b05-96fd-d09bc9c90c41": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "0fa6d86c-eac3-472e-a564-16e834f4f112": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.957851
+      "playing": 12,
+      "fps": 53.372078
     },
-    "89af48d2-e7dc-47ef-91e0-4b2c39a5ccd9": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "65f33513-9e95-4405-834e-b162516bd2ae": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.954994
+      "playing": 12,
+      "fps": 59.861301
     },
-    "5308e6a4-35fa-475c-bc22-c97ea07448a6": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "beb66a04-3427-4aa0-a1e2-de36465004e3": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.940826
+      "playing": 12,
+      "fps": 59.954197
     },
-    "33f33dd8-1de8-4941-bb46-17e1c22061d9": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "ccd1784c-3b87-483c-949d-9790f86dcb06": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.972031
+      "playing": 12,
+      "fps": 59.889446
     },
-    "fabf8a28-1554-48ad-a2b9-c9a608fd5eb0": {
-      "firstSeen": 1780116907.805,
-      "firstSeenTs": "2026-05-30T04:55:07.805Z",
+    "12d1692b-bb28-4b3c-93ba-abf400e3a7ef": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
       "status": "tracked",
-      "playing": 10,
-      "fps": 59.916939
+      "playing": 12,
+      "fps": 59.844238
+    },
+    "388c8ca3-2720-4751-a602-c80c580836be": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.852131
+    },
+    "ff33c7ec-605a-4562-ba45-879e73ca7454": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.578964
+    },
+    "07e82512-6fa3-461b-b2c3-3c9962d04d93": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 58.019043
+    },
+    "e099970f-1214-493e-9945-260b965af385": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.843704
+    },
+    "22087560-11c5-4afd-bb53-986de61ab05a": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.947803
+    },
+    "e463fb8d-5ae8-4f4d-bb27-f5d4ced0f595": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.54353
+    },
+    "c4e760c9-b502-4121-b368-fc8dea2f4795": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.910984
+    },
+    "e9bd5c3f-f327-42be-ae0b-52a3585b0d9f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.74477
+    },
+    "f13f8f5f-7aef-4d3a-a94c-5aaf77e4ccae": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.920956
+    },
+    "8e90be7d-3ee6-401d-8036-c8da417004c9": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.976627
+    },
+    "7b8a1b00-3a3a-470f-b4c1-393bf8a695d7": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.777859
+    },
+    "acedb476-adf9-4756-893e-84f136f08955": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.952595
+    },
+    "df771c48-07cd-43f2-be5b-4c4d45e48818": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.954285
+    },
+    "3aa382ad-1b0a-4f1c-8ba9-a648ad07f162": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.910477
+    },
+    "c91d8568-9958-4e02-abca-206f6b7fba6f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.958256
+    },
+    "8ab83631-4f39-4494-8381-9a3158320c43": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.976383
+    },
+    "5f6af33d-94bc-4834-a11f-85559c29db5f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.939941
+    },
+    "520c67c5-bc83-4a06-acef-555370387a2a": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.475899
+    },
+    "71be2890-a76d-456c-8f5f-de9f2c9cd858": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.914833
+    },
+    "7e9d78b5-9ad0-4137-a7fd-9a4150c47683": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.91959
+    },
+    "8c69ffe5-5d23-4ba6-9318-618a51b0c7d2": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.82468
+    },
+    "d0f17486-4147-4187-98ba-b779528ae32d": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.944168
+    },
+    "7b2034e6-a29d-4135-89ea-43ea3a1fa471": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.910374
+    },
+    "048224df-3642-4c8b-a93e-ef772cf58e04": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.869331
+    },
+    "8c4cee1e-db83-47ab-84c3-6fb93bbd71d4": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.722019
+    },
+    "43c3ce88-8da8-4aa6-9ccc-3685e0254f5c": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.800999
+    },
+    "2a840334-da93-49c7-bfd8-b6c2bb26e3e2": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.874752
+    },
+    "56d17053-cebb-4de9-bd4a-fd78e271bdd1": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.944466
+    },
+    "aff4b60e-a182-4774-8564-ad9636bae9f6": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.883747
+    },
+    "2f6d17a8-bf9c-4497-8648-36911db1a210": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 52.785862
+    },
+    "b5ebf872-9a2c-41c1-b5a4-b006b4270ab3": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 52.836246
+    },
+    "0257d763-770f-4371-bda6-3f9de68bdb1b": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.943409
+    },
+    "19632514-4981-40cd-9e68-e1a3d73c7248": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 58.958569
+    },
+    "d17fa72e-4fb5-4bd9-a151-ab75cacdf780": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.91539
+    },
+    "72c0c017-9be7-4b4d-aa08-aca74dd78456": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.924213
+    },
+    "068818df-e585-4ea5-851f-81e57e1cc054": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.927586
+    },
+    "25cf5e5c-da74-4d31-8a16-298c881e6d2b": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.785812
+    },
+    "db44cfbf-b1f6-4868-a753-7b4cdd1da438": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.932106
+    },
+    "79f7c32f-b3a1-47c8-bdf9-5b5ba4729618": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.903072
+    },
+    "b83e402d-18fa-491c-a46b-9e0eba7c876a": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.431446
+    },
+    "2984517c-a292-4162-8784-c0440d85efbb": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 53.377289
+    },
+    "335c0d66-7f81-484a-b587-3743d4f83a44": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.89465
+    },
+    "7b84dea8-b5c3-477c-9e6d-f4822207b78e": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.971951
+    },
+    "fb0bf760-8821-48a5-b4ef-7e20fc7a4649": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.951393
+    },
+    "1f7df22f-b9aa-4505-be6f-7a4d9fcb0302": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.933079
+    },
+    "ae1ff1a2-392b-43aa-b762-990626b0384f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.906296
+    },
+    "378a8018-0203-4f44-8ef3-956cf70bc332": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 53.239548
+    },
+    "3b9e6add-550e-4143-afab-c5e33e475bd9": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 60.047295
+    },
+    "fa778b15-25b4-4b15-8011-0bfc0ff5f015": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.821632
+    },
+    "f18100b2-25c2-456c-b15c-2aaa18f1b48a": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 57.888653
+    },
+    "71c16c60-4b49-4ad0-9e39-19617e2b0ba2": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.848007
+    },
+    "102ebd6f-4ba1-4358-891c-b962722b6f9b": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.755249
+    },
+    "a2ca0af8-3798-460a-921a-850361eca809": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.944519
+    },
+    "30968a28-f4ca-4dbb-a5a5-5b96c44cdd25": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.89352
+    },
+    "7a3b19bc-6e57-449a-bfaa-681caa38bea0": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.936275
+    },
+    "8d5e550d-46d1-4aaf-816c-63798b676a2b": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.954403
+    },
+    "3b77be60-2d6f-4b68-b83c-fd1c30065015": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.891499
+    },
+    "c91838bf-fa2a-4e58-903a-886f9a04137c": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.702267
+    },
+    "4bc19ec6-48ce-4536-aed9-89d0ee81a8a9": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 60.027229
+    },
+    "d05274f6-5f73-4db9-be27-5452fd5b0811": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.969547
+    },
+    "298043fb-f29e-4ba3-943c-e01772d96606": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.828999
+    },
+    "a6ec1173-6f6d-4d0b-88d1-5c26ce0013b6": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.891251
+    },
+    "26eeba6a-0fe3-4aba-89f5-cb82603e5f16": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 51.259747
+    },
+    "af246e23-b0c4-4f12-ad0f-18b20a9950f1": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.901642
+    },
+    "158d642c-da6d-41c2-b595-e31d67caf18c": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.967113
+    },
+    "7c625ab1-c65e-41f9-ba3e-20fb9c939191": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.890591
+    },
+    "7622c0a0-56c1-4435-a4d0-90c0f113949b": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.886162
+    },
+    "c3ee30db-eb0a-4178-9243-738ebae9244c": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.976166
+    },
+    "054d2c34-d064-4bd8-9c19-4c18b362d317": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.877716
+    },
+    "e3baec9e-6457-499f-9a40-d8f157706ded": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.945004
+    },
+    "ec057ab9-9f48-43fe-8fd4-bcc8511337fd": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.955429
+    },
+    "06e98d96-2e3c-4615-9e99-806b8e72ea26": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.942322
+    },
+    "10a5953c-1e53-4dc3-b14c-48ac3afef727": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.924465
+    },
+    "c1aa934d-f5d8-4b38-a59a-e5bf4355736e": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.963116
+    },
+    "8c48bdda-b05d-4f59-93df-d38d37b8a3c7": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.891758
+    },
+    "6fc3d0a6-69f7-4639-a3ea-b0662b6801bc": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.905602
+    },
+    "b4e47ad9-32e7-4cf1-a8e1-c06549bb4ef3": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.783623
+    },
+    "41aebac4-281e-4788-b715-7a6ee5c4dda9": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.932964
+    },
+    "314a4b6f-ac8d-4c0d-bd86-ce19ee82937d": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 60.056107
+    },
+    "8ee95920-1e2e-4256-b657-e0dbf4da7b16": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.891869
+    },
+    "115a798e-c028-44ee-96e8-fcd59140f0b2": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 60.011131
+    },
+    "32489a12-6c5e-4d40-946e-d68f46551c19": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.88636
+    },
+    "06bf6b46-e0f4-46e2-9425-f7421b977c1d": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.963657
+    },
+    "3f8aa33f-799f-4ff8-9c67-7dcd44de748d": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.950394
+    },
+    "919bef3b-0f36-409d-875d-e6473d0cb6c2": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.907902
+    },
+    "3be1ec38-ae97-48f3-af23-a3609c0d61ed": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.93195
+    },
+    "5932b317-6fa3-45f0-918a-1639473506da": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.791702
+    },
+    "8a91ae2f-5af0-4e93-9ae5-4af438d9e0b2": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.702133
+    },
+    "ce2c8ef0-1b52-4aac-a4e8-2ca0251a4ad7": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.958553
+    },
+    "37ae48ed-cb3f-4bbd-8fc0-d1bfe6f30a31": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.942719
+    },
+    "7f373b3a-63cb-4186-92fd-2295a09f2f39": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.916359
+    },
+    "04250e94-4070-41bd-8723-9c6ccaeaf271": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 12,
+      "fps": 59.915417
+    },
+    "9390cd77-73fd-4843-817c-56bfd1a47742": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.959545
+    },
+    "edc2cc12-e016-40f5-9c21-045cd361dc44": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.923241
+    },
+    "3b68ee5f-a35e-483a-972b-ad074fd19d4a": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.921947
+    },
+    "774d7d05-fed5-4299-b351-6fd54bcc6cb9": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.910904
+    },
+    "f6e26f32-5475-4790-b4d1-dcf6ef6ba5c4": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.874779
+    },
+    "ff245ff9-64a8-4346-9495-0f92b7b1e627": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.916229
+    },
+    "33c3da08-4a7e-4f97-ae6f-af10d05cb444": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.935196
+    },
+    "a6f81ef9-b8d9-4c00-bd50-f2dfb5a0209b": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.866745
+    },
+    "3017e804-f881-41fa-a472-933e9630bfa9": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.910362
+    },
+    "b91be1d3-08b1-45ab-867b-14faabd73c7d": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.937515
+    },
+    "b8dbbe66-bf6b-45b4-9dc6-f1afbf9348c1": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.890022
+    },
+    "50873010-b83e-4a2f-9426-985b82d661f5": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.959915
+    },
+    "cad5c301-1ef6-4c31-b431-5deabc7d6c0a": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.866566
+    },
+    "f851fa2c-bf33-477c-a22c-01bda8555698": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.937649
+    },
+    "937c3d4a-af46-4bc0-84b3-72ffd67a0450": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.847839
+    },
+    "c7d1f893-aabf-46f4-92c3-1a202f66c512": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.856403
+    },
+    "a87552bf-ce5b-4173-8105-6e903768c5d6": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.75177
+    },
+    "a29b741d-8c68-4233-8ad9-20863fbb2e03": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.693878
+    },
+    "4561df2d-75b1-494b-8f2f-9f3f6d54527e": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.921177
+    },
+    "151f5d0d-e381-498c-8c1d-9ec5b818edde": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.917572
+    },
+    "6076aeef-b965-4452-bd5b-048e9eede9a0": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.951096
+    },
+    "d9aed90a-e396-4749-891f-35a3f98a42c9": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.887753
+    },
+    "fc0dc125-c6c3-4bb0-9144-9ed7a847cafc": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.684677
+    },
+    "8167a382-3a13-4584-95bd-ff42b457778f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.939308
+    },
+    "e22d926e-8e18-433d-aa0d-6b3b5e9c07c0": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.917454
+    },
+    "ce107ab7-47b5-43aa-8ba7-c38f384cc4c1": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.923622
+    },
+    "6a0f14f3-6471-4b06-9f34-c71ad0618345": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.953392
+    },
+    "322fabb9-ae1e-49b8-8ef6-ed58b55a5941": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.932404
+    },
+    "65b8c587-a797-47f9-ab27-18a5ce13c137": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.942787
+    },
+    "2d4b7f01-79d5-4b03-b5d3-86a30c37e06f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.878494
+    },
+    "3ffdb600-018f-4ef5-bf0c-b47987a3af78": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.876255
+    },
+    "8db75494-02a1-4801-91f4-14ad884deaa4": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.885612
+    },
+    "15eaca77-81ad-463c-a48d-ec39cb23ab86": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.953743
+    },
+    "06d557b9-5b1a-49c2-91ba-c7753dc21bc2": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.735992
+    },
+    "d708b2aa-c5e6-4840-97aa-4fb000a845a5": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.897076
+    },
+    "50e2df9d-0811-46e1-96bc-5dc869e0e275": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.923786
+    },
+    "588418ec-c6c5-4b0c-8f95-86bf070cb7ac": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.30563
+    },
+    "a3d2bb0e-d8a0-4257-8b0e-890f04c9ae57": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.848499
+    },
+    "bb3f454e-14bc-4756-976a-defaf02505ed": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.974216
+    },
+    "d43f6b0a-8591-45f9-a4bc-bf76e0562cc7": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 53.585533
+    },
+    "9e1c08d4-f148-4a9b-b1ba-a11f4f5145d2": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.961178
+    },
+    "571b3450-8d02-46d6-bfa4-2c219f2ef721": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.935623
+    },
+    "dd328409-9ea8-42ad-a2aa-973a8f101c67": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.932991
+    },
+    "ca9c01ca-1130-47bf-9448-3f3b17d65f5f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.947533
+    },
+    "bdadcc5f-e723-42b8-92e9-0084393af325": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.807537
+    },
+    "f46b8fe8-c545-4d3e-a2fc-b775a3f146be": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.839752
+    },
+    "a353ba90-ee88-4836-8b2d-1a2cc74a20e9": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.827168
+    },
+    "a3ab841d-fd79-4e4e-981f-44fcc31cc02f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.73568
+    },
+    "edfa1ea7-a43b-4588-a776-175fd7ff24f5": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 53.851856
+    },
+    "566723f2-db96-433f-bc02-6d61af34cb67": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.886459
+    },
+    "2c1449a6-f3bf-4cbd-949a-e18d1bbe057d": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.808552
+    },
+    "2323f7c5-3abe-40f0-9021-c0f1c890ae8e": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 58.348328
+    },
+    "5226ebd6-2c6e-4a1d-aa65-f719421acb9a": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.986732
+    },
+    "3bde9aab-98c7-4fe2-b610-10ecf156ac55": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.818813
+    },
+    "177837ca-1e2a-43bd-9061-88cdc18cdc17": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.877235
+    },
+    "1e69f24f-479c-4037-9bd8-fe7e5cfcbc9f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.962593
+    },
+    "f3d4af58-dec6-4180-8e8a-7d867f19d16a": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.917706
+    },
+    "cfc30480-0635-4c88-8cde-1e866093172a": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.899166
+    },
+    "c7708810-a94a-40f5-9562-300403ae7831": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.950962
+    },
+    "78bc464b-2579-4888-b625-5b587cbdabc9": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.921936
+    },
+    "9bdd8118-aef4-4692-a421-cb365b61fb5f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.962055
+    },
+    "eacb19ad-c41c-4315-8506-f2e98288be59": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.812874
+    },
+    "f9a64cc9-ef33-44f5-bd6d-22deacaaa8e7": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.947002
+    },
+    "8ef220b3-d37d-4d91-88ab-ba51fe051d80": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.911564
+    },
+    "1f63efb4-1c38-4580-beb2-21e3bf4315ab": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 60.129704
+    },
+    "b5a00e74-42c4-423f-a7dc-9ca72be07026": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.952732
+    },
+    "f6216558-cd46-46d9-9840-6eb7550d4090": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.848644
+    },
+    "11864800-3794-47d7-8de7-5c36017f2b8d": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.976353
+    },
+    "4d71ed65-a8b1-4a82-beae-fabe48f9980f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 60.010399
+    },
+    "36c9bcc9-661d-4f95-9f82-afeec5e50339": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 54.432106
+    },
+    "6997f22f-ddc2-4046-8b63-6d6edc8c2068": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.904137
+    },
+    "6144aba0-19a3-4816-8001-4e22785b2cd6": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.831459
+    },
+    "e4c38285-c9c0-4afe-8a12-4434f52df9ca": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.855637
+    },
+    "6193f07c-379f-4289-93e0-31d4282a5a77": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.925217
+    },
+    "76ddd937-fc4e-4e19-977a-5acc1f5c081a": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.909622
+    },
+    "5f33622b-35c2-4205-ac0e-02fbad7f82a8": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.889305
+    },
+    "8c4a27e3-2fe9-481b-a36c-1ba57841c699": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.893486
+    },
+    "ac244d3f-9bf1-4d68-b244-db3dd6d87c43": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.952278
+    },
+    "462b80d0-14a2-4cf6-a1db-75a2949dddac": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.892075
+    },
+    "51632670-5479-4f83-bd6f-a2c16c3b7aed": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.922245
+    },
+    "454028df-e30a-44c0-a476-41cdb98cb9d1": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.944511
+    },
+    "56b0b383-e03f-4d49-bcd2-30d01e131e27": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.947876
+    },
+    "c1c86fc9-b6d7-44d9-809d-b50f11e66f7c": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.775654
+    },
+    "ab6d9f06-9e93-4967-8620-5f0ed5db010c": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.96257
+    },
+    "e486c2f3-60f2-4b25-963a-fe5676eeb408": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.952393
+    },
+    "536d3a34-f853-45ad-a99f-202209181880": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.905628
+    },
+    "b95c04c3-f9d3-4100-80c9-f58305cb4f8f": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.04845
+    },
+    "18950e94-dcf1-4cee-90cc-098885df7e2e": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.928707
+    },
+    "86621994-0879-43a4-9f5f-06d4c1f8ad94": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.979279
+    },
+    "a54a66b8-de30-4ac7-bd9e-2e4f5a14b9ca": {
+      "firstSeen": 1780130607.025,
+      "firstSeenTs": "2026-05-30T08:43:27.025Z",
+      "status": "tracked",
+      "playing": 11,
+      "fps": 59.967415
     }
   },
-  "lastScanAt": "2026-05-30T04:55:07.805Z",
+  "lastScanAt": "2026-05-30T08:43:27.025Z",
   "alertedJobs": {
-    "FruitSpawn:74b078fd-98ff-4860-a46b-98d7f7adc428": true
+    "FistOfDarkness:5f39562d-b122-433c-a832-1deb02d763f0": true,
+    "GodChalice:5f39562d-b122-433c-a832-1deb02d763f0": true,
+    "LegendarySword:5f39562d-b122-433c-a832-1deb02d763f0": true,
+    "FistOfDarkness:30eaa3e4-844c-4a54-8061-06ed097dcb12": true,
+    "LegendarySword:30eaa3e4-844c-4a54-8061-06ed097dcb12": true,
+    "GodChalice:30eaa3e4-844c-4a54-8061-06ed097dcb12": true,
+    "FistOfDarkness:3e3928f9-689b-4e68-9482-dee0e407c6b0": true,
+    "LegendarySword:3e3928f9-689b-4e68-9482-dee0e407c6b0": true,
+    "GodChalice:3e3928f9-689b-4e68-9482-dee0e407c6b0": true
   },
-  "liveMessages": {}
+  "liveMessages": {
+    "FistOfDarkness:5f39562d-b122-433c-a832-1deb02d763f0": {
+      "messageId": "1510201967023099914",
+      "sentAt": 1780130607.025
+    },
+    "GodChalice:5f39562d-b122-433c-a832-1deb02d763f0": {
+      "messageId": "1510201967052587034",
+      "sentAt": 1780130607.025
+    },
+    "LegendarySword:5f39562d-b122-433c-a832-1deb02d763f0": {
+      "messageId": "1510201967022968843",
+      "sentAt": 1780130607.025
+    },
+    "FistOfDarkness:30eaa3e4-844c-4a54-8061-06ed097dcb12": {
+      "messageId": "1510201968243642440",
+      "sentAt": 1780130607.025
+    },
+    "LegendarySword:30eaa3e4-844c-4a54-8061-06ed097dcb12": {
+      "messageId": "1510201968604479518",
+      "sentAt": 1780130607.025
+    },
+    "GodChalice:30eaa3e4-844c-4a54-8061-06ed097dcb12": {
+      "messageId": "1510201968457416734",
+      "sentAt": 1780130607.025
+    },
+    "FistOfDarkness:3e3928f9-689b-4e68-9482-dee0e407c6b0": {
+      "messageId": "1510201969208201318",
+      "sentAt": 1780130607.025
+    },
+    "LegendarySword:3e3928f9-689b-4e68-9482-dee0e407c6b0": {
+      "messageId": "1510201969401270332",
+      "sentAt": 1780130607.025
+    },
+    "GodChalice:3e3928f9-689b-4e68-9482-dee0e407c6b0": {
+      "messageId": "1510201969204133940",
+      "sentAt": 1780130607.025
+    }
+  }
 }
